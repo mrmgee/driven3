@@ -1,0 +1,287 @@
+<style>
+/* Header */
+.header {
+    background-color: var(--charcoal);
+    z-index: 20;
+}
+
+/* Logo */
+.logo {
+    display: inline-block;
+    margin-top: var(--space-xs);
+}
+
+
+
+
+/* Nav menu */
+.nav {
+
+}
+
+ul.menu li {
+    position: relative;
+    /* padding: var(--space-s) var(--space-m); */
+    height: var(--space-m);
+    text-transform: uppercase;
+    font-size: var(--step--1);
+    border-radius: 4px;
+}
+
+
+
+.menu a, 
+li.subnav-wrap {
+    display: block;
+    font-weight: 500;
+    color: var(--link-lt);
+}
+
+
+.nav {
+    max-height: 0;
+    transition: max-height .5s ease-out;
+}
+
+/* Sub nav */
+li.subnav-wrap {
+    position: relative;
+}
+.subnav-content {
+    background-color:  #fff;
+    width: 100%;
+    z-index: 1;
+    padding: 20px 0 ;
+    display: none;
+  }
+.subnav-content a {
+    text-decoration: none;
+    padding: 0.5rem 2rem;
+    margin: 10px 0;
+}
+/*
+.subnav:hover .subnav-content {
+    display: block;
+}
+*/
+
+
+/* Menu Icon */
+
+.hamb {
+    cursor: pointer;
+    float: right;
+    padding: 40px 20px;
+}
+
+
+.hamb-line {
+    background: #fff;
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 24px;
+    
+}
+
+.hamb-line::before,
+.hamb-line::after {
+    background: #fff;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+
+.hamb-line::before {
+    top: 5px;
+}
+
+.hamb-line::after {
+    top: -5px;
+}
+
+
+.side-menu {
+    display: none;
+}
+
+/* Toggle menu icon */
+
+
+.side-menu:checked ~ nav {
+    max-height: 100%;
+}
+.side-menu:checked ~ .subnav-content {
+    display: block;
+}
+.side-menu:checked ~ .hamb .hamb-line {
+    background: transparent;
+}
+
+.side-menu:checked ~ .hamb .hamb-line::before {
+    transform: rotate(-45deg);
+    top:0;
+
+}
+
+.side-menu:checked ~ .hamb .hamb-line::after {
+    transform: rotate(45deg);
+    top:0;
+}
+
+
+/* Responsiveness */
+
+@media (min-width: 768px) {
+    .header .container {
+        display: flex;
+        max-width: var(--grid-max-width);
+        margin: 0 auto;
+        padding: var(--space-xs) var(--space-s);
+        border: 1px solid #3366ff;
+    }
+    .header .container > * {
+        flex-grow: 1;
+    }
+ 
+    .nav, 
+    .nav .menu {
+        display: flex;
+        flex-shrink: 0;
+        align-items: stretch;
+        max-height: 100%;
+    }
+
+
+    ul.menu li {
+        /* display: block; */
+        padding: var(--space-3xs) var(--space-xs);
+        border-radius: 4px;
+    }
+
+/*    .menu a:hover,  */
+/*    li.subnav-wrap:hover,  */
+    ul.menu li:hover, 
+
+    li.subnav-wrap .side-menu:checked {
+        color: #fff;
+        background-color: var(--primary);
+        transform: skew(-24deg);
+    }
+    ul.menu li:hover span, 
+    li.subnav-wrap .subnavbtn, 
+    .side-menu:checked ~ .subnav .subnavbtn, 
+    .side-menu:checked ~ .subnav-content span
+     {
+        display: block;
+        transform: skew(24deg);
+    }
+
+
+    /* Sub nav */
+    .subnav-content {
+        position: absolute;
+        left: 0;
+        /* min-width: 340px; */
+        width: max-content;
+        padding: 20px 0 ;
+        display: none;
+        background-color: #fff;
+    }
+
+    .subnav-content a {
+        color: var(--charcoal);
+        white-space: nowrap;
+    }
+    .hamb {
+        display: none;
+    }
+
+}
+
+
+
+
+li.subnav-wrap {
+    /* display: block; */
+    /* padding: var(--space-3xs) var(--space-xs); */
+     
+
+    transform: skew(-24deg);
+
+
+
+}
+
+</style>
+    
+    
+    
+    <!-- Navigation bar -->
+    <header class="header">
+        <div class="container">
+
+
+
+
+        <!-- Logo -->
+        <a href="/" class="logo">
+            <img src="/assets/images/driven_white.svg" alt="Driven Garage">
+        </a>
+
+        <!-- Hamburger icon -->
+        <input class="side-menu" type="checkbox" id="side-menu"/>
+        <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+
+        <!-- Menu -->
+        <nav class="nav">
+            <ul class="menu">
+                <li><a href="/"><span>Home</span></a></li>
+
+                <li class="subnav-wrap">
+                    <!-- dropdown -->
+                    <input class="side-menu" type="checkbox" id="dropdown-menu"/>
+                    <label class="subnav" for="dropdown-menu">
+                        <span class="subnavbtn">Services <i class="fa fa-caret-down"></i></span>
+                    </label>
+
+
+
+<!--
+                    <span class="subnavbtn">Services <i class="fa fa-caret-down"></i></span>
+-->
+                    <div class="subnav-content">
+                        <a href="/services/performance-upgrades/"><span>Performance Upgrades</span></a>
+                        <a href="/services/repair-maintenance/"><span>Repair &amp; Maintenance</span></a>
+                        <a href="/services/body-paint-metalwork/"><span>Body, Paint &amp; Metalwork</span></a>
+                        <a href="/services/custom-fabrication/"><span>Custom Fabrication</span></a>
+                        <a href="/services/restoration/"><span>Restoration</span></a>
+                        <a href="/services/restomod/"><span>Restomod &amp; Full Builds</span></a>
+                        <a href="/services/car-audio-alarms/"><span>Car Audio and Alarms</span></a>
+                        <a href="/services/restyling/"><span>Restyling</span></a>
+                        <a href="/services/detailing/"><span>Detailing</span></a>
+                    </div>
+                </li>
+
+
+                <li><a href="/projects/"><span>Projects</span></a></li>
+                <li><a href="/how-we-work/"><span>How We Work</span></a></li>
+                <li><a href="/about/"><span>About</span></a></li>
+            </ul>
+
+            <div class="cta">
+                <h3>Need work done?</h3>
+                <button class="button is-primary slant js-modal-trigger" data-target="modal-js-example">
+                    <h4>Click for Estimate  &gt; </h4>
+                </button>
+            </div>
+
+        </nav>
+
+            
+        </div><!-- END container-->
+
+    </header>

@@ -1,0 +1,273 @@
+<style>
+    .modal {
+        position: fixed;
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        overflow: hidden;
+        z-index: 15;
+    }
+    
+
+    
+
+    .modal-background {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(10,10,10,.86);
+        z-index: 10;
+    }
+
+    .modal-content {
+        position: relative;
+        width: 100%;
+        max-height: calc(100vh - 160px);
+        margin: 0 20px;
+        overflow: auto;
+        z-index: 20;
+    }
+    .modal-content .box {
+        display: block;
+        padding: 0 0 1rem 0;
+        color: #4a4a4a;
+        background-color: #fff;
+        /* border-radius: 6px; */
+        border-radius: 0.4rem 0.4rem 0 0;
+    }
+    .modal-content h2 {
+        padding: var(--space-xs);
+        font-size: var(--step-1);
+        font-weight: 700;
+        text-transform: uppercase;
+        background-color: var(--primary);
+        border-radius: 0.4rem 0.4rem 0 0;
+    }
+    .toggle-content > p {
+        margin-bottom: var(--step-1);
+    }
+
+    .modal-content .row {
+        display: flex;
+        gap: var(--space-m);
+        max-width: 84%;
+        margin: 0 auto var(--space-m) auto;
+
+    }
+
+    .img-wrap {
+        text-align: center;
+    }
+    .img-wrap .icon {
+        width: 100%;
+        font-size: 6rem;
+        color: #f79837;
+    }
+    .icon {
+        width: 1.5rem;
+        height: 1.5rem;
+        line-height: 1;
+    }
+    .img-wrap .icon:before {
+        margin-left: 0;
+        vertical-align: top;
+    }
+
+    [class^="flaticon-"]:before, [class*=" flaticon-"]:before, 
+    [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+        font-size: 1em;
+    }
+
+    .flaticon-car-search:before {
+        content: "\f10b";
+    }
+    .img-wrap .icon.i-timesheet img {
+        max-height: 8rem;
+        /* margin: 0.3rem 0 0 0; */
+    }
+
+    .process-item {
+        display: flex;
+        flex-direction: column;
+        min-height: 100%;
+        background-color: var(--v-lt-grey);
+    }
+    .process-item h5 {
+        margin: 0;
+        padding: 0 0 var(--space-3xs) 0;
+        font-size: var(--step-0);
+        font-weight: 500;
+        color: #fff;
+        background-color: var(--dk-grey);
+    }
+    .process-item h5 span {
+        width: 3rem;
+        height: 3rem;
+        margin: 0 0 0 -1.2rem;
+        padding: 0.8rem 1.4rem;
+        color: #fff;
+        background: #f79837;
+        border-radius: 50%;
+        font-size: 2rem;
+        text-align: center;
+    }
+    .process-item p {
+        padding: var(--space-3xs);
+    }
+
+
+    /* TOGGLE */
+    .form-modal:checked ~ .modal {
+        display: flex;
+    }
+
+
+    /* DEFAULT Step 1 ON  /  Step 2 off */
+    #step1-cont.toggle-content, 
+    .label-modal h4.s2 {
+        display: block;
+    }
+    .label-modal h4.s1, 
+    #step2-cont .toggle-content {
+        display: none;
+    }
+    .form-modal:checked ~ .label-modal h4.s1 {
+        position: fixed;
+        width: 3rem;
+        height: 3rem;
+        font-size: var(--step-2);
+        font-weight: 700;
+        color: var(--primary);
+        z-index: 100;
+    }
+    /* Step 1 off  /  Step 2 ON */
+    .form-modal-step:checked ~ #step2-cont .toggle-content, 
+    .form-modal-step:checked ~ .cta .label-modal h4.s1, 
+    .form-modal:checked ~ .label-modal h4.s1 {
+        display: block;
+    }
+    .form-modal-step:checked ~ #step1-cont.toggle-content, 
+    .form-modal-step:checked ~ .cta .label-modal h4.s2, 
+    .form-modal:checked ~ .label-modal h4.s2 {
+        display: none;
+    }
+
+
+
+
+
+    @media screen and (min-width: 769px) {
+        .modal-card, .modal-content {
+            margin: 0 auto;
+            max-height: calc(100vh - 40px);
+            width: 640px;
+        }
+    }
+
+
+</style>
+
+
+
+<div class="modal">
+  <div class="modal-background"></div>
+
+  <div class="modal-content">
+
+    <div class="box">
+      <h2>Need some work done on your ride?</h2>
+
+      <!-- TOGGLE checkbox -->
+      <input class="form-modal-step" type="checkbox" id="form-modal-step"/>
+
+
+      <div id="step1-cont" class="toggle-content">
+      
+      <!-- <h3>Just give us your info, tell us what needs fixed or work you need done</h3> -->
+      <p>Give us a bit to respond with a detailed estimate. We need time to do a through review to research and write your estimate.<br>
+
+      <div class="row">
+        <div class="img-wrap">
+            <i class="icon flaticon-car-search"></i>
+        </div>
+        <div class="process-item">
+            <h5><span>1</span> Get a Quote</h5>
+            <p>Tells us what's wrong with your car or work you want done. We'll shoot back a detailed estimate that includes diagnosis, parts, and labor.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="img-wrap">
+            <i class="icon flaticon-autolift"></i>
+        </div>
+        <div class="process-item">
+            <h5><span>2</span> Approve Repairs</h5>
+            <p>Once you approve the estimate, we'll book an appoitment to drop off your car and our team will get to work.</p>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="img-wrap">
+            <i class="icon i-timesheet">
+            <img src="{{ rootPath }}assets/images/i-timesheet.svg" alt="timesheet">
+            </i>
+        </div>
+        <div class="process-item">
+            <h5><span>3</span> Time is Money</h5>
+            <p>Only pay for time our team is working on your car. We use strict time tracking to ensure you won't pay extra.</p>
+        </div>
+      </div>
+
+
+
+      <div class="row">
+        <div class="img-wrap">
+            <i class="icon flaticon-fix-sign"></i>
+        </div>
+        <div class="process-item">
+            <h5><span>4</span> Hit the Road</h5>
+            <p>Our certified team will fix your car and get you back on the road.</p>
+        </div>
+      </div>
+
+    </div>
+
+
+    <div id="step2-cont">
+<!--
+        <input class="form-modal-step2" type="checkbox" id="form-modal-step2"/>
+-->
+
+
+        <div class="toggle-content">
+            <p><strong>To ensure a prompt response, please enter your valid phone number and email</strong></p>
+            <p style="font-size:0.8rem;">Please be patient: It can take <span class="hilite"><i>a day or 2</i></span> for smaller jobs and <span class="hilite"><i>a few days</i></span> for more complex requests.</p>
+
+            <iframe id="shopmonkey-form" src="https://app.shopmonkey.io/quote-request/028a78c54fda5e7ae2570db0fb187cd5?noExternalScripts=1" width="100%" height="700" frameborder="0"></iframe>
+        </div>
+    </div>
+    
+
+    <div class="cta">
+        <label class="label-modal" for="form-modal-step">
+            <h4 class="s2">Let's Go ></h4><h4 class="s1">< Go Back</h4>
+        </label>
+    </div>
+
+
+  </div><!-- END box -->
+
+
+  </div><!-- END modal-content -->
+<!--
+  <button class="modal-close is-large" aria-label="close"></button>
+-->  
+</div>

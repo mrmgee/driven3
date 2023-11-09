@@ -1,0 +1,37 @@
+{%set pagePath = "./src"+page.url %}
+{%set imgHeroPath = featuredImage %}
+{# {%set fullHeroPath = pagePath+imgHeroPath %} #}
+{%set fullHeroPath = featuredImage %}
+{% set heroAlt = featuredImageAlt %}
+{% set imgSlidePos = featuredImagePos %}  <!-- outputs as class="1234" -->
+{% set imgSizesResp = "100vw" %}
+<!-- 
+pagePath: {{ pagePath }}
+featuredImage: {{ featuredImage }}
+imgHeroPath: {{ imgHeroPath }}
+fullHeroPath: {{ fullHeroPath }}
+heroAlt: {{ heroAlt }}
+-->    
+
+<!-- Build hero image position -->
+<style>
+  @media screen and (min-width: 769px) {
+    .sec-bkg-img img {
+      {{ featuredImagePos }}
+    }
+  }
+</style>
+
+    <section class="hero">
+      <h1 class="title">{{title}}</h1>
+
+      {% if fullHeroPath|length %}
+      <figure class="bkg-img">
+          {% image ""+fullHeroPath, ""+heroAlt, ""+imgSlidePos, ""+imgSizesResp %}
+      </figure>
+      {% endif %}
+
+      <figure class="halftone-overlay"></figure>
+
+
+    </section>

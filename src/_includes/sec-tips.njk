@@ -1,0 +1,61 @@
+{% block secTips %}
+
+
+{% for cont in sectionCont %}
+    {% if cont.pattern == "sec-tips" %}
+    
+
+      {% set imgBkgP = cont.bkgImage %}
+      {% set imgBkgPSizesResp = "100vw" %}
+
+
+      {% set imgPostP = cont.image %}
+      {% set imgPostAlt = cont.altText %}
+      {% set imgSizesResp = "(min-width: 1420px) 660px, 
+      (min-width: 1220px) 564px, 
+      (min-width: 1040px) 468px, 
+      (min-width: 780px) 50vw, 
+      calc(100vw - 24px)"
+      %}
+
+
+<!-- START pro-tips -->
+<section class="pro-tips">
+    <header>
+        <div class="know-tips">
+            <h3>How <span style="color: #f79837;">Driven</span> <i>Does It Right</i></h3>
+            <span class="hilite"><i>Tips from the Pros</i></span>
+        </div>
+    </header>
+    
+        {% if imgPostP | length %}
+        <figure class="cont-img">
+            {% image ""+imgPostP, ""+imgPostAlt, "tips-img", ""+imgSizesResp %}
+        </figure>
+        {% endif %}
+        <article>
+            <p class="tips-subhead">
+                After years under cars, we've honed the best installation matched with the right parts to do the job right
+            </p>
+        {% if cont.title|length %}
+            <h4>{{ cont.title }}</h4>
+        {% endif %}
+        {% if cont.text|length %}
+            <p>{{ cont.text | safe }}</p>
+        {% endif %}
+        </article>
+        
+
+      {% if imgBkgP|length %}
+      <figure class="bkg-img">
+          {% image ""+imgBkgP, ""+imgPostAlt, "bkg-img", ""+imgBkgPSizesResp %}
+      </figure>
+      {% endif %}
+
+</section>
+
+  {% endif %}
+{% endfor %}
+
+
+{% endblock secTips %}

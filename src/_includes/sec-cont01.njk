@@ -1,0 +1,75 @@
+{% block secCont01 %}
+
+    <section class="services half-split">
+
+{% for cont in sectionCont %}
+
+    {% set imgPostP = cont.image %}
+    {% set imgPostAlt = cont.altText %}
+    {% set imgSizesResp = "(min-width: 1420px) 660px, 
+    (min-width: 1220px) 564px, 
+    (min-width: 1040px) 468px, 
+    (min-width: 780px) 50vw, 
+    calc(100vw - 24px)"
+    %}
+    {% set imgBkgP = cont.bkgImage %}
+    {% set imgSlidePos = "cont-img" %}
+
+    {% if cont.pattern == "sec-2col-pos1" %}
+
+        {% if (loop.index)%2 == 0 %}  {# loop.index(4)%2 = 0 EVEN   loop.index(5)%2 = 1 ODD #}
+
+
+        <article>
+            <figure>
+                {% if imgPostP | length %}
+                    {% image ""+imgPostP, ""+imgPostAlt, ""+imgSlidePos, ""+imgSizesResp %}
+                {% endif %}
+            </figure>
+            <div class="column">
+                {% if cont.title|length %}
+                    <h3>{{ cont.title | safe }}</h3>
+                {% endif %}
+                {% if cont.text|length %}
+                    <p>{{ cont.text | safe }}</p>
+                {% endif %}
+                {% if cont.CTAlabel|length %}
+                <div class="control">
+                    <div class="button is-primary slant js-modal-trigger" data-target="modal-js-example"><h4>{{ cont.CTAlabel }}</h4></div>
+                </div>
+                {% endif %}
+            </div>
+        </article>
+
+        {% else %}
+
+        <article>
+            <div class="column">
+                {% if cont.title|length %}
+                    <h3>{{ cont.title | safe }}</h3>
+                {% endif %}
+                {% if cont.text|length %}
+                    <p>{{ cont.text | safe }}</p>
+                {% endif %}
+                {% if cont.CTAlabel|length %}
+                <div class="control">
+                    <div class="button is-primary slant js-modal-trigger" data-target="modal-js-example"><h4>{{ cont.CTAlabel }}</h4></div>
+                </div>
+                {% endif %}
+            </div>
+            <figure>
+                {% if imgPostP | length %}
+                    {% image ""+imgPostP, ""+imgPostAlt, ""+imgSlidePos, ""+imgSizesResp %}
+                {% endif %}
+            </figure>
+        </article>
+
+        {% endif %}
+
+    {% endif %}
+{% endfor %}
+
+    </section>
+
+
+{% endblock secCont01 %}
