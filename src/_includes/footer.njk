@@ -1,61 +1,90 @@
 <style>
-  #mapid {
-    width:800px; height:600px;
+footer {
+  color: #fff;
+  background-color: var(--charcoal);
+  padding-bottom: var(--space-l);
+}
+.columns {
+  display: flex;
+}
+.columns > * {
+  flex-grow: 1;
+}
+footer article {
+  display: block;
+  padding: var(--space-s);
+}
+
+
+@media (min-width: 768px) {
+  footer {
+    display: grid;
+    grid-template-columns: 2fr 2fr 4fr;
+    column-gap: var(--space-s);
+    width: 100%;
+    margin-top: var(--space-l);
+    padding: 0 5%;
   }
+  footer header {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    margin-bottom: var(--space-s);
+  }
+  footer article {
+    grid-row-start: 2;
+    grid-row-end: 2;
+  }
+  h4.foot-tag {
+    margin-top: var(--space-s);
+    font-size: var(--step-0);
+    font-weight: 500;
+  }
+
+  #mapid {
+    width:800px;
+    height:600px;
+  }
+
+}
 </style>
-<footer class="section has-background-dark has-text-white">
-  <div class="container">
+<footer>
+    <header class="header">
+        <div class="container">
+            <a href="/" class="logo">
+                <img src="/assets/images/driven_white.svg" alt="Driven Garage">
+            </a>
+            <div class="cta">
+              <h3>Need work done?</h3>
+              <input class="form-modal" type="checkbox" id="form-modal"/>
 
-    <div class="columns">
-      <div class="column">
-        <a class="navbar-item" href="{{ config.url }}">
-          {% if config.logoUrl.length > 0 %}
-            {#
-              Si logo desde fichero: <img src="{{ config.logoUrl }}" alt="{{ config.title }}"/>
-              Si logo insertado como SVG: {% logoSVG %}
-            #}
-            <img src="{{ rootPath }}{{ config.logoUrl }}" alt="{{ config.title }}"/>
-          {% else %}
-            {{ config.title }}
-          {% endif %}
-        </a>
-      </div>
-      <div class="column">
-        <div class="level-item cta-bar">
-          <h3>Need work done?</h3>
-          <div class="control">
-            <a class="button is-primary slant js-modal-trigger" data-target="modal-js-example" href="#" target="_self"><h4>Open a Work Request  > </h4></a>
+              <label class="label-modal" for="form-modal">
+                  <h4 class="s2">Open a Work Request  ></h4><h4 class="s1">X</h4>
+              </label>
           </div>
-
         </div>
-      </div>
+    </header>
 
-    </div><!-- END columns -->
-
-
-    <div class="columns">
-      <div class="column is-one-quarter">
-        <p>2051 Alpine Way</p>
-        <p>Hayward, CA 94545</p>
-        <h4 class="foot-tag">Small jobs, big jobs,
-          all makes and models...
-          <span class="hilite"> <i>Yes, even that one</i></span>
-        </h4>
-
-    
-      </div>
-      <div class="column is-one-quarter">
-        <div class="columns is-mobile">
-          <div class="column">
-            <p>Monday</p>
-            <p>Tuesday</p>
-            <p>Wednesday</p>
-            <p>Thursday</p>
-            <p>Friday</p>
-            <p>Saturday</p>
-            <p>Sunday</p>
-          </div>
-          <div class="column">
+    <article>
+      <p>2051 Alpine Way</p>
+      <p>Hayward, CA 94545</p>
+      <h4 class="foot-tag">Small jobs, big jobs,
+        all makes and models...
+        <span class="hilite"> <i>Yes, even that one</i></span>
+      </h4>
+      </article>
+      <div class="columns">
+        <article>
+          <p>Monday</p>
+          <p>Tuesday</p>
+          <p>Wednesday</p>
+          <p>Thursday</p>
+          <p>Friday</p>
+          <p>Saturday</p>
+          <p>Sunday</p>
+          </article>
+          <article>
             <p>8:30am - 6:00pm</p>
             <p>8:30am - 6:00pm</p>
             <p>8:30am - 6:00pm</p>
@@ -63,16 +92,14 @@
             <p>8:30am - 6:00pm</p>
             <p>By appointment</p>
             <p>Closed</p>
-          </div>
+          </article>
         </div>
-      </div>
-      <div class="column">
+
         <div class="gmap_canvas">
 <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=Driven+Garage&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="400" frameborder="0" marginwidth="0" marginheight="0" scrolling="no">
 </iframe>
         </div>
-      </div>
-    </div><!-- END columns -->
 
-  </div><!-- END container -->
+
+
 </footer>

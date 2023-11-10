@@ -2,7 +2,7 @@
 /* Header */
 .header {
     background-color: var(--charcoal);
-    z-index: 20;
+    /* z-index: 20; */
 }
 
 /* Logo */
@@ -71,10 +71,11 @@ li.subnav-wrap {
 }
 
 /* CTA nav */
-.nav .cta {
+.nav .cta, 
+footer .cta {
     align-items: center;
     display: flex;
-    margin-left: 4rem;
+/*    margin-left: 4rem; */
     flex-basis: auto;
     flex-grow: 0;
     flex-shrink: 0;
@@ -86,13 +87,15 @@ li.subnav-wrap {
 
 
 .nav .cta h3, 
+footer .cta h3, 
 /* .nav .cta  */
 .label-modal h4 {
     font-size: var(--step--1);
     font-weight: 500;
     text-transform: uppercase;
 }
-.nav .cta h3 {
+.nav .cta h3, 
+footer .cta h3 {
     margin-right: var(--space-s);
     color: var(--primary);
 }
@@ -205,6 +208,7 @@ input[id=form-modal]:not(:checked) ~  .label-modal,
     }
     .header .container > * {
         flex-grow: 1;
+        justify-content: flex-end;
     }
  
     .nav, 
@@ -217,8 +221,9 @@ input[id=form-modal]:not(:checked) ~  .label-modal,
     .nav {
         justify-content: flex-end;
     }
-
-
+    .nav .menu {
+        margin-right: 4rem;
+    }
     .menu a, 
     .menu li .subnav {        
         border-radius: 4px;
