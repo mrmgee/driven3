@@ -1,0 +1,910 @@
+<!doctype html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta property="og:title" content=Restyling/>
+    <meta property="og:url" content=../..//services/restyling/ />
+    <meta property="og:description" content=Driven Garage nothern California restomod auto customization and repair shop />
+    <meta property="og:image" content="../.././src/_images/Dodge_Scat_Pack_Charger_tire_letters.jpg" />
+    <meta property="og:type" content="article" />
+
+
+
+    <title>git deploy 1-1  |  Restyling</title>
+    <meta name="description" content="Driven Garage nothern California restomod auto customization and repair shop">
+    <link rel="stylesheet" href="../../assets/css/driven.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic%7CUbuntu:300,300italic,400,400italic,500,500italic,700,700italic%7CRoboto:300,regular,500" media="all">
+
+<!-- Swiffy Slider -->
+<link rel="stylesheet" href="../../_css/swiffy-slider.min.css">
+
+<!-- PhotoSwipe gallery -->
+<link rel="stylesheet" href="../../_css/photoswipe.css">
+
+<!-- Flaticon icon fonts -->
+<link rel="stylesheet" href="../../assets/css/flaticon/flaticon.css">
+
+    
+
+    
+
+  </head>
+
+  <body class="p-restyling">
+    <style>
+/* Header */
+.header {
+    background-color: var(--charcoal);
+    /* z-index: 20; */
+}
+
+/* Logo */
+.logo {
+    display: inline-block;
+    margin-top: var(--space-xs);
+}
+
+
+
+
+/* Nav menu */
+@media (max-width: 768px) {
+    .nav, 
+    .subnav-content {
+        display: none;
+    }
+}
+
+.menu a, 
+.menu li .subnav {
+    display: block;
+    position: relative;
+    padding: var(--space-3xs) var(--space-xs);
+    color: var(--link-lt);
+    font-size: var(--step--1);
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.menu a {
+    padding: var(--space-3xs) var(--space-xs);
+}
+.menu li .subnav {
+    padding: var(--space-2xs) var(--space-xs);
+}
+
+.nav {
+    max-height: 0;
+    transition: max-height .5s ease-out;
+}
+
+
+
+
+
+/* Sub nav */
+li.subnav-wrap {
+    position: relative;
+}
+.subnav-content {
+    display: none;
+    width: 100%;
+    padding-left: var(--space-s);
+    background-color: var(--dk-grey);
+    z-index: 1;
+  }
+
+.subnav-content a {
+    text-decoration: none;
+    /* padding: 0.5rem 2rem; */
+    /* margin: 10px 0; */
+}
+.subnavbtn {
+    padding-right: 1rem;
+}
+
+/* CTA nav */
+.nav .cta, 
+footer .cta {
+    align-items: center;
+    display: flex;
+/*    margin-left: 4rem; */
+    flex-basis: auto;
+    flex-grow: 0;
+    flex-shrink: 0;
+    justify-content: center;
+}
+#form-modal {
+    z-index: 100;
+}
+
+
+.nav .cta h3, 
+footer .cta h3, 
+/* .nav .cta  */
+.label-modal h4 {
+    font-size: var(--step--1);
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.nav .cta h3, 
+footer .cta h3 {
+    margin-right: var(--space-s);
+    color: var(--primary);
+}
+
+input[id=form-modal]:not(:checked) ~ .label-modal h4, 
+.form-modal-step ~ .cta .label-modal h4 {
+    color: #fff;
+    transform: skew(24deg);
+}
+
+
+input[id=form-modal]:not(:checked) ~  .label-modal, 
+.form-modal-step ~ .cta .label-modal {
+    position: relative;
+    right: 1rem;
+    margin-left: var(--space-s);
+    padding: var(--space-2xs) var(--space-xs);
+    color: #fff;
+    background-color: var(--primary);
+    font-size: var(--step--0);
+    border-radius: 4px;
+    transform: skew(-24deg);
+
+}
+
+
+
+/* Menu Icon */
+
+.hamb {
+    cursor: pointer;
+    float: right;
+    padding: var(--space-m) var(--space-xs); 
+}
+
+
+.hamb-line {
+    background: #fff;
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 24px;
+    
+}
+
+.hamb-line::before,
+.hamb-line::after {
+    background: #fff;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+
+.hamb-line::before {
+    top: 5px;
+}
+
+.hamb-line::after {
+    top: -5px;
+}
+
+
+/* Toggle menu icon */
+
+/* Hide input checkbox */
+.side-menu, 
+.form-modal, 
+.form-modal-step {
+    display: none;
+}
+
+
+
+
+.side-menu:checked ~ nav {
+    max-height: 100%;
+}
+.side-menu:checked ~ .nav, 
+.side-menu:checked ~ .subnav-content, 
+.side-menu:checked ~ .nav .menu .subnav-content {
+    display: block;
+}
+.side-menu:checked ~ .hamb .hamb-line {
+    background: transparent;
+}
+
+.side-menu:checked ~ .hamb .hamb-line::before {
+    transform: rotate(-45deg);
+    top:0;
+
+}
+
+.side-menu:checked ~ .hamb .hamb-line::after {
+    transform: rotate(45deg);
+    top:0;
+}
+
+
+/* Responsiveness */
+
+@media (min-width: 768px) {
+    .header .container {
+        display: flex;
+        max-width: var(--grid-max-width);
+        margin: 0 auto;
+        padding: var(--space-xs) 0;
+    }
+    .header .container > * {
+        flex-grow: 1;
+        justify-content: flex-end;
+    }
+ 
+    .nav, 
+    .nav .menu {
+        display: flex;
+        flex-shrink: 0;
+        align-items: center;
+        max-height: 100%;
+    }
+    .nav {
+        justify-content: flex-end;
+    }
+    .nav .menu {
+        margin-right: 4rem;
+    }
+    .menu a, 
+    .menu li .subnav {        
+        border-radius: 4px;
+    }
+
+    .menu > li > a:hover {
+        transform: skew(-24deg);
+    }
+
+    .menu a:hover, 
+    .subnav:hover, 
+    .side-menu:checked ~ .subnav {
+        color: #fff;
+        background-color: var(--primary);
+    }
+    .subnav:hover .subnavbtn:after, 
+    .side-menu:checked ~ .subnav .subnavbtn:after {
+        border-color: var(--link-lt);
+    }
+
+
+    .menu a:hover span, 
+    .subnav:hover .subnavbtn, 
+    li.subnav-wrap .subnavbtn {
+        display: block;
+        transform: skew(24deg);
+    }
+
+
+    /* Sub nav */
+    li.subnav-wrap {
+        transform: skew(-24deg);
+    }
+    .subnav-content {
+        position: absolute;
+        display: none;
+        left: 0;
+        width: max-content;
+        padding-left: 0;
+        background-color: #fff;
+        border-radius: 4px;
+        box-shadow: 0 8px 8px rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 10%);
+    }
+
+    .subnav-content a {
+        color: var(--charcoal);
+        white-space: nowrap;
+        transform: skew(24deg);
+    }
+    .menu .subnav-content a:hover {
+        color: var(--primary);
+        background-color: var(--lt-grey);
+        transform: skew(0deg);
+    }
+    .subnavbtn:after {
+        position: absolute;
+        content: " ";
+        display: block;
+        height: 0.625em;
+        top: 50%;
+        right: 0;
+        margin-top: -0.4375em;
+        transform: rotate(-45deg);
+        transform-origin: center;
+        width: 0.625em;
+        border: 3px solid transparent;
+        border-top: 0;
+        border-right: 0;
+        
+        border-color: var(--primary);
+        border-radius: 2px;
+        pointer-events: none;
+    }
+
+
+    .hamb {
+        display: none;
+    }
+
+}
+
+</style>
+    
+    
+    
+    <!-- Navigation bar -->
+    <header class="header">
+        <div class="container">
+
+
+
+
+        <!-- Logo -->
+        <a href="/" class="logo">
+            <img src="/assets/images/driven_white.svg" alt="Driven Garage">
+        </a>
+
+        <!-- Hamburger icon -->
+        <input class="side-menu" type="checkbox" id="side-menu"/>
+        <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+
+        <!-- Menu -->
+        <nav class="nav">
+            <ul class="menu">
+                <li><a href="/"><span>Home</span></a></li>
+
+                <li class="subnav-wrap">
+                    <!-- dropdown -->
+                    <input class="side-menu" type="checkbox" id="dropdown-menu"/>
+
+                    <!-- <div class="subnav-drop"> -->
+
+                    <label class="subnav" for="dropdown-menu">
+                        <span class="subnavbtn">Services <i class="fa fa-caret-down"></i></span>
+                    </label>
+
+
+
+<!--
+                    <span class="subnavbtn">Services <i class="fa fa-caret-down"></i></span>
+-->
+                    <div class="subnav-content">
+                        <a href="/services/performance-upgrades/"><span>Performance Upgrades</span></a>
+                        <a href="/services/repair-maintenance/"><span>Repair &amp; Maintenance</span></a>
+                        <a href="/services/body-paint-metalwork/"><span>Body, Paint &amp; Metalwork</span></a>
+                        <a href="/services/custom-fabrication/"><span>Custom Fabrication</span></a>
+                        <a href="/services/restoration/"><span>Restoration</span></a>
+                        <a href="/services/restomod/"><span>Restomod &amp; Full Builds</span></a>
+                        <a href="/services/car-audio-alarms/"><span>Car Audio and Alarms</span></a>
+                        <a href="/services/restyling/"><span>Restyling</span></a>
+                        <a href="/services/detailing/"><span>Detailing</span></a>
+                    </div>
+                    <!-- </div> --> <!-- END subnav-drop -->
+                </li>
+
+
+                <li><a href="/projects/"><span>Projects</span></a></li>
+                <li><a href="/how-we-work/"><span>How We Work</span></a></li>
+                <li><a href="/about/"><span>About</span></a></li>
+            </ul>
+
+            <div class="cta">
+                <h3>Need work done?</h3>
+                <input class="form-modal" type="checkbox" id="form-modal"/>
+
+                <label class="label-modal" for="form-modal">
+                    <h4 class="s2">Click for Estimate  &gt;</h4><h4 class="s1">X</h4>
+                </label>
+
+                <style>
+    .modal {
+        position: fixed;
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        overflow: hidden;
+        z-index: 15;
+    }
+    
+
+    
+
+    .modal-background {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(10,10,10,.86);
+        z-index: 10;
+    }
+
+    .modal-content {
+        position: relative;
+        width: 100%;
+        max-height: calc(100vh - 160px);
+        margin: 0 20px;
+        overflow: auto;
+        z-index: 20;
+    }
+    .modal-content .box {
+        display: block;
+        padding: 0 0 1rem 0;
+        color: #4a4a4a;
+        background-color: #fff;
+        /* border-radius: 6px; */
+        border-radius: 0.4rem 0.4rem 0 0;
+    }
+    .modal-content h2 {
+        padding: var(--space-xs);
+        font-size: var(--step-1);
+        font-weight: 700;
+        text-transform: uppercase;
+        background-color: var(--primary);
+        border-radius: 0.4rem 0.4rem 0 0;
+    }
+    .toggle-content > p {
+        margin-bottom: var(--step-1);
+    }
+
+    .modal-content .row {
+        display: flex;
+        gap: var(--space-m);
+        max-width: 84%;
+        margin: 0 auto var(--space-m) auto;
+
+    }
+
+    .img-wrap {
+        text-align: center;
+    }
+    .img-wrap .icon {
+        width: 100%;
+        font-size: 6rem;
+        color: #f79837;
+    }
+    .icon {
+        width: 1.5rem;
+        height: 1.5rem;
+        line-height: 1;
+    }
+    .img-wrap .icon:before {
+        margin-left: 0;
+        vertical-align: top;
+    }
+
+    [class^="flaticon-"]:before, [class*=" flaticon-"]:before, 
+    [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+        font-size: 1em;
+    }
+
+    .flaticon-car-search:before {
+        content: "\f10b";
+    }
+    .img-wrap .icon.i-timesheet img {
+        max-height: 8rem;
+        /* margin: 0.3rem 0 0 0; */
+    }
+
+    .process-item {
+        display: flex;
+        flex-direction: column;
+        min-height: 100%;
+        background-color: var(--v-lt-grey);
+    }
+    .process-item h5 {
+        margin: 0;
+        padding: 0 0 var(--space-3xs) 0;
+        font-size: var(--step-0);
+        font-weight: 500;
+        color: #fff;
+        background-color: var(--dk-grey);
+    }
+    .process-item h5 span {
+        width: 3rem;
+        height: 3rem;
+        margin: 0 0 0 -1.2rem;
+        padding: 0.8rem 1.4rem;
+        color: #fff;
+        background: #f79837;
+        border-radius: 50%;
+        font-size: 2rem;
+        text-align: center;
+    }
+    .process-item p {
+        padding: var(--space-3xs);
+    }
+
+
+    /* TOGGLE */
+    .form-modal:checked ~ .modal {
+        display: flex;
+    }
+
+
+    /* DEFAULT Step 1 ON  /  Step 2 off */
+    #step1-cont.toggle-content, 
+    .label-modal h4.s2 {
+        display: block;
+    }
+    .label-modal h4.s1, 
+    #step2-cont .toggle-content {
+        display: none;
+    }
+    .form-modal:checked ~ .label-modal h4.s1 {
+        position: fixed;
+        width: 3rem;
+        height: 3rem;
+        font-size: var(--step-2);
+        font-weight: 700;
+        color: var(--primary);
+        z-index: 100;
+    }
+    /* Step 1 off  /  Step 2 ON */
+    .form-modal-step:checked ~ #step2-cont .toggle-content, 
+    .form-modal-step:checked ~ .cta .label-modal h4.s1, 
+    .form-modal:checked ~ .label-modal h4.s1 {
+        display: block;
+    }
+    .form-modal-step:checked ~ #step1-cont.toggle-content, 
+    .form-modal-step:checked ~ .cta .label-modal h4.s2, 
+    .form-modal:checked ~ .label-modal h4.s2 {
+        display: none;
+    }
+
+
+
+
+
+    @media screen and (min-width: 769px) {
+        .modal-card, .modal-content {
+            margin: 0 auto;
+            max-height: calc(100vh - 40px);
+            width: 640px;
+        }
+    }
+
+
+</style>
+
+
+
+<div class="modal">
+  <div class="modal-background"></div>
+
+  <div class="modal-content">
+
+    <div class="box">
+      <h2>Need some work done on your ride?</h2>
+
+      <!-- TOGGLE checkbox -->
+      <input class="form-modal-step" type="checkbox" id="form-modal-step"/>
+
+
+      <div id="step1-cont" class="toggle-content">
+      
+      <!-- <h3>Just give us your info, tell us what needs fixed or work you need done</h3> -->
+      <p>Give us a bit to respond with a detailed estimate. We need time to do a through review to research and write your estimate.<br>
+
+      <div class="row">
+        <div class="img-wrap">
+            <i class="icon flaticon-car-search"></i>
+        </div>
+        <div class="process-item">
+            <h5><span>1</span> Get a Quote</h5>
+            <p>Tells us what's wrong with your car or work you want done. We'll shoot back a detailed estimate that includes diagnosis, parts, and labor.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="img-wrap">
+            <i class="icon flaticon-autolift"></i>
+        </div>
+        <div class="process-item">
+            <h5><span>2</span> Approve Repairs</h5>
+            <p>Once you approve the estimate, we'll book an appoitment to drop off your car and our team will get to work.</p>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="img-wrap">
+            <i class="icon i-timesheet">
+            <img src="../../assets/images/i-timesheet.svg" alt="timesheet">
+            </i>
+        </div>
+        <div class="process-item">
+            <h5><span>3</span> Time is Money</h5>
+            <p>Only pay for time our team is working on your car. We use strict time tracking to ensure you won't pay extra.</p>
+        </div>
+      </div>
+
+
+
+      <div class="row">
+        <div class="img-wrap">
+            <i class="icon flaticon-fix-sign"></i>
+        </div>
+        <div class="process-item">
+            <h5><span>4</span> Hit the Road</h5>
+            <p>Our certified team will fix your car and get you back on the road.</p>
+        </div>
+      </div>
+
+    </div>
+
+
+    <div id="step2-cont">
+<!--
+        <input class="form-modal-step2" type="checkbox" id="form-modal-step2"/>
+-->
+
+
+        <div class="toggle-content">
+            <p><strong>To ensure a prompt response, please enter your valid phone number and email</strong></p>
+            <p style="font-size:0.8rem;">Please be patient: It can take <span class="hilite"><i>a day or 2</i></span> for smaller jobs and <span class="hilite"><i>a few days</i></span> for more complex requests.</p>
+
+            <iframe id="shopmonkey-form" src="https://app.shopmonkey.io/quote-request/028a78c54fda5e7ae2570db0fb187cd5?noExternalScripts=1" width="100%" height="700" frameborder="0"></iframe>
+        </div>
+    </div>
+    
+
+    <div class="cta">
+        <label class="label-modal" for="form-modal-step">
+            <h4 class="s2">Let's Go ></h4><h4 class="s1">< Go Back</h4>
+        </label>
+    </div>
+
+
+  </div><!-- END box -->
+
+
+  </div><!-- END modal-content -->
+<!--
+  <button class="modal-close is-large" aria-label="close"></button>
+-->  
+</div>
+
+            </div>
+
+        </nav>
+
+            
+        </div><!-- END container-->
+
+    </header>
+
+
+
+
+
+
+
+
+
+  <!-- outputs as class="1234" -->
+
+<!-- 
+pagePath: ./src/services/restyling/
+featuredImage: ./src/_images/Dodge_Scat_Pack_Charger_tire_letters.jpg
+imgHeroPath: ./src/_images/Dodge_Scat_Pack_Charger_tire_letters.jpg
+fullHeroPath: ./src/_images/Dodge_Scat_Pack_Charger_tire_letters.jpg
+heroAlt: Dodge Scat Pack Charger tire letters
+-->    
+
+<!-- Build hero image position -->
+<style>
+  @media screen and (min-width: 769px) {
+    .sec-bkg-img img {
+      
+    }
+  }
+</style>
+
+    <section class="hero">
+      <h1 class="title">Restyling</h1>
+
+      
+      <figure class="bkg-img">
+          <img class="undefined" alt="Dodge Scat Pack Charger tire letters" loading="lazy" decoding="async" src="/assets/images/Dodge_Scat_Pack_Charger_tire_letters-400.jpeg" width="1440" height="1440" srcset="/assets/images/Dodge_Scat_Pack_Charger_tire_letters-400.jpeg 400w, /assets/images/Dodge_Scat_Pack_Charger_tire_letters-600.jpeg 600w, /assets/images/Dodge_Scat_Pack_Charger_tire_letters-800.jpeg 800w, /assets/images/Dodge_Scat_Pack_Charger_tire_letters-1280.jpeg 1280w, /assets/images/Dodge_Scat_Pack_Charger_tire_letters-1440.jpeg 1440w" sizes="100vw">
+      </figure>
+      
+
+      <figure class="halftone-overlay"></figure>
+
+
+    </section>
+
+
+    
+
+
+
+    
+    
+    
+    
+    
+
+    
+
+
+    
+    
+    
+    
+    
+
+    
+
+
+    
+    
+    
+    
+    
+
+    
+
+
+    
+    
+    
+    
+    
+
+    
+
+
+    
+    
+    
+    
+    
+
+    
+
+
+    
+    
+    
+    
+    
+
+    
+
+
+
+
+
+
+    
+    
+
+<style>
+footer {
+  color: #fff;
+  background-color: var(--charcoal);
+  padding-bottom: var(--space-l);
+}
+.columns {
+  display: flex;
+}
+.columns > * {
+  flex-grow: 1;
+}
+footer article {
+  display: block;
+  padding: var(--space-s);
+}
+
+
+@media (min-width: 768px) {
+  footer {
+    display: grid;
+    grid-template-columns: 2fr 2fr 4fr;
+    column-gap: var(--space-s);
+    width: 100%;
+    margin-top: var(--space-l);
+    padding: 0 5%;
+  }
+  footer header {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    margin-bottom: var(--space-s);
+  }
+  footer article {
+    grid-row-start: 2;
+    grid-row-end: 2;
+  }
+  h4.foot-tag {
+    margin-top: var(--space-s);
+    font-size: var(--step-0);
+    font-weight: 500;
+  }
+
+  #mapid {
+    width:800px;
+    height:600px;
+  }
+
+}
+</style>
+<footer>
+    <header class="header">
+        <div class="container">
+            <a href="/" class="logo">
+                <img src="/assets/images/driven_white.svg" alt="Driven Garage">
+            </a>
+            <div class="cta">
+              <h3>Need work done?</h3>
+              <input class="form-modal" type="checkbox" id="form-modal"/>
+
+              <label class="label-modal" for="form-modal">
+                  <h4 class="s2">Open a Work Request  ></h4><h4 class="s1">X</h4>
+              </label>
+          </div>
+        </div>
+    </header>
+
+    <article>
+      <p>2051 Alpine Way</p>
+      <p>Hayward, CA 94545</p>
+      <h4 class="foot-tag">Small jobs, big jobs,
+        all makes and models...
+        <span class="hilite"> <i>Yes, even that one</i></span>
+      </h4>
+      </article>
+      <div class="columns">
+        <article>
+          <p>Monday</p>
+          <p>Tuesday</p>
+          <p>Wednesday</p>
+          <p>Thursday</p>
+          <p>Friday</p>
+          <p>Saturday</p>
+          <p>Sunday</p>
+          </article>
+          <article>
+            <p>8:30am - 6:00pm</p>
+            <p>8:30am - 6:00pm</p>
+            <p>8:30am - 6:00pm</p>
+            <p>8:30am - 6:00pm</p>
+            <p>8:30am - 6:00pm</p>
+            <p>By appointment</p>
+            <p>Closed</p>
+          </article>
+        </div>
+
+        <div class="gmap_canvas">
+<iframe id="gmap_canvas" src="https://maps.google.com/maps?q=Driven+Garage&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="400" frameborder="0" marginwidth="0" marginheight="0" scrolling="no">
+</iframe>
+        </div>
+
+
+
+</footer>
+
+  </body>
+
+</html>

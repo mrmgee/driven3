@@ -64,6 +64,19 @@ module.exports = function (eleventyConfig) {
     // Image plugin and shortcode
     eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
 
+
+    // Order serviceItems collection
+    eleventyConfig.addCollection("service", collection =>
+    collection
+        .getFilteredByTag("service")
+        .filter(function(item) {
+        return "serviceItems" in item.data;
+        })
+        .sort((a, b) => {
+        return (a.data.serviceItems.order || 0) - (b.data.serviceItems.order || 0);
+        })
+    );
+
     return {
       dir: {
         input: 'src',

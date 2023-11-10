@@ -1,0 +1,158 @@
+{% block services %}
+
+{% for cont in sectionCont %}
+
+    {% set imgPostP = cont.image %}
+    {% set imgPostAlt = cont.altText %}
+    {% set imgSizesResp = "(min-width: 1420px) 660px, 
+    (min-width: 1220px) 564px, 
+    (min-width: 1040px) 468px, 
+    (min-width: 780px) 50vw, 
+    calc(100vw - 24px)"
+    %}
+    {% set imgBkgP = cont.bkgImage %}
+    {% set imgSlidePos = "cont-img" %}
+
+    {% if cont.pattern == "sec-services" %}
+
+<style>
+    section.services {
+        max-width: var(--grid-max-width);
+        margin: 0 auto;
+    }
+    section.services .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--space-m);
+    }
+    section.services .grid .card a {
+        display: grid;
+        grid-template-areas: "overlaycard";
+        overflow: hidden;
+    }
+    section.services .grid .card a > * {
+        grid-area: overlaycard;
+    }
+    .card-overlay, 
+    .card .halftone-overlay {
+        color: #fff;
+        transition: transform .3s;
+        transform: translate3d(0,100%,0);
+    }
+    .card:hover .card-overlay, 
+    .card:hover .card-overlay h3,
+    .card:hover .halftone-overlay {
+        transform: translate3d(0,0,0);
+
+    }
+    .card-overlay h3 {
+        margin: 0;
+        padding: 0.4rem;
+        color: #f79837;
+        background-color: #363636!important;
+        font-size: 1.13rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        transform: translate3d(0,-100%,0);
+        transition: transform .3s;   
+    }
+    .card-overlay p {
+        padding: var(--space-s);
+        font-size: var(--step-0);
+    }
+    .card-overlay .control {
+        position: absolute;
+        bottom: 1rem;
+        right: 1rem;
+        display: flex;
+        justify-content: flex-end;
+        font-size: var(--step--1);
+        background-color: rgba(0,0,0,.33);
+    }
+    .card:hover .card-overlay {
+        background: rgba(0,0,0,0.6);
+    }
+
+    .card a > figure {
+        height: 19rem;
+        transition: transform .3s;
+    }
+    .card:hover a > figure {
+        transform: scale(1.2);
+    }
+    .card a > figure >img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+        transition: transform .3s;
+    }
+
+
+
+</style>
+
+<section class="services">
+  <div class="container">
+    {% if cont.title|length %}
+    <h2>{{ cont.title | safe }}</h2>
+    {% endif %}
+    {% if cont.subtitle|length %}
+    <h3>{{ cont.subtitle | safe }}</h3>
+    {% endif %}
+
+  </div>
+  <div class="grid">
+
+    {%- for post in collections.service %}
+
+    {% set imgPostP = post.data.featuredImage %}
+    {% set imgPostAlt = post.data.featuredImageAlt %}
+    {% set imgSizesResp = "(min-width: 1420px) 432px, 
+    (min-width: 1220px) 368px, 
+    (min-width: 1040px) 304px, 
+    (min-width: 780px) calc(33.33vw - 16px), 
+    calc(100vw - 24px)"
+    %}
+
+    {% if (post.data.title !== title) %}
+
+
+    <div class="card">
+        <a href="{{ post.url }}">
+
+            
+            <figure>
+        {% if imgPostP | length %}
+            {% image ""+imgPostP, ""+imgPostAlt, ""+imgSlidePos, ""+imgSizesResp %}
+        {% endif %}   
+            </figure>
+            <figure class="halftone-overlay"></figure>
+
+            
+
+            <div class="card-overlay">
+                <h3>{{ post.data.title }}</h3>
+        {% if post.content | length %}
+                {{ post.content | safe }}
+        {% endif %}
+                <div class="control">
+                    click for more
+                    <img src="/assets/images/i-link-arr.png" alt="Link to more">
+                </div>
+            </div>
+
+        </a>
+    </div>
+    {% endif %}
+  {%- endfor %}
+
+
+  </div>
+</section>
+
+    {% endif %}
+{% endfor %}
+
+
+{% endblock services %}

@@ -119,6 +119,9 @@ button {
     border-radius: var(--space-3xs);
     border: none;
 }
+section {
+    margin-bottom: var(--space-l)!important;
+}
 
 
 
@@ -129,7 +132,7 @@ button {
     figure.bkg-img {
         position: relative;
         overflow: hidden;
-        z-index: -1;
+        /* z-index: -1; */
     }
     section.pro-tips figure.bkg-img {
         max-height: 26rem;
@@ -335,6 +338,7 @@ section.hero {
     display: grid;
     grid-template-areas: "overlayhero"; 
     grid-template-columns: 10% 2fr 10%;
+    align-items: center;
     column-gap: var(--space-s);
     width: 100%;
 }
@@ -350,25 +354,32 @@ section.hero h1.title {
     color: var(--primary);
 }
 
-section.hero figure.halftone-overlay {
+/* section.hero  */
+figure.halftone-overlay {
     position: absolute;
     width: 100%;
     height: 100%;
-    max-height: 13rem;
     top: 0;
     left: 0;
     background: url(/assets/images/bkg_halftone.svg) repeat-x;
-  }
+}
+section.hero figure.halftone-overlay {
+    max-height: 13rem;
+}
 
-section.hero figure.halftone-overlay, 
+/* section.hero  */
+figure.halftone-overlay, 
 section.hero figure.bkg-img {
     position: relative;
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 2;
-    max-height: 7.4rem;
     overflow: hidden;
+}
+section.hero figure.halftone-overlay, 
+section.hero figure.bkg-img {
+    max-height: 7.4rem;
 }
 
 @media screen and (max-width: 768px) {
@@ -398,11 +409,12 @@ section.half-split {
 }
 
 section.half-split article {
-    padding: 0;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-columns: repeat(auto-fill,minmax(clamp(48%, (400px - 100vw)*1000, 100%),1fr));
     grid-gap: var(--space-s);
+    margin-bottom: var(--space-m);
+    padding: 0;
 }
 section.half-split article .column {
     padding: 1rem;
@@ -528,8 +540,10 @@ figure.bkg-img::after {
     height: 100%;
     top: 0;
     left: 0;
-    background-color: #000;
-    opacity: 0.4;
+    background: rgba(0,0,0,0.6);
+}
+section.hero figure.bkg-img::after {
+    background: rgba(0,0,0,0.4)!important;
 }
 figure.bkg-img img {
     width: 100%;
