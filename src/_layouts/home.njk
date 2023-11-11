@@ -2,8 +2,9 @@
 layout: base.njk
 title: Home layout
 ---
-
-{% include "hero.njk" %}
+{% block hero %}
+    {% include "hero-home.njk" %}
+{% endblock hero %}
 
 {% block services %}
     {% include "sec-services.njk" %}

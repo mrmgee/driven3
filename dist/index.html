@@ -18,14 +18,14 @@
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic%7CUbuntu:300,300italic,400,400italic,500,500italic,700,700italic%7CRoboto:300,regular,500" media="all">
 
-<!-- Swiffy Slider -->
-<link rel="stylesheet" href="_css/swiffy-slider.min.css">
+    <!-- Swiffy Slider -->
+    <link rel="stylesheet" href="assets/css/swiffy-slider.min.css">
 
-<!-- PhotoSwipe gallery -->
-<link rel="stylesheet" href="_css/photoswipe.css">
+    <!-- PhotoSwipe gallery -->
+    <link rel="stylesheet" href="_css/photoswipe.css">
 
-<!-- Flaticon icon fonts -->
-<link rel="stylesheet" href="assets/css/flaticon/flaticon.css">
+    <!-- Flaticon icon fonts -->
+    <link rel="stylesheet" href="assets/css/flaticon/flaticon.css">
 
     
 
@@ -33,317 +33,7 @@
 
   </head>
 
-  <body>
-    <style>
-/* Header */
-.header {
-    background-color: var(--charcoal);
-    /* z-index: 20; */
-}
-
-/* Logo */
-.logo {
-    display: inline-block;
-    margin-top: var(--space-xs);
-}
-
-
-
-
-/* Nav menu */
-@media (max-width: 768px) {
-    .nav, 
-    .subnav-content {
-        display: none;
-    }
-}
-
-.menu a, 
-.menu li .subnav {
-    display: block;
-    position: relative;
-    padding: var(--space-3xs) var(--space-xs);
-    color: var(--link-lt);
-    font-size: var(--step--1);
-    font-weight: 500;
-    text-transform: uppercase;
-}
-
-.menu a {
-    padding: var(--space-3xs) var(--space-xs);
-}
-.menu li .subnav {
-    padding: var(--space-2xs) var(--space-xs);
-}
-
-.nav {
-    max-height: 0;
-    transition: max-height .5s ease-out;
-}
-
-
-
-
-
-/* Sub nav */
-li.subnav-wrap {
-    position: relative;
-}
-.subnav-content {
-    display: none;
-    width: 100%;
-    padding-left: var(--space-s);
-    background-color: var(--dk-grey);
-    z-index: 1;
-  }
-
-.subnav-content a {
-    text-decoration: none;
-    /* padding: 0.5rem 2rem; */
-    /* margin: 10px 0; */
-}
-.subnavbtn {
-    padding-right: 1rem;
-}
-
-/* CTA nav */
-.nav .cta, 
-footer .cta {
-    align-items: center;
-    display: flex;
-/*    margin-left: 4rem; */
-    flex-basis: auto;
-    flex-grow: 0;
-    flex-shrink: 0;
-    justify-content: center;
-}
-#form-modal {
-    z-index: 100;
-}
-
-
-.nav .cta h3, 
-footer .cta h3, 
-/* .nav .cta  */
-.label-modal h4 {
-    font-size: var(--step--1);
-    font-weight: 500;
-    text-transform: uppercase;
-}
-.nav .cta h3, 
-footer .cta h3 {
-    margin-right: var(--space-s);
-    color: var(--primary);
-}
-
-input[id=form-modal]:not(:checked) ~ .label-modal h4, 
-.form-modal-step ~ .cta .label-modal h4 {
-    color: #fff;
-    transform: skew(24deg);
-}
-
-
-input[id=form-modal]:not(:checked) ~  .label-modal, 
-.form-modal-step ~ .cta .label-modal {
-    position: relative;
-    right: 1rem;
-    margin-left: var(--space-s);
-    padding: var(--space-2xs) var(--space-xs);
-    color: #fff;
-    background-color: var(--primary);
-    font-size: var(--step--0);
-    border-radius: 4px;
-    transform: skew(-24deg);
-
-}
-
-
-
-/* Menu Icon */
-
-.hamb {
-    cursor: pointer;
-    float: right;
-    padding: var(--space-m) var(--space-xs); 
-}
-
-
-.hamb-line {
-    background: #fff;
-    display: block;
-    height: 2px;
-    position: relative;
-    width: 24px;
-    
-}
-
-.hamb-line::before,
-.hamb-line::after {
-    background: #fff;
-    content: '';
-    display: block;
-    height: 100%;
-    position: absolute;
-    transition: all .2s ease-out;
-    width: 100%;
-}
-
-.hamb-line::before {
-    top: 5px;
-}
-
-.hamb-line::after {
-    top: -5px;
-}
-
-
-/* Toggle menu icon */
-
-/* Hide input checkbox */
-.side-menu, 
-.form-modal, 
-.form-modal-step {
-    display: none;
-}
-
-
-
-
-.side-menu:checked ~ nav {
-    max-height: 100%;
-}
-.side-menu:checked ~ .nav, 
-.side-menu:checked ~ .subnav-content, 
-.side-menu:checked ~ .nav .menu .subnav-content {
-    display: block;
-}
-.side-menu:checked ~ .hamb .hamb-line {
-    background: transparent;
-}
-
-.side-menu:checked ~ .hamb .hamb-line::before {
-    transform: rotate(-45deg);
-    top:0;
-
-}
-
-.side-menu:checked ~ .hamb .hamb-line::after {
-    transform: rotate(45deg);
-    top:0;
-}
-
-
-/* Responsiveness */
-
-@media (min-width: 768px) {
-    .header .container {
-        display: flex;
-        max-width: var(--grid-max-width);
-        margin: 0 auto;
-        padding: var(--space-xs) 0;
-    }
-    .header .container > * {
-        flex-grow: 1;
-        justify-content: flex-end;
-    }
- 
-    .nav, 
-    .nav .menu {
-        display: flex;
-        flex-shrink: 0;
-        align-items: center;
-        max-height: 100%;
-    }
-    .nav {
-        justify-content: flex-end;
-    }
-    .nav .menu {
-        margin-right: 4rem;
-    }
-    .menu a, 
-    .menu li .subnav {        
-        border-radius: 4px;
-    }
-
-    .menu > li > a:hover {
-        transform: skew(-24deg);
-    }
-
-    .menu a:hover, 
-    .subnav:hover, 
-    .side-menu:checked ~ .subnav {
-        color: #fff;
-        background-color: var(--primary);
-    }
-    .subnav:hover .subnavbtn:after, 
-    .side-menu:checked ~ .subnav .subnavbtn:after {
-        border-color: var(--link-lt);
-    }
-
-
-    .menu a:hover span, 
-    .subnav:hover .subnavbtn, 
-    li.subnav-wrap .subnavbtn {
-        display: block;
-        transform: skew(24deg);
-    }
-
-
-    /* Sub nav */
-    li.subnav-wrap {
-        transform: skew(-24deg);
-    }
-    .subnav-content {
-        position: absolute;
-        display: none;
-        left: 0;
-        width: max-content;
-        padding-left: 0;
-        background-color: #fff;
-        border-radius: 4px;
-        box-shadow: 0 8px 8px rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 10%);
-    }
-
-    .subnav-content a {
-        color: var(--charcoal);
-        white-space: nowrap;
-        transform: skew(24deg);
-    }
-    .menu .subnav-content a:hover {
-        color: var(--primary);
-        background-color: var(--lt-grey);
-        transform: skew(0deg);
-    }
-    .subnavbtn:after {
-        position: absolute;
-        content: " ";
-        display: block;
-        height: 0.625em;
-        top: 50%;
-        right: 0;
-        margin-top: -0.4375em;
-        transform: rotate(-45deg);
-        transform-origin: center;
-        width: 0.625em;
-        border: 3px solid transparent;
-        border-top: 0;
-        border-right: 0;
-        
-        border-color: var(--primary);
-        border-radius: 2px;
-        pointer-events: none;
-    }
-
-
-    .hamb {
-        display: none;
-    }
-
-}
-
-</style>
-    
-    
+  <body class="home">
     
     <!-- Navigation bar -->
     <header class="header">
@@ -695,43 +385,255 @@ input[id=form-modal]:not(:checked) ~  .label-modal,
 
 
 
+    
+
+
+<section class="hero">   <!-- slider-nav-autoplay -->
+    <div class="swiffy-slider slider-nav-autopause">  
+        <ul class="slider-container">
 
 
 
 
+    
+    
+    
+    
 
-  <!-- outputs as class="1234" -->
+    
+        
+    
 
-<!-- 
-pagePath: ./src/
-featuredImage: 
-imgHeroPath: 
-fullHeroPath: 
-heroAlt: 
--->    
-
-<!-- Build hero image position -->
-<style>
-  @media screen and (min-width: 769px) {
-    .sec-bkg-img img {
-      
-    }
-  }
-</style>
-
-    <section class="hero">
-      <h1 class="title">Home v1-1-1</h1>
-
-      
-
-      <figure class="halftone-overlay"></figure>
-
-
-    </section>
 
 
     
 
+            <li>
+                <div class="slide-box">
+                    <a href="/projects/67-dart-vader/">
+                        <figure>
+        
+            <img class="m-top-15" alt="67 Dart Vader three quarters front left graffiti" loading="lazy" decoding="async" src="/assets/images/67_dart_vader_graffiti-400.jpeg" width="2000" height="1125" srcset="/assets/images/67_dart_vader_graffiti-400.jpeg 400w, /assets/images/67_dart_vader_graffiti-600.jpeg 600w, /assets/images/67_dart_vader_graffiti-800.jpeg 800w, /assets/images/67_dart_vader_graffiti-1280.jpeg 1280w, /assets/images/67_dart_vader_graffiti-1440.jpeg 1440w, /assets/images/67_dart_vader_graffiti-2000.jpeg 2000w" sizes="(min-width: 2120px) 2000px, calc(94.44vw + 17px)">
+           
+                        </figure>
+                        <div class="slide-overlay">
+        
+                            <h3>Born from our</h3>
+        
+        
+                            <h1>Passion <span>for</span> Classic Cars</h1>
+        
+                        </div>
+                    </a>
+                </div>
+              </li><!-- END slide 1 -->
+
+    
+
+    
+    
+    
+    
+
+    
+        
+    
+
+
+
+    
+
+            <li>
+                <div class="slide-box">
+                    <a href="/projects/69-barracuda-formula-s/">
+                        <figure>
+        
+            <img class="m-top-20" alt="69 Cuda" loading="lazy" decoding="async" src="/assets/images/69-cuda-5-400.jpeg" width="1275" height="850" srcset="/assets/images/69-cuda-5-400.jpeg 400w, /assets/images/69-cuda-5-600.jpeg 600w, /assets/images/69-cuda-5-800.jpeg 800w, /assets/images/69-cuda-5-1275.jpeg 1275w" sizes="(min-width: 2120px) 2000px, calc(94.44vw + 17px)">
+           
+                        </figure>
+                        <div class="slide-overlay">
+        
+                            <h3>69 Cuda</h3>
+        
+        
+                            <h1>Every <span>bolt</span> Touched</h1>
+        
+                        </div>
+                    </a>
+                </div>
+              </li><!-- END slide 2 -->
+
+    
+
+    
+    
+    
+    
+
+    
+        
+    
+
+
+
+    
+
+            <li>
+                <div class="slide-box">
+                    <a href="/projects/55-buick/">
+                        <figure>
+        
+            <img class="m-top-15" alt="55 Buick" loading="lazy" decoding="async" src="/assets/images/55_buick_front_left-400.jpeg" width="2000" height="1333" srcset="/assets/images/55_buick_front_left-400.jpeg 400w, /assets/images/55_buick_front_left-600.jpeg 600w, /assets/images/55_buick_front_left-800.jpeg 800w, /assets/images/55_buick_front_left-1280.jpeg 1280w, /assets/images/55_buick_front_left-1440.jpeg 1440w, /assets/images/55_buick_front_left-2000.jpeg 2000w" sizes="(min-width: 2120px) 2000px, calc(94.44vw + 17px)">
+           
+                        </figure>
+                        <div class="slide-overlay">
+        
+                            <h3>55 Buick</h3>
+        
+        
+                            <h1>Classic <span>Frame-off</span> Restoration</h1>
+        
+                        </div>
+                    </a>
+                </div>
+              </li><!-- END slide 3 -->
+
+    
+
+    
+    
+    
+    
+
+    
+        
+    
+
+
+
+    
+
+            <li>
+                <div class="slide-box">
+                    <a href="/projects/67-camaro-forsyth/">
+                        <figure>
+        
+            <img class="m-top-30" alt="67 Camaro" loading="lazy" decoding="async" src="/assets/images/67-camaro_forsyth_front_right-400.jpeg" width="2000" height="1333" srcset="/assets/images/67-camaro_forsyth_front_right-400.jpeg 400w, /assets/images/67-camaro_forsyth_front_right-600.jpeg 600w, /assets/images/67-camaro_forsyth_front_right-800.jpeg 800w, /assets/images/67-camaro_forsyth_front_right-1280.jpeg 1280w, /assets/images/67-camaro_forsyth_front_right-1440.jpeg 1440w, /assets/images/67-camaro_forsyth_front_right-2000.jpeg 2000w" sizes="(min-width: 2120px) 2000px, calc(94.44vw + 17px)">
+           
+                        </figure>
+                        <div class="slide-overlay">
+        
+                            <h3>67 Camaro</h3>
+        
+        
+                            <h1>Mean <span>Detroit</span> Muscle</h1>
+        
+                        </div>
+                    </a>
+                </div>
+              </li><!-- END slide 4 -->
+
+    
+
+    
+    
+    
+    
+
+    
+        
+    
+
+
+
+    
+
+    
+    
+    
+    
+
+    
+        
+    
+
+
+
+    
+
+
+        </ul>
+
+        <button type="button" class="slider-nav"></button>
+        <button type="button" class="slider-nav slider-nav-next"></button>
+    
+        <div class="slider-indicators">
+            <button class="active"></button>
+            <button></button>
+            <button></button>
+        </div>
+    </div><!-- END swiffy-slider -->
+
+    <header class="header">
+        <div class="container">
+            <h4 class="cta-tag">
+                Small jobs, big jobs, all makes and models... <i>Yes, even that one</i>
+            </h4>
+            <div class="cta">
+              <h3>Need work done?</h3>
+              <input class="form-modal" type="checkbox" id="form-modal"/>
+
+              <label class="label-modal" for="form-modal">
+                  <h4 class="s2">Click for Estimate  >   ></h4><h4 class="s1">X</h4>
+              </label>
+          </div>
+        </div>
+    </header>
+
+</section>
+
+
+
+
+
+    
+
+
+
+    
+    
+    
+    
+    
+
+    
+
+
+    
+    
+    
+    
+    
+
+    
+
+
+    
+    
+    
+    
+    
+
+    
+
+
+    
+    
+    
+    
+    
+
+    
 
 
     
@@ -813,6 +715,11 @@ heroAlt:
         display: block;
         object-fit: cover;
         transition: transform .3s;
+    }
+    .card .control img {
+        width: 1.2rem;
+        height: 1.2rem;
+        margin: 0.2rem 0 0 0.4rem;
     }
 
 
@@ -1279,6 +1186,10 @@ footer article {
 
 
 </footer>
+
+
+<!-- Swiffy Slider -->
+<script src="assets/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
 
   </body>
 

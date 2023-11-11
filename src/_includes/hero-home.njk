@@ -1,0 +1,81 @@
+{% block hero %}
+
+
+<section class="hero">   <!-- slider-nav-autoplay -->
+    <div class="swiffy-slider slider-nav-autopause">  
+        <ul class="slider-container">
+
+
+{% for cont in sectionCont %}
+
+    {% set imgPostP = cont.image %}
+    {% set imgPostAlt = cont.altText %}
+    {% set imgSizesResp = "(min-width: 2120px) 2000px, calc(94.44vw + 17px)"
+    %}
+    {% set imgBkgP = cont.bkgImage %}
+
+    {% if cont.position | length %}
+        {% set imgSlidePos = cont.position %}
+    {% else %}
+        {% set imgSlidePos = "cont-img" %}
+    {% endif %}
+
+
+
+    {% if cont.pattern == "hero-home" %}
+
+            <li>
+                <div class="slide-box">
+                    <a href="{{ cont.link }}">
+                        <figure>
+        {% if imgPostP | length %}
+            {% image ""+imgPostP, ""+imgPostAlt, ""+imgSlidePos, ""+imgSizesResp %}
+        {% endif %}   
+                        </figure>
+                        <div class="slide-overlay">
+        {% if cont.subtitle|length %}
+                            <h3>{{ cont.subtitle | safe }}</h3>
+        {% endif %}
+        {% if cont.title|length %}
+                            <h1>{{ cont.title | safe }}</h1>
+        {% endif %}
+                        </div>
+                    </a>
+                </div>
+              </li><!-- END slide {{ loop.index }} -->
+
+    {% endif %}
+{%- endfor %}
+
+
+        </ul>
+
+        <button type="button" class="slider-nav"></button>
+        <button type="button" class="slider-nav slider-nav-next"></button>
+    
+        <div class="slider-indicators">
+            <button class="active"></button>
+            <button></button>
+            <button></button>
+        </div>
+    </div><!-- END swiffy-slider -->
+
+    <header class="header">
+        <div class="container">
+            <h4 class="cta-tag">
+                Small jobs, big jobs, all makes and models... <i>Yes, even that one</i>
+            </h4>
+            <div class="cta">
+              <h3>Need work done?</h3>
+              <input class="form-modal" type="checkbox" id="form-modal"/>
+
+              <label class="label-modal" for="form-modal">
+                  <h4 class="s2">Click for Estimate  >   ></h4><h4 class="s1">X</h4>
+              </label>
+          </div>
+        </div>
+    </header>
+
+</section>
+
+{% endblock hero %}

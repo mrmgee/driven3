@@ -1,7 +1,44 @@
 ---
 layout: home.njk
 title: Home v1-1-1
+bodyName: home
 sectionCont:
+  - pattern: hero-home
+    title: Passion <span>for</span> Classic Cars
+    subtitle: Born from our
+    image: ./src/_images/67_dart_vader_graffiti.jpg
+    altText: 67 Dart Vader three quarters front left graffiti
+    link: /projects/67-dart-vader/
+    position: m-top-15
+    text: Pick your powerplant and we’ll make it happen. We’re specialists in modern engine swaps into classic cars - from mild to wild and oddball combos, we love making your classic better with an engine swap. We know the right parts to make it all work seamlessly and make awesome power and reliability. 
+    slidelayout:
+  - pattern: hero-home
+    title: Every <span>bolt</span> Touched
+    subtitle: 69 Cuda
+    image: ./src/_images/69-cuda-5.jpg
+    altText: 69 Cuda
+    link: /projects/69-barracuda-formula-s/
+    position: m-top-20
+    text: Pick your powerplant and we’ll make it happen. We’re specialists in modern engine swaps into classic cars - from mild to wild and oddball combos, we love making your classic better with an engine swap. We know the right parts to make it all work seamlessly and make awesome power and reliability. 
+    slidelayout:
+  - pattern: hero-home
+    title: Classic <span>Frame-off</span> Restoration
+    subtitle: 55 Buick
+    image: ./src/_images/55_buick_front_left.jpg
+    altText: 55 Buick
+    link: /projects/55-buick/
+    position: m-top-15
+    text: Pick your powerplant and we’ll make it happen. We’re specialists in modern engine swaps into classic cars - from mild to wild and oddball combos, we love making your classic better with an engine swap. We know the right parts to make it all work seamlessly and make awesome power and reliability. 
+    slidelayout:
+  - pattern: hero-home
+    title: Mean <span>Detroit</span> Muscle
+    subtitle: 67 Camaro
+    image: ./src/_images/67-camaro_forsyth_front_right.jpg
+    altText: 67 Camaro
+    link: /projects/67-camaro-forsyth/
+    position: m-top-30
+    text: Pick your powerplant and we’ll make it happen. We’re specialists in modern engine swaps into classic cars - from mild to wild and oddball combos, we love making your classic better with an engine swap. We know the right parts to make it all work seamlessly and make awesome power and reliability. 
+    slidelayout:
   - pattern: sec-services
     title: Services
     subtitle: Get your classic back on the road, get it serviced, or make it perform better!

@@ -59,6 +59,7 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPlugin(eleventyNavigationPlugin);
 
     eleventyConfig.addPassthroughCopy("src/assets/css/");
+    eleventyConfig.addPassthroughCopy("src/assets/js/");
     eleventyConfig.addPassthroughCopy("src/assets/images/");
 
     // Image plugin and shortcode
