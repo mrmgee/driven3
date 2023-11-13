@@ -99,185 +99,7 @@
                     <h4 class="s2">Click for Estimate  &gt;</h4><h4 class="s1">X</h4>
                 </label>
 
-                <style>
-    .modal {
-        position: fixed;
-        display: none;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        overflow: hidden;
-        z-index: 15;
-    }
-    
-
-    
-
-    .modal-background {
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background-color: rgba(10,10,10,.86);
-        z-index: 10;
-    }
-
-    .modal-content {
-        position: relative;
-        width: 100%;
-        max-height: calc(100vh - 160px);
-        margin: 0 20px;
-        overflow: auto;
-        z-index: 20;
-    }
-    .modal-content .box {
-        display: block;
-        padding: 0 0 1rem 0;
-        color: #4a4a4a;
-        background-color: #fff;
-        /* border-radius: 6px; */
-        border-radius: 0.4rem 0.4rem 0 0;
-    }
-    .modal-content h2 {
-        padding: var(--space-xs);
-        font-size: var(--step-1);
-        font-weight: 700;
-        text-transform: uppercase;
-        background-color: var(--primary);
-        border-radius: 0.4rem 0.4rem 0 0;
-    }
-    .toggle-content > p {
-        margin-bottom: var(--step-1);
-    }
-
-    .modal-content .row {
-        display: flex;
-        gap: var(--space-m);
-        max-width: 84%;
-        margin: 0 auto var(--space-m) auto;
-
-    }
-
-    .img-wrap {
-        text-align: center;
-    }
-    .img-wrap .icon {
-        width: 100%;
-        font-size: 6rem;
-        color: #f79837;
-    }
-    .icon {
-        width: 1.5rem;
-        height: 1.5rem;
-        line-height: 1;
-    }
-    .img-wrap .icon:before {
-        margin-left: 0;
-        vertical-align: top;
-    }
-
-    [class^="flaticon-"]:before, [class*=" flaticon-"]:before, 
-    [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
-        font-size: 1em;
-    }
-
-    .flaticon-car-search:before {
-        content: "\f10b";
-    }
-    .img-wrap .icon.i-timesheet img {
-        max-height: 8rem;
-        /* margin: 0.3rem 0 0 0; */
-    }
-
-    .process-item {
-        display: flex;
-        flex-direction: column;
-        min-height: 100%;
-        background-color: var(--v-lt-grey);
-    }
-    .process-item h5 {
-        margin: 0;
-        padding: 0 0 var(--space-3xs) 0;
-        font-size: var(--step-0);
-        font-weight: 500;
-        color: #fff;
-        background-color: var(--dk-grey);
-    }
-    .process-item h5 span {
-        width: 3rem;
-        height: 3rem;
-        margin: 0 0 0 -1.2rem;
-        padding: 0.8rem 1.4rem;
-        color: #fff;
-        background: #f79837;
-        border-radius: 50%;
-        font-size: 2rem;
-        text-align: center;
-    }
-    .process-item p {
-        padding: var(--space-3xs);
-    }
-
-
-    /* TOGGLE */
-    .form-modal:checked ~ .modal {
-        display: flex;
-    }
-
-
-    /* DEFAULT Step 1 ON  /  Step 2 off */
-    #step1-cont.toggle-content, 
-    .label-modal h4.s2 {
-        display: block;
-    }
-    .label-modal h4.s1, 
-    #step2-cont .toggle-content {
-        display: none;
-    }
-    .form-modal:checked ~ .label-modal h4.s1 {
-        position: fixed;
-        width: 3rem;
-        height: 3rem;
-        font-size: var(--step-2);
-        font-weight: 700;
-        color: var(--primary);
-        z-index: 100;
-    }
-    /* Step 1 off  /  Step 2 ON */
-    .form-modal-step:checked ~ #step2-cont .toggle-content, 
-    .form-modal-step:checked ~ .cta .label-modal h4.s1, 
-    .form-modal:checked ~ .label-modal h4.s1 {
-        display: block;
-    }
-    .form-modal-step:checked ~ #step1-cont.toggle-content, 
-    .form-modal-step:checked ~ .cta .label-modal h4.s2, 
-    .form-modal:checked ~ .label-modal h4.s2 {
-        display: none;
-    }
-
-
-
-
-
-    @media screen and (min-width: 769px) {
-        .modal-card, .modal-content {
-            margin: 0 auto;
-            max-height: calc(100vh - 40px);
-            width: 640px;
-        }
-    }
-
-
-</style>
-
-
-
-<div class="modal">
+                <div class="modal">
   <div class="modal-background"></div>
 
   <div class="modal-content">
@@ -438,60 +260,49 @@
 
 
 
+
+    
+
+<section class="process">
+  <div class="container">
+    <h2>How We Work</h2>
+    <h3>Getting your car worked on is easier than ever - Here's how you do it</h3>
+
+    <article>
+        <div class="columns">
+            <i class="icon flaticon-car-search"></i>
+            <h5><span>1</span> Get a Quote</h5>
+            <p>Tells us what's wrong with your car or work you want done. We'll shoot back a detailed estimate that includes diagnosis, parts, and labor.</p>
+        </div>
+        <div class="columns">
+            <i class="icon flaticon-autolift"></i>
+            <h5><span>2</span> Approve Repairs</h5>
+            <p>Once you approve the estimate, we'll book an appoitment to drop off your car and our team will get to work.</p>
+        </div>
+        <div class="columns">
+            <i class="icon i-timesheet">
+                <img src="/assets/images/i-timesheet.svg" alt="timesheet">
+            </i>
+            <h5><span>3</span> Time is Money</h5>
+            <p>Only pay for time our team is working on your car. We use strict time tracking to ensure you won't pay extra. </p>
+        </div>
+        <div class="columns">
+            <i class="icon flaticon-fix-sign"></i>
+            <h5><span>4</span> Hit the Road</h5>
+            <p>Our certified team will fix your car and get you back on the road.</p>
+        </div>
+    </article>
+  </div>
+</section>
+
+
+
+
+
+
     
     
 
-<style>
-footer {
-  color: #fff;
-  background-color: var(--charcoal);
-  padding-bottom: var(--space-l);
-}
-.columns {
-  display: flex;
-}
-.columns > * {
-  flex-grow: 1;
-}
-footer article {
-  display: block;
-  padding: var(--space-s);
-}
-
-
-@media (min-width: 768px) {
-  footer {
-    display: grid;
-    grid-template-columns: 2fr 2fr 4fr;
-    column-gap: var(--space-s);
-    width: 100%;
-    margin-top: var(--space-l);
-    padding: 0 5%;
-  }
-  footer header {
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row-start: 1;
-    grid-row-end: 1;
-    margin-bottom: var(--space-s);
-  }
-  footer article {
-    grid-row-start: 2;
-    grid-row-end: 2;
-  }
-  h4.foot-tag {
-    margin-top: var(--space-s);
-    font-size: var(--step-0);
-    font-weight: 500;
-  }
-
-  #mapid {
-    width:800px;
-    height:600px;
-  }
-
-}
-</style>
 <footer>
     <header class="header">
         <div class="container">
