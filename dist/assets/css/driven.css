@@ -841,6 +841,91 @@ section.hero figure.bkg-img {
 
 /* SERVICES content */
 
+section.services {
+    max-width: var(--grid-max-width);
+    margin: 0 auto;
+}
+section.services .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-m);
+}
+/* section.services */
+.grid .card a {
+    display: grid;
+    grid-template-areas: "overlaycard";
+    overflow: hidden;
+}
+/* section.services */
+.grid .card a > * {
+    grid-area: overlaycard;
+}
+.card-overlay, 
+.card .halftone-overlay {
+    color: #fff;
+    transition: transform .3s;
+    transform: translate3d(0,100%,0);
+}
+.card:hover .card-overlay, 
+.card:hover .card-overlay h3,
+.card:hover .halftone-overlay {
+    transform: translate3d(0,0,0);
+
+}
+.card-overlay h3 {
+    margin: 0;
+    padding: 0.4rem;
+    color: #f79837;
+    background-color: #363636!important;
+    font-size: 1.13rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    transform: translate3d(0,-100%,0);
+    transition: transform .3s;   
+}
+.card-overlay p {
+    padding: var(--space-s);
+    font-size: var(--step-0);
+}
+.card-overlay .control {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    font-size: var(--step--1);
+    background-color: rgba(0,0,0,.33);
+}
+.card:hover .card-overlay {
+    background: rgba(0,0,0,0.6);
+}
+section.services .card a > figure {
+    height: 19rem;
+}
+.card a > figure {
+    transition: transform .3s;
+}
+.card:hover a > figure {
+    transform: scale(1.2);
+}
+.card a > figure >img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform .3s;
+}
+.card .control img {
+    width: 1.2rem;
+    height: 1.2rem;
+    margin: 0.2rem 0 0 0.4rem;
+}
+
+
+
+
+
+
 section.half-split {
     max-width: var(--grid-max-width);
     margin: 0 auto;
@@ -905,6 +990,58 @@ section.process .columns p {
         width: 25%;
     }
 }
+
+
+
+
+/* Featured Projects */
+body.home section.projects .slide-box {
+    background-color: rgb(248 248 248);
+}
+
+section.projects .slide-box a > .columns > * {
+    width: 50%;
+}
+
+section.projects .columns .columns {
+    flex-direction: column;
+    /* padding: 3rem 5rem 1rem 5rem; */
+    padding: var(--space-xl) var(--space-2xl) var(--space-s) var(--space-2xl);
+    line-height: 2rem;
+}
+section.projects h4 {
+    margin-bottom: var(--space-xs);
+    font-size: var(--step--1);
+    letter-spacing: .24rem;
+}
+section.projects h3 {
+    margin-bottom: var(--space-l);
+    color: var(--primary);
+    font-size: var(--step-2);
+    font-weight: 500;
+}
+section.projects p {
+    margin-bottom: var(--space-xs);
+    line-height: 1.6rem;
+}
+
+section.projects .slide-box li::before {
+    content: "\2022";
+    color: var(--primary);
+    font-weight: 700;
+    display: inline-block;
+    width: 1rem;
+    margin-left: -1rem;
+}
+
+section.projects .grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: var(--space-m);
+    max-width: var(--grid-max-width);
+    margin: var(--space-m) auto 0 auto;
+}
+
 
 
 /* PRO TIPS content */
