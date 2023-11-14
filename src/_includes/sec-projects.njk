@@ -5,13 +5,12 @@
 
     {% if bodyName == "home" %}
     <div class="container">
+        <a class="control" href="projects" target="_self">
+            <span>click for more</span>
+            <img src="{{ rootPath }}assets/images/i-link-arr.png" alt="Link to more">
+        </a>
         <h2>Featured Projects</h2>
         <h3>Every build is infused with our blood and sweat. Taming metal and tuning performace.</h3>
-        <div class="control">
-            <a href="projects" target="_self"><span>click for more</span>
-            <img src="{{ rootPath }}_images/i-link-arr.png" alt="Link to more">
-            </a>
-        </div>
     </div>
     {% endif %}
 
