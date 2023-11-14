@@ -1,0 +1,112 @@
+{% block reviews %}
+
+{% for cont in sectionCont %}
+    {% if cont.pattern == "sec-reviews" %}
+    
+
+      {% set imgBkgP = cont.bkgImage %}
+      {% set imgBkgPSizesResp = "100vw" %}
+
+
+      {% set imgPostP = cont.image %}
+      {% set imgPostAlt = cont.altText %}
+      {% set imgSizesResp = "(min-width: 1420px) 660px, 
+      (min-width: 1220px) 564px, 
+      (min-width: 1040px) 468px, 
+      (min-width: 780px) 50vw, 
+      calc(100vw - 24px)"
+      %}
+
+<!-- START pro-tips -->
+<section class="reviews">
+    <header>
+        <div class="container">
+            <a class="control" href="https://www.google.com/search?q=Driven+Garage+Oakland+CA&rlz=1CDGOYI_enUS592US592&oq=driven+garage+oakland&aqs=chrome..69i57.12348j0j7&hl=en-US&sourceid=chrome-mobile&ie=UTF-8&stick=H4sIAAAAAAAAAONgVuLVT9c3NEzLK6rMqrTMeMRowS3w8sc9YSn9SWtOXmPU5OIKzsgvd80rySypFJLmYoOyBKX4uVB18uxi4vfJT07MCcjPDEoty0wtL17EKppSlFmWmqeQnliUmJ6qUAQRBwAjqyVwdgAAAA&ictx=1&ved=2ahUKEwjgu8-Hppr8AhWcIzQIHVQUABcQyNoBKAF6BAgTEAg" target="_self">
+                <span>click for more</span>
+                <img src="{{ rootPath }}assets/images/i-link-arr.png" alt="Link to more">
+            </a>
+      {% if cont.title|length %}
+            <h2>{{ cont.title }}</h2>
+      {% endif %}
+      {% if cont.subtitle|length %}
+            <h3>{{ cont.subtitle }}</h3>
+      {% endif %}
+        </div>
+    </header>
+
+
+    <div class="container">
+        <!-- Start Carousel -->
+      <div class="swiffy-slider slider-item-show4">
+        <ul class="slider-container">
+            <li>
+              <div class="carousel-cont">
+                <p>“They did a great job of replacing my carburetor on my 1971 Monte Carlo. Very professional and detailed invoice I would highly recommend if you want your classic worked on to come here. Turn around time was fast.”</p>
+                <h3>Lisa Northcutt</h3>
+              </div>
+            </li>
+            <li>
+              <div class="carousel-cont">
+                <p>“I came in  to tune up the engine and in inspection.  Car was bogging  and not running well. Geoffrey replaced the carb and got the timing on point and the car was running at its best, thanks to Driven Garage.  Driven Garage its just the place to to go.”</p>
+                <h3>Juan Cruz</h3>
+              </div>
+            </li>
+            <li>
+              <div class="carousel-cont">
+                <p>“71 Chevelle: Performed a complete re-wire of the whole car, new dash and digital gauges, new retro radio, and a bunch more.
+                  I can not say enough about this team. So glad I found them. They make me feel welcome every time I stop by.”</p>
+                <h3>Jonathan Richardson</h3>
+              </div>
+            </li>
+            <li>
+              <div class="carousel-cont">
+                <p>“This is THE place to take your older/classic car. Geoff and his crew are great!! I have been back multiple times to upgrade my 1977 Chevy Truck. They do it all from electrical, bodywork and of course working on vintage motors.
+                  Top notch quality work.”</p>
+                <h3>Eddie Valdez</h3>
+              </div>
+            </li>
+            <li>
+              <div class="carousel-cont">
+                <p>“My 93 year old father has proudly owned a 1978 Buick Electra Limited.
+                  The lack of qualified repair shops that could service an older carbureted car lead me to a shop recommendation from Buick forum “Driven Garage”. THE go to place for all your service, repair and restoration needs.”</p>
+                <h3>Reggie Davis</h3>
+              </div>
+            </li>
+            <li>
+              <div class="carousel-cont">
+                <p>“Driven Garage is a life saver! My car started sputtering and I had to pull over. 
+                  Driven Garage was one of the few auto shops open on a Saturday! They ran diagnostics, ordered parts, and got it fixed by Monday. 
+                  I'm very grateful for their work and great customer service!”</p>
+                <h3>Camila Hurtado</h3>
+              </div>
+            </li>
+        </ul>
+    
+        <button type="button" class="slider-nav"></button>
+        <button type="button" class="slider-nav slider-nav-next"></button>
+    
+        <div class="slider-indicators">
+            <button class="active"></button>
+            <button></button>
+            <button></button>
+        </div>
+    </div><!-- End Carousel -->
+    </div><!-- END container-->
+
+
+
+
+
+
+      {% if imgPostP|length %}
+        <figure class="bkg-img">
+        {% image ""+imgPostP, ""+imgPostAlt, "bkg-img", ""+imgBkgPSizesResp %}
+        </figure>
+      {% endif %}
+
+        <figure class="halftone-overlay"></figure>
+
+</section>
+  {% endif %}
+{% endfor %}
+{% endblock reviews %}    

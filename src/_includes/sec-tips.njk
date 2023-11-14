@@ -9,6 +9,7 @@
       {% set imgBkgPSizesResp = "100vw" %}
 
 
+
       {% set imgPostP = cont.image %}
       {% set imgPostAlt = cont.altText %}
       {% set imgSizesResp = "(min-width: 1420px) 660px, 
@@ -17,6 +18,11 @@
       (min-width: 780px) 50vw, 
       calc(100vw - 24px)"
       %}
+      {% if cont.bkgImgPos | length %}
+        {% set imgPostPos = cont.bkgImgPos %}
+      {% else %}
+        {% set imgPostPos = "cont-img" %}
+      {% endif %}
 
 
 <!-- START pro-tips -->
@@ -48,7 +54,7 @@
 
       {% if imgBkgP|length %}
       <figure class="bkg-img">
-          {% image ""+imgBkgP, ""+imgPostAlt, "bkg-img", ""+imgBkgPSizesResp %}
+          {% image ""+imgBkgP, ""+imgPostAlt, ""+imgPostPos, ""+imgBkgPSizesResp %}
       </figure>
       {% endif %}
 

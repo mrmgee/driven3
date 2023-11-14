@@ -45,7 +45,8 @@ sectionCont:
     image: ./src/_images/89_Grand_Wagoneer-LS-side-top.jpg
     altText: 89 Grand Wagoneer LS side top
     position: 
-    text: Pick your powerplant and we’ll make it happen. We’re specialists in modern engine swaps into classic cars - from mild to wild and oddball combos, we love making your classic better with an engine swap. We know the right parts to make it all work seamlessly and make awesome power and reliability. 
+    text: Pick your powerplant and we’ll make it happen. We’re specialists in modern engine swaps into classic cars - from mild to wild and oddball combos, we love making your classic better with an engine swap. We know the right parts to make it all work seamlessly and make awesome power and reliability.
+    collectionName: service
     slidelayout:
   - pattern: sec-2col-pos1
     title: We do “normal” engines as well
@@ -56,4 +57,12 @@ sectionCont:
     text: If your original engine is shot or you’d like to get more power and performance - we can handle that. Whether it’s sourcing and swapping a crate engine - or working with our rolodex of reputable machine shops on a custom build we can handle it all.
     CTAlabel: Let's Go >
     slidelayout: 1
+  - pattern: sec-reviews
+    title: Listen to our Customers
+    subtitle: Don't take our word for it... Our great customers share their stories
+    image: ./src/_images/89_Grand_Wagoneer-LS-side-top.jpg
+    altText: 89 Grand Wagoneer LS side top
+    position: 
+    text: Pick your powerplant and we’ll make it happen. We’re specialists in modern engine swaps into classic cars - from mild to wild and oddball combos, we love making your classic better with an engine swap. We know the right parts to make it all work seamlessly and make awesome power and reliability. 
+    slidelayout:
 ---

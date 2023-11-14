@@ -58,6 +58,9 @@
     /* DARK GREY color */
     --dk-grey: #4a4a4a;
 
+    /* MEDIUM GREY color */
+    --md-grey: #eee;
+    
     /* LIGHT GREY color */
     --lt-grey: #f5f5f5;
 
@@ -82,6 +85,10 @@
 .m-top-30 {
     margin-top: -30%;
 }
+.m-top-65 {
+    margin-top: -65%;
+}
+
 
 
 /* Box sizing rules */
@@ -888,7 +895,7 @@ section.services .grid {
     font-size: var(--step-0);
 }
 .card-overlay .control, 
-section.projects a.control {
+section a.control {
     position: absolute;
     bottom: 1rem;
     right: 1rem;
@@ -998,10 +1005,10 @@ section.process .columns p {
 
 
 /* Featured Projects */
-section.projects .container {
+section .container {
     position: relative;
 }
-section.projects a.control {
+section a.control {
     align-items: center;
     gap: var(--space-2xs);
 }
@@ -1051,6 +1058,72 @@ section.projects .grid {
     gap: var(--space-m);
     max-width: var(--grid-max-width);
     margin: var(--space-m) auto 0 auto;
+}
+
+
+
+/* REVIEWS content */
+section.reviews {
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "overlayreviews";
+    margin: 0;
+    padding: 0;
+}
+
+section.reviews header {
+    grid-area: header;
+    background-color: var(--charcoal);
+}
+section.reviews a.control {
+    color: var(--link-lt);
+}
+section.reviews h2 {
+    color: var(--primary);
+}
+section.reviews header h3 {
+    color: #fff;
+}
+
+
+section.reviews figure {
+    grid-area: overlayreviews;
+}
+figure.halftone-overlay {
+    max-height: 14rem;
+}
+figure.bkg-img {
+    max-height: 7rem;
+}
+
+
+section.reviews > .container {
+    grid-area: overlayreviews;
+}
+section.reviews .swiffy-slider li {
+    display: flex;
+}
+.carousel-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    padding: var(--space-m);
+    background-color: var(--md-grey);
+}
+
+
+/* MEDIA mentions content */
+section.media .columns {
+    margin-top: var(--space-s);
+    gap: var(--space-m);
+}
+section.media .columns > * {
+    flex-grow: 1;
+}
+section.media figure img {
+    max-width: 70%;
 }
 
 
@@ -1167,8 +1240,82 @@ figure.bkg-img img {
     width: 100%;
     object-fit: cover;
 }
+section.pro-tips article .tips-subhead {
+    margin-bottom: var(--space-xs);
+    font-size: var(--step--1);
+    font-weight: 300;
+    color: var(--md-grey);
+}
 section.pro-tips article h4 {
     margin-bottom: var(--space-xs);
     font-size: var(--step-1);
     color: var(--primary);
 }
+section.pro-tips article p {
+    font-weight: 300;
+}
+
+
+
+/* COST section content */
+
+section.services-cost {
+    position: relative;
+    margin: var(--space-2xs);
+}
+@media screen and (min-width: 769px) {
+    section.services-cost {
+        display: grid;
+        max-width: var(--grid-max-width);
+        margin: 0 auto;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: var(--space-s); 
+    }
+}
+section.services-cost > * {
+}
+section.services-cost header {
+    font-size: var(--step-0);
+}
+section.services-cost header h3 {
+    margin-bottom: var(--space-2xs);
+    width: fit-content;
+    font-size: var(--step-3);
+    font-weight: 500;
+    border-bottom: 2px solid #f79837;
+}
+section.services-cost header .cost-subhead {
+    margin-bottom: var(--space-s);
+    font-size: var(--step--1);
+}
+
+section.services-cost article {
+    padding: var(--space-s);
+    font-size: var(--step-0);
+    text-align: center;
+    background-color: #f3f3f3;
+    filter: drop-shadow( var(--space-2xs) calc(var(--space-2xs) * -1) 0px #f79837);
+}
+section.services-cost article > * {
+    margin: 0 auto;
+}
+@media screen and (max-width: 768px) {
+    section.services-cost article {
+        margin: var(--space-m) var(--space-m) var(--space-m) var(--space-xs);
+    }
+}
+section.services-cost article figure {
+    max-width: var(--space-3xl);
+    margin-bottom: var(--space-s);
+}
+section.services-cost article h3 {
+    /* margin: 0 1rem 1rem 0; */
+    font-size: var(--step-1);
+    font-weight: 600;
+    color: #363636;
+}
+section.services-cost article p {
+    font-size: var(--step--2);
+    font-weight: 500;
+}
+

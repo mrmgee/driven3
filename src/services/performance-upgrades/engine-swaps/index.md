@@ -35,6 +35,7 @@ sectionCont:
     image: ./src/_images/66_Chevelle03.jpg
     altText: 66 Chevelle engine
     bkgImage: ./src/_images/70_Mustang01_green_lights.jpg
+    bkgImgPos: m-top-65
     text: Modern engine swaps are a great way to make your classic car more powerful, reliable and efficient - but along with the engine itself, we also need to modernize the transmission, fuel system, cooling system, exhaust and more. These parts add up and often surprise a customer before they even pull the trigger on a swap.
     slidelayout:
   - pattern: sec-2col-pos2
@@ -63,8 +64,10 @@ sectionCont:
     figures:
       - title: $1,100 - $1,855
         subtitle: for the parts
+        icon: i-repair.svg
       - title: $2,100 - $2,655
         subtitle: for installation and calibration
+        icon: i-mechanic.svg
     slidelayout: 1
   - pattern: sec-faq-accordion
     title: Engine Swaps FAQs
