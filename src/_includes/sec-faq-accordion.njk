@@ -1,0 +1,41 @@
+{% block secFAQs %}
+
+{% for cont in sectionCont %}
+  {% set imgP = cont.image %}  {# 67camaro_forsyth-0608.jpg = image file name #}
+  {% set imgAlt = cont.altText %}  {# 67 Camaro Forsyth before rear = sets imgAlt var with alt text string #}
+  {% set imgBkgP = cont.bkgImage %}
+
+    {% if cont.pattern == "sec-faq-accordion" %}
+
+<section class="faq-accordion accordion--radio">
+  <div class="container">
+
+        {% for item in cont.qaCont %}
+    <div class="tab">
+      <input type="radio" name="accordion" id="rd{{loop.index}}" {% if loop.index == 1 %}checked{% endif %}>
+      <label for="rd{{loop.index}}" class="tab-label">
+        <span>Q</span>
+        <p>
+          {% if item.que|length %}
+              {{ item.que | safe }}
+          {% endif %}
+        </p>
+      </label>
+      <div class="tab-content">
+        <span>A</span>
+        <p>
+          {% if item.ans|length %}
+              {{ item.ans | safe }}
+          {% endif %}
+        </p>
+      </div>
+    </div>
+        {% endfor %}
+
+  </div>
+</section>
+
+    {% endif %}
+{% endfor %}
+
+{% endblock secFAQs %}

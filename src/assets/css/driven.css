@@ -58,6 +58,9 @@
     /* DARK GREY color */
     --dk-grey: #4a4a4a;
 
+    /* MEDIUM DARK GREY color */
+    --md-dk-grey: #dadada;
+
     /* MEDIUM GREY color */
     --md-grey: #eee;
     
@@ -593,17 +596,25 @@ section.process article h5 {
     background-color: var(--dk-grey);
 }
 .process-item h5 span, 
-section.process article h5 span {
-    width: 3rem;
-    height: 3rem;
-    margin: 0 0 0 -1.2rem;
-    padding: 0.8rem 1.4rem;
+section.process article h5 span, 
+section.faq-accordion .tab-label span, 
+section.faq-accordion .tab-content span {
+    min-width: 3rem;
+    min-height: 3rem;
     color: #fff;
     background: #f79837;
     border-radius: 50%;
     font-size: 2rem;
     text-align: center;
 }
+
+.process-item h5 span, 
+section.process article h5 span {
+    margin: 0 0 0 -1.2rem;
+    padding: 0.8rem 1.4rem;
+}
+
+
 .process-item p {
     padding: var(--space-3xs);
 }
@@ -1317,5 +1328,89 @@ section.services-cost article h3 {
 section.services-cost article p {
     font-size: var(--step--2);
     font-weight: 500;
+}
+
+
+
+/* FAQ accordion section content */
+
+.tab input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+.tab-content {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.35s;
+}
+.tab input:checked ~ .tab-content {
+    opacity: 1;
+    display: flex;
+    max-height: 10rem;
+    margin-bottom: var(--space-m);
+}
+ 
+  
+.tab-label,
+.tab-close {
+    display: flex;
+    cursor: pointer;
+ }
+.tab-label, 
+.tab-content {
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--space-s);
+    padding: var(--space-xs);
+    font-size: var(--step-0);
+    border-radius: 4px;
+}
+.tab-label {
+    color: #fff;
+    background: var(--charcoal);
+}
+.tab input:checked + .tab-label span {
+    background: var(--md-dk-grey);  
+}
+  
+.tab-label > p, 
+.tab-content p {
+    flex-grow: 1;
+}
+  
+.tab-label::after {
+    content: "\276F";
+    width: 1em;
+    height: 1em;
+    text-align: center;
+    transform: rotate(90deg);
+    transition: all 0.35s;
+}
+.tab input:checked + .tab-label::after {
+    transform: rotate(270deg);
+}
+.tab-content p {
+    margin: 0;
+    padding: 1rem;
+}
+.tab-close {
+    justify-content: flex-end;
+    padding: 0.5rem 1rem;
+    font-size: 0.75rem;
+}
+  
+  /* Arrow animation */
+.tab input:not(:checked) + .tab-label:hover::after {
+    animation: bounce .5s infinite;
+}
+@keyframes bounce {
+    25% {
+      transform: rotate(90deg) translate(.25rem);
+    }
+    75% {
+      transform: rotate(90deg) translate(-.25rem);
+    }
 }
 
