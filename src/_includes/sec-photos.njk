@@ -43,18 +43,6 @@
             
     {% elseif bodyName == "cars" %}
 
-        {% if header|length %}
-        <h2>
-            {{ header | safe }}
-        </h2>    
-        {% endif %}
-
-        {% if content|length %}
-        <h3>
-            {{ content | safe }}
-        </h3>    
-        {% endif %}
-
         <div class="grid">
         {% for item in carsAll.cars %}
             {% set imgPostP = item.image %}

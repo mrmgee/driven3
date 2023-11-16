@@ -3,37 +3,31 @@
 {% for cont in sectionCont %}
     {% if cont.pattern == "sec-cost" %}
 <section class="services-cost">
-    <header>
+    <div class="container">
+        <header>
         {% if cont.title | length %}
-        <h3>{{ cont.title | safe }}</h3>
+            <h3>{{ cont.title | safe }}</h3>
         {% endif %}
-        <p class="cost-subhead">Each job will be estimated individually, but here are some guidelines to help you budget</p>
+            <p class="cost-subhead">Each job will be estimated individually, but here are some guidelines to help you budget</p>
 
         {% if cont.text | length %}
             {{ cont.text | safe }}
         {% endif %}
-    <!--    <p>Engine swaps are tough to give a “rough” estimate on as the price of parts can vary wildly. Many LS swaps are an easy bolt in.</p>  -->
-    </header>
+        </header>
 
         {% for fig in cont.figures %}
-            <article>
+        <article>
             {% if fig.title|length %}        
-                <figure>
-                    <img alt="Cost icon" loading="lazy" decoding="async" src="/assets/images/{{ fig.icon }}">
-                </figure>
-                <h3>{{ fig.title }}</h3>
-                <p>{{ fig.subtitle }}</p>
+            <figure>
+                <img alt="Cost icon" loading="lazy" decoding="async" src="/assets/images/{{ fig.icon }}">
+            </figure>
+            <h3>{{ fig.title }}</h3>
+            <p>{{ fig.subtitle }}</p>
             {% endif %}
-            </article>
+        </article>
         {% endfor %}
-
-
-
-
-
     
-    
-
+    </div>
 </section>
 
     {% endif %}

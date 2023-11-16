@@ -17,6 +17,10 @@
 
     {% if cont.pattern == "sec-2col-pos1" %}
 
+        {% if cont.secTitle|length %}
+            <h2>{{ cont.secTitle | safe }}</h2>
+        {% endif %}
+
         {% if (loop.index)%2 == 0 %}  {# loop.index(4)%2 = 0 EVEN   loop.index(5)%2 = 1 ODD #}
 
 

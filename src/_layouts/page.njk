@@ -4,4 +4,27 @@ title: Page layout
 ---
 {% include "hero.njk" %}
 
-{% include ('sec-photos.njk' if bodyName == 'cars' else 'hero.njk') %}
+
+<section class="page-content">
+    <div class="container">
+
+        {% if header|length %}
+        <h2>
+            {{ header | safe }}
+        </h2>    
+        {% endif %}
+
+        {% if subheader|length %}
+        <h3>
+            {{ subheader | safe }}
+        </h3>
+        {% endif %}
+
+        {% if content|length %}
+            {{ content | safe }} 
+        {% endif %}
+    </div>
+</section>
+
+
+{% include ('sec-photos.njk' if bodyName == 'cars' else 'sec-cont01.njk') %}
