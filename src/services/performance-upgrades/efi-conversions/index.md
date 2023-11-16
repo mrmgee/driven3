@@ -1,6 +1,7 @@
 ---
 layout: service-detail.njk
 title: EFI Conversions
+bodyName: services
 urlPath: services/performance-upgrades/suspension-upgrades/
 tags: ['performanceUpgrades']
 performanceUpgradesItems:
@@ -36,6 +37,7 @@ sectionCont:
     image: ./src/_images/Holley_MSD_Atomic_EFI.jpg
     altText: Holley MSD Atomic EFI
     bkgImage: ./src/_images/70_Mustang01_green_lights.jpg
+    bkgImgPos: m-top-65
     text: With a few components we can add timing control to most EFI systems. This enables the EFI computer to control the timing curve on your engine as well as the fuel map. This allows us to dial in your advance curve to make your car more responsive and put the fuel and timing map in concert to help make the most power at the right time.
     slidelayout:
   - pattern: sec-cost
@@ -48,8 +50,10 @@ sectionCont:
     figures:
       - title: $1,100 - $1,855
         subtitle: for the parts
+        icon: i-repair.svg
       - title: $2,100 - $2,655
         subtitle: for installation, plumbing, wiring and tuning
+        icon: i-mechanic.svg
     CTAlabel: Give me an Estimate - I’m Ready!>
     slidelayout: 1
   - pattern: sec-faq-accordion

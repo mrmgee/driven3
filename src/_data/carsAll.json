@@ -1,0 +1,33 @@
+{"cars":[
+    {
+    "title": "’67 Dart Vader",
+    "subtitle": "Classic Period-correct restoration",
+    "image": "./src/_images/67_dart_vader_graffiti.jpg",
+    "altText": "’67 Dart Vader three quarters rear left",
+    "position": "",
+    "text": "<ul><li>Resprayed in original A4 silver</li><li>Original 340 engine</li><li>Original 4-speed transmission w/Hurst shifter</li><li>Original 8 ¾” Sure-Grip rear end</li><li>Every nut and bolt on this car was touched</li><li>Period-correct restoration using NOS parts wherever possible</li><li>High-quality aftermarket parts when needed</li></ul>",
+    "slidelayout": 1
+    },
+    {
+    "title": "’69 Barracuda Formula S",
+    "subtitle": "Complete ground-up rebuild",
+    "image": "./src/projects/69-barracuda-formula-s/69-cuda-5.jpg",
+    "altText": "’69 Barracuda Formula S three quarters front left",
+    "position": "",
+    "text": "This is one fine MOPAR! After almost a year in the shop, getting every last inch of old ground, sanded, painted, buffed and polished out, this classic restoration project went up at Barrett Jackson/Las Vegas 2013.",
+    "slidelayout": 0
+    },
+    {
+    "title": "’63 Corvette",
+    "image": "./src/_images/63_Corvette_dk_blue.jpg",
+    "altText": "’63 Corvette dark blue three quarters front right",
+    "position": ""
+    },
+    {
+    "title": "’65 Mercury Comet",
+    "image": "./src/_images/65_Mercury_Comet05.jpg",
+    "altText": "’65 Mercury Comet blue three quarters front right",
+    "position": ""
+    }
+
+]}

@@ -1,0 +1,7 @@
+---
+layout: base.njk
+title: Page layout
+---
+{% include "hero.njk" %}
+
+{% include ('sec-photos.njk' if bodyName == 'cars' else 'hero.njk') %}

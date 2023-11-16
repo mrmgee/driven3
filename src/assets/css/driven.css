@@ -1414,3 +1414,56 @@ section.services-cost article p {
     }
 }
 
+/* PHOTOS all carousel-cars */
+section.carousel-cars .slider-item-helper:not(.slider-item-ratio) .slider-container > * {
+    min-height: 2rem;
+}
+
+section.carousel-cars .slide-box {
+    max-width: 22rem;
+/*
+    max-height: 11rem;
+    width: auto;
+*/
+}
+
+section.carousel-cars .slide-box figure {
+    display: grid;
+    align-items: end;
+    grid-template-areas: "overlayslide";
+}
+section.carousel-cars .slide-box figure > * {
+    grid-area: overlayslide;
+}
+section.carousel-cars .slide-box figure img {
+    max-height: 100%;
+    min-height: 100%;
+    min-width: 100%;
+    max-width: 100%;
+
+
+    object-fit: cover;
+    aspect-ratio: 16 / 9;
+}
+section.carousel-cars figure figcaption {
+    padding: var(--space-3xs) var(--space-xs);
+    background: rgba(255,255,255,.45);
+}
+
+
+/* CARS grid photo wall */
+section.carousel-cars .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-m);
+    margin-top: var(--space-m);
+}
+
+section.carousel-cars figure img {
+    object-fit: cover;
+    aspect-ratio: 16 / 9;
+}
+body.cars section.carousel-cars figure figcaption {
+    font-weight: 500;
+    background-color: var(--md-dk-grey);
+}
