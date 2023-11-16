@@ -28,6 +28,102 @@
     "image": "./src/_images/65_Mercury_Comet05.jpg",
     "altText": "’65 Mercury Comet blue three quarters front right",
     "position": ""
+    },
+    {
+    "title": "’67 Camaro",
+    "image": "./src/projects/67-camaro-forsyth/67camaro_forsyth-5857.jpg",
+    "altText": "’67 Camaro three quarters front left",
+    "position": "p-top-50"
+    },
+    {
+    "title": "’67 Cuda",
+    "image": "./src/_images/67_Cuda_blue.jpg",
+    "altText": "’67 Cuda blue three quarters front left",
+    "position": ""
+    },
+    {
+    "title": "’67 GTO",
+    "image": "./src/_images/67_GTO_red.jpg",
+    "altText": "’67 GTO red three quarters front right",
+    "position": "p-top-20"
+    },
+    {
+    "title": "’67 Valiant",
+    "image": "./src/_images/67_Valiant_blue.jpg",
+    "altText": "’67 Valiant blue three quarters front left",
+    "position": ""
+    },
+    {
+    "title": "’68 Mercedes",
+    "image": "./src/_images/68_Mercedes_cream.jpg",
+    "altText": "’68 Mercedes cream three quarters front left",
+    "position": ""
+    },
+    {
+    "title": "’69 Custom S",
+    "image": "./src/_images/69_Custom_S_silver.jpg",
+    "altText": "’69 Custom S silver three quarters front right",
+    "position": "p-top-20"
+    },
+    {
+    "title": "’70 El Camino",
+    "image": "./src/_images/70_El-Camino_dk_blue.jpg",
+    "altText": "’70 El Camino dark blue three quarters front left",
+    "position": "p-top-20"
+    },
+    {
+    "title": "’70 Malibu",
+    "image": "./src/_images/70_Malibu_white_rear_rt.jpg",
+    "altText": "’70 Malibu white three quarters rear right",
+    "position": ""
+    },
+    {
+    "title": "’74 Vega",
+    "image": "./src/_images/74_Vega_green.jpg",
+    "altText": "’74 Vega green three quarters front right",
+    "position": "p-top-20"
+    },
+    {
+    "title": "’76 Chevelle",
+    "image": "./src/_images/76_Chevelle_silver.jpg",
+    "altText": "’76 Chevelle silver three quarters front left",
+    "position": ""
+    },
+    {
+    "title": "’56 Studebaker Hawk",
+    "image": "./src/_images/56_Studebaker_Hawk.jpg",
+    "altText": "’56 Studebaker Hawk black side left",
+    "position": ""
+    },
+    {
+    "title": "Kellison",
+    "image": "./src/_images/Kellison.jpg",
+    "altText": "Kellison detail badge",
+    "position": ""
+    },
+    {
+    "title": "’30 Ford Model A",
+    "image": "./src/_images/30_Ford_Model_A.jpg",
+    "altText": "’30 Ford Model A yellow side right",
+    "position": ""
+    },
+    {
+    "title": "bill lovens",
+    "image": "./src/_images/bill_lovens.jpg",
+    "altText": "bill lovens cream three quarters front right",
+    "position": ""
+    },
+    {
+    "title": "’70 Mustang",
+    "image": "./src/_images/70_Mustang01.jpg",
+    "altText": "’70 Mustang black three quarters front left",
+    "position": ""
+    },
+    {
+    "title": "F100",
+    "image": "./src/_images/F100_front_right.jpg",
+    "altText": "F100 green three quarters front right",
+    "position": ""
     }
 
 ]}
