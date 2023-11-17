@@ -154,8 +154,8 @@ section .container > *:last-child {
 
 /* LARGER than MOBILE */
 @media screen and (min-width: 769px) {
-    figure.halftone-overlay, 
-    figure.bkg-img {
+    section.reviews figure.halftone-overlay, 
+    section.reviews figure.bkg-img {
         position: relative;
         overflow: hidden;
         z-index: -1;
@@ -867,8 +867,13 @@ section.services {
 }
 section.services .grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-columns: repeat(3, 1fr); */
     gap: var(--space-m);
+}
+@media screen and (min-width: 769px) {
+    section.services .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 /* section.services */
 .grid .card a {
@@ -886,6 +891,12 @@ section.services .grid {
     transition: transform .3s;
     transform: translate3d(0,100%,0);
 }
+
+section.services figure.halftone-overlay {
+    max-height: 19rem;
+}
+
+
 .card:hover .card-overlay, 
 .card:hover .card-overlay h3,
 .card:hover .halftone-overlay {
@@ -1077,12 +1088,17 @@ section.projects .grid {
 
 /* REVIEWS content */
 section.reviews {
-    display: grid;
+    /* display: grid; */
     grid-template-areas: 
     "header"
     "overlayreviews";
     margin: 0;
     padding: 0;
+}
+@media screen and (min-width: 769px) {
+    section.reviews {
+        display: grid;
+    }
 }
 
 section.reviews header {
@@ -1103,7 +1119,7 @@ section.reviews header h3 {
 section.reviews figure {
     grid-area: overlayreviews;
 }
-figure.halftone-overlay {
+section.reviews figure.halftone-overlay {
     max-height: 14rem;
 }
 figure.bkg-img {

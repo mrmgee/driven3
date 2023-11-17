@@ -4,7 +4,7 @@ title: Page layout
 ---
 {% include "hero.njk" %}
 
-
+{% if bodyName != 'how-we-work' %}
 <section class="page-content">
     <div class="container">
 
@@ -25,6 +25,13 @@ title: Page layout
         {% endif %}
     </div>
 </section>
+{% endif %}
 
 
-{% include ('sec-photos.njk' if bodyName == 'cars' else 'sec-cont01.njk') %}
+{% if bodyName == 'about' %}
+    {%set useInclude = 'sec-cont01.njk' %}
+{% elseif bodyName == 'how-we-work' %}
+    {%set useInclude = 'sec-timeline.njk' %}
+{% endif %}
+
+{% include ('sec-photos.njk' if bodyName == 'cars' else useInclude) %}
