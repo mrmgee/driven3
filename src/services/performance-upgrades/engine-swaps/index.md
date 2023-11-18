@@ -36,6 +36,7 @@ sectionCont:
     image: ./src/_images/66_Chevelle03.jpg
     altText: 66 Chevelle engine
     bkgImage: ./src/_images/70_Mustang01_green_lights.jpg
+    bkgImgAlt: 70 Mustang green lights
     bkgImgPos: m-top-65
     text: Modern engine swaps are a great way to make your classic car more powerful, reliable and efficient - but along with the engine itself, we also need to modernize the transmission, fuel system, cooling system, exhaust and more. These parts add up and often surprise a customer before they even pull the trigger on a swap.
     slidelayout:

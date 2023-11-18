@@ -24,6 +24,15 @@
         {% set imgPostPos = "cont-img" %}
       {% endif %}
 
+      {% set bkgImageP = cont.bkgImage %}
+      {% set bkgImgAltP = cont.bkgImgAlt %}
+      {% if cont.bkgImgPos | length %}
+        {% set bkgImgPosP = cont.bkgImgPos %}
+      {% else %}
+        {% set bkgImgPosP = "cont-img" %}
+      {% endif %}
+
+
 
 <!-- START pro-tips -->
 <section class="pro-tips">
@@ -54,7 +63,11 @@
 
       {% if imgBkgP|length %}
       <figure class="bkg-img">
-          {% image ""+imgBkgP, ""+imgPostAlt, ""+imgPostPos, ""+imgBkgPSizesResp %}
+        
+          {% image ""+bkgImageP, ""+bkgImgAltP, ""+bkgImgPosP, ""+imgBkgPSizesResp %}
+        
+  
+
       </figure>
       {% endif %}
 

@@ -162,6 +162,8 @@ section .container > *:last-child {
     }
     section.pro-tips figure.bkg-img {
         max-height: 26rem;
+        overflow: hidden;
+        z-index: -1;
     }
 }
 
@@ -402,6 +404,7 @@ input[id=form-modal]:not(:checked) ~  .label-modal,
     }
     .nav .menu {
         margin-right: 4rem;
+        z-index: 2;
     }
     .menu a, 
     .menu li .subnav {        
@@ -810,6 +813,7 @@ section.hero h1.title {
     text-align: center;
     text-transform: uppercase;
     color: var(--primary);
+    z-index: 1;
 }
 
 /* section.hero  */
