@@ -1,6 +1,7 @@
 ---
 layout: service-detail.njk
 title: Suspension Upgrades
+bodyName: services
 urlPath: services/performance-upgrades/suspension-upgrades/
 tags: ['performanceUpgrades']
 performanceUpgradesItems:
@@ -35,6 +36,8 @@ sectionCont:
     image: ./src/_images/Hotchkis_suspension.jpg
     altText: Hotchkis suspension detail
     bkgImage: ./src/_images/70_Mustang01_green_lights.jpg
+    bkgImgAlt: 70 Mustang green lights
+    bkgImgPos: m-top-65
     text: We install suspension upgrade kits from Ride Tech, QA1, Hotchkis Suspension, Detroit Speed and more. We can work with you to determine your goals for the handling - and spec a and purchase a kit for you that gives you the best bang for your buck.
     slidelayout:
   - pattern: sec-cost
@@ -47,8 +50,10 @@ sectionCont:
     figures:
       - title: $1,100 - $1,855
         subtitle: for the parts
+        icon: i-repair.svg
       - title: $2,100 - $2,655
         subtitle: for installation and calibration
+        icon: i-mechanic.svg
     slidelayout: 1
   - pattern: sec-faq-accordion
     title: Suspension Upgrades FAQs

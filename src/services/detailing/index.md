@@ -1,7 +1,7 @@
 ---
-layout: home.njk
+layout: service-detail.njk
 title: Detailing
-bodyName: p-detailing
+bodyName: detailing
 tags: ['service']
 serviceItems:
   tag: service
@@ -43,6 +43,8 @@ sectionCont:
     image: ./src/_images/67_GTO_red_carb.jpg
     altText: 67 GTO red carb
     bkgImage: ./src/_images/70_Mustang01_green_lights.jpg
+    bkgImgAlt: 70 Mustang green lights
+    bkgImgPos: m-top-65
     text: Detailing tip paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae dolor id enim iaculis bibendum. Fusce ut pellentesque erat. Nunc vitae viverra massa. Duis placerat a augue in eleifend. Pellentesque ut neque ex. Ut non nisi ultrices, tincidunt nunc vitae, tincidunt orci. Donec cursus sagittis felis sed tempus. Ut et viverra arcu.
     slidelayout:
   - pattern: sec-2col-pos2
@@ -63,8 +65,10 @@ sectionCont:
     figures:
       - title: $1,100 - $1,855
         subtitle: for the parts
+        icon: i-repair.svg
       - title: $2,100 - $2,655
         subtitle: for installation and calibration
+        icon: i-mechanic.svg
     slidelayout: 1
   - pattern: sec-faq-accordion
     title: Detailing FAQs

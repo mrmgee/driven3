@@ -18,6 +18,7 @@ featuredImage: ./src/_images/67_Camaro01.jpg
 featuredImageAlt: "67 Camaro engine"
 featuredImagePos: "margin-top: -20%;"
 isHome: 1
+collectionName: performanceUpgrades
 
 sectionCont:
   - pattern: sec-services
@@ -27,7 +28,6 @@ sectionCont:
     altText: 89 Grand Wagoneer LS side top
     position: 
     text: Pick your powerplant and we’ll make it happen. We’re specialists in modern engine swaps into classic cars - from mild to wild and oddball combos, we love making your classic better with an engine swap. We know the right parts to make it all work seamlessly and make awesome power and reliability.
-    collectionName: performanceUpgrades
     slidelayout:
 
 

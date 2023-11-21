@@ -1,6 +1,7 @@
 ---
 layout: service-detail.njk
 title: Brake Upgrades
+bodyName: services
 urlPath: services/performance-upgrades/brake-upgrades/
 tags: ['performanceUpgrades']
 performanceUpgradesItems:
@@ -35,6 +36,8 @@ sectionCont:
     image: ./src/_images/67_GTO_wheel_brakes.jpg
     altText: 67 GTO red wheel brakes detail
     bkgImage: ./src/_images/70_Mustang01_green_lights.jpg
+    bkgImgAlt: 70 Mustang green lights
+    bkgImgPos: m-top-65
     text: We’ve seen it a bunch… Customer buys “no name” disc brake kit online and asks us to install it. Most of these kits use off the shelf parts from 20 year old cars and some brackets. They rarely fit right and can take 2x longer to install. We prefer to spec a good engineered component from a company like Wilwood Engineering, Brembo, Baer, etc. The kit was engineered for the car - and can generally be installed in half the time of some cobbled together “Kit”.  You save in the long run by saving on Labor hours - $400 saved on the cheap kit can end up costing you $800 in hours to install. You also get a superior product that adds resale to the car.
     slidelayout:
   - pattern: sec-2col-pos2
@@ -63,8 +66,10 @@ sectionCont:
     figures:
       - title: $900 - $2000
         subtitle: for the parts
+        icon: i-repair.svg
       - title: $1200 - $2000
         subtitle: for labor/installation
+        icon: i-mechanic.svg
     slidelayout: 1
   - pattern: sec-faq-accordion
     title: Wiring and Elecrical FAQs

@@ -1,7 +1,7 @@
 ---
-layout: home.njk
+layout: services.njk
 title: Repair & Maintenance
-bodyName: p-repair-maintenance
+bodyName: repair-maintenance
 tags: ['service']
 serviceItems:
   tag: service
@@ -20,6 +20,16 @@ featuredImageAlt: "65 Mustang quick service"
 featuredImagePos: "margin-top: -38%;"
 collectionName: repairMaintenance
 isHome: 1
+sectionCont:
+  - pattern: sec-services
+    title: Keep Up your Ride
+    subtitle: Proper maintenance of your classic car can help avoid nasty and expensive problems down the road. Aggressive and consistent maintenance is the best way to ensure your car will be ready when you want to drive, and that you don't get surprised with unexpected failures. Your car is special - this much you know. What you may not know is that your classic may need special services and additives to keep it running at peak performance.
+    image: ./src/_images/89_Grand_Wagoneer-LS-side-top.jpg
+    altText: 89 Grand Wagoneer LS side top
+    position: 
+    text: Pick your powerplant and we’ll make it happen. We’re specialists in modern engine swaps into classic cars - from mild to wild and oddball combos, we love making your classic better with an engine swap. We know the right parts to make it all work seamlessly and make awesome power and reliability.
+    collectionName: performanceUpgrades
+    slidelayout:
 mylistfield:
   - "General repair"
   - "Classic car oil changes"

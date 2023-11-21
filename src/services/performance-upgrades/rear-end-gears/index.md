@@ -1,6 +1,7 @@
 ---
 layout: service-detail.njk
 title: Rear end / Gears / Narrowing
+bodyName: services
 urlPath: services/performance-upgrades/rear-end-gears
 tags: ['performanceUpgrades']
 performanceUpgradesItems:
@@ -34,6 +35,8 @@ sectionCont:
     image: ./src/_images/rear_differential.jpg
     altText: Rear differential - Get the good stuff
     bkgImage: ./src/_images/70_Mustang01_green_lights.jpg
+    bkgImgAlt: 70 Mustang green lights
+    bkgImgPos: m-top-65
     text: There’s a lot of cheap components out there for differentials. We prefer to use brand names we trust in your final drive. There’s no need to skimp here as failure will take out everything in the rear end.
     slidelayout:
   - pattern: sec-2col-pos2

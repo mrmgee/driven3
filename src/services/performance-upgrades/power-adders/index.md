@@ -1,6 +1,7 @@
 ---
 layout: service-detail.njk
 title: Power Adders
+bodyName: services
 urlPath: services/performance-upgrades/power-adders/
 tags: ['performanceUpgrades']
 performanceUpgradesItems:
@@ -35,6 +36,8 @@ sectionCont:
     image: ./src/_images/67_gto_red_steering_wheel.jpg
     altText: 66 Chevelle engine
     bkgImage: ./src/_images/70_Mustang01_green_lights.jpg
+    bkgImgAlt: 70 Mustang green lights
+    bkgImgPos: m-top-65
     text: We love superchargers here - the power is linear, with no lag from turbo spool-up. But the turbo vs supercharger question really lies in the engine application - and the goals for the build. Looking for streetable boost? In most cases a supercharger (or blower) fits the bill. Looking for power on the top end? A turbo might be the way to go. There is no right or wrong answer.
     slidelayout:
   - pattern: sec-cost
@@ -47,8 +50,10 @@ sectionCont:
     figures:
       - title: $1,100 - $1,855
         subtitle: for the parts
+        icon: i-repair.svg
       - title: $2,100 - $2,655
         subtitle: for installation and calibration
+        icon: i-mechanic.svg
     slidelayout: 1
   - pattern: sec-faq-accordion
     title: SPower Adders FAQs

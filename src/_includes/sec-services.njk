@@ -2,6 +2,12 @@
 
 {% for cont in sectionCont %}
 
+    {% if bodyName == "home" %}
+        {% set collectionLoop = cont.collectionName %}
+    {% else %}
+        {% set collectionLoop = collectionName %}
+    {% endif %}
+
     {% set imgPostP = cont.image %}
     {% set imgPostAlt = cont.altText %}
     {% set imgSizesResp = "(min-width: 1420px) 660px, 
@@ -24,10 +30,10 @@
     <h3>{{ cont.subtitle | safe }}</h3>
     {% endif %}
   </div>
-
+{% endif %}
 
   <div class="grid">
-    {%- for post in collections[cont.collectionName] %}
+    {%- for post in collections[collectionLoop] %}
 
     {% set imgPostP = post.data.featuredImage %}
     {% set imgPostAlt = post.data.featuredImageAlt %}
@@ -74,7 +80,7 @@
   </div>
 </section>
 
-    {% endif %}
+    
 {% endfor %}
 
 

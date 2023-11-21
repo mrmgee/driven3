@@ -1,6 +1,7 @@
 ---
 layout: service-detail.njk
 title: Exhaust
+bodyName: services
 urlPath: services/performance-upgrades/exhaust/
 tags: ['performanceUpgrades']
 performanceUpgradesItems:
@@ -35,6 +36,8 @@ sectionCont:
     image: ./src/_images/exhaust_cu.jpg
     altText: Exhaust catalytic converter detail
     bkgImage: ./src/_images/70_Mustang01_green_lights.jpg
+    bkgImgAlt: 70 Mustang green lights
+    bkgImgPos: m-top-65
     text: We specialize in custom Tig Welded stainless steel exhaust. Each system is custom made starting from the headers back and is truly a work of art. We painstakingly fit a custom system to get it as far away from the ground and around complex suspensions. All the tubing we use is 16ga. Food grade 304 stainless that is mandrel bent and hand Tig Welded.
     slidelayout:
   - pattern: sec-2col-pos2
@@ -55,8 +58,10 @@ sectionCont:
     figures:
       - title: $800 - $2000
         subtitle: kit / materials
+        icon: i-repair.svg
       - title: $1500 - $3000
         subtitle: installation / welding
+        icon: i-mechanic.svg
     slidelayout: 1
   - pattern: sec-faq-accordion
     title: Exhaust FAQs

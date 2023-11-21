@@ -1,6 +1,7 @@
 ---
 layout: service-detail.njk
 title: Transmission Swaps
+bodyName: services
 urlPath: services/performance-upgrades/transmission-swaps
 tags: ['performanceUpgrades']
 performanceUpgradesItems:
@@ -34,6 +35,8 @@ sectionCont:
     image: ./src/_images/84_Camaro_Z28_engine_electrical.jpg
     altText: CCS transmission swap
     bkgImage: ./src/_images/70_Mustang01_green_lights.jpg
+    bkgImgAlt: 70 Mustang green lights
+    bkgImgPos: m-top-65
     text: Trans tips paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae dolor id enim iaculis bibendum. Fusce ut pellentesque erat. Nunc vitae viverra massa. Duis placerat a augue in eleifend. Pellentesque ut neque ex. Ut non nisi ultrices, tincidunt nunc vitae, tincidunt orci. Donec cursus sagittis felis sed tempus. Ut et viverra arcu.
     slidelayout:
   - pattern: sec-cost
@@ -46,8 +49,10 @@ sectionCont:
     figures:
       - title: $2,100 - $2,655
         subtitle: for the parts
+        icon: i-repair.svg
       - title: $1,677 - $1,8599
         subtitle: for installation, plumbing, wiring and tuning.
+        icon: i-mechanic.svg
     slidelayout: 1
   - pattern: sec-faq-accordion
     title: Transmission Swaps FAQs

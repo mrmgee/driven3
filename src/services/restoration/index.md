@@ -1,7 +1,7 @@
 ---
-layout: home.njk
+layout: service-detail.njk
 title: Frame-off Restoration
-bodyName: p-restoration
+bodyName: restoration
 tags: ['service']
 serviceItems:
   tag: service
@@ -38,6 +38,8 @@ sectionCont:
     image: ./src/_images/rear_differential.jpg
     altText: The devil is in the details
     bkgImage: ./src/_images/70_Mustang01_green_lights.jpg
+    bkgImgAlt: 70 Mustang green lights
+    bkgImgPos: m-top-65
     text: We can repair even badly damaged factory sheetmetal and use original parts when necessary for a high value historic restoration. We will use new old stock parts if available and keep your car numbers matching. We’ll sweat the details right down to date coded hoses and factory grease pencil marks if that is your aim.
     slidelayout:
   - pattern: sec-2col-pos2
@@ -66,8 +68,10 @@ sectionCont:
     figures:
       - title: $1,100 - $1,855
         subtitle: for the parts
+        icon: i-repair.svg
       - title: $2,100 - $2,655
         subtitle: for installation and calibration
+        icon: i-mechanic.svg
     slidelayout: 1
   - pattern: sec-faq-accordion
     title: Restoration FAQs

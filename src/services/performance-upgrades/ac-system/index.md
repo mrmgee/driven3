@@ -1,6 +1,7 @@
 ---
 layout: service-detail.njk
 title: AC System Installations
+bodyName: services
 urlPath: services/performance-upgrades/ac-system/
 tags: ['performanceUpgrades']
 performanceUpgradesItems:
@@ -35,6 +36,8 @@ sectionCont:
     image: ./src/_images/Restomod-Air-Conditioning-Cadillac.jpg
     altText: 66 Chevelle engine
     bkgImage: ./src/_images/70_Mustang01_green_lights.jpg
+    bkgImgAlt: 70 Mustang green lights
+    bkgImgPos: m-top-65
     text: AC System Installations tip paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae dolor id enim iaculis bibendum. Fusce ut pellentesque erat. Nunc vitae viverra massa. Duis placerat a augue in eleifend. Pellentesque ut neque ex. Ut non nisi ultrices, tincidunt nunc vitae, tincidunt orci. Donec cursus sagittis felis sed tempus. Ut et viverra arcu.
     slidelayout:
   - pattern: sec-2col-pos2
@@ -55,8 +58,10 @@ sectionCont:
     figures:
       - title: $1,100 - $1,855
         subtitle: for the parts
+        icon: i-repair.svg
       - title: $2,100 - $2,655
         subtitle: for installation and calibration
+        icon: i-mechanic.svg
     slidelayout: 1
   - pattern: sec-faq-accordion
     title: AC System Installations FAQs

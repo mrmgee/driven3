@@ -1,6 +1,7 @@
 ---
 layout: service-detail.njk
 title: Wiring and Electrical
+bodyName: services
 urlPath: services/performance-upgrades/wiring-electrical
 tags: ['performanceUpgrades']
 performanceUpgradesItems:
@@ -34,6 +35,8 @@ sectionCont:
     image: ./src/_images/66_Chevelle03.jpg
     altText: 66 Chevelle engine
     bkgImage: ./src/_images/70_Mustang01_green_lights.jpg
+    bkgImgAlt: 70 Mustang green lights
+    bkgImgPos: m-top-65
     text: We keep the wires as hidden as possible. Not only does this give a clean finish without wires crisscrossing the engine, it protects the wires from heat and moving components. All connections are crimped, and shrink tubed to provide years of trouble-free service.  
     slidelayout:
   - pattern: sec-cost
@@ -46,8 +49,10 @@ sectionCont:
     figures:
       - title: $400 - $800
         subtitle: for the parts
+        icon: i-repair.svg
       - title: $3,900 - $4,900
         subtitle: (20-25 hours) for installation and looming up the harness
+        icon: i-mechanic.svg
     slidelayout: 1
   - pattern: sec-faq-accordion
     title: Wiring and Elecrical FAQs
