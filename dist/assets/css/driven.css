@@ -729,62 +729,82 @@ footer article {
 
 
 /* HERO HOME content */
-body.home section.hero {
+body.home section.hero, 
+body.restomod section.hero {
     display: block;
 }
 body.home .slide-box, 
-body.home .slide-box a > * {
+body.home .slide-box a > *, 
+body.restomod .slide-box, 
+body.restomod .slide-box a > *, 
+section.projects .slide-box, 
+section.projects .slide-box a {
     max-height: 36rem;
 }
-body.home .slide-box {
+body.home .slide-box, 
+body.restomod .slide-box, 
+section.projects .slide-box {
     /* min-height: 36rem; */
     background-color: #d3d3d3;
     overflow-y: hidden;
 }
-body.home .slide-box a {
+body.home .slide-box a, 
+body.restomod .slide-box a {
     display: grid;
     grid-template-areas: "overlayhero";
     align-items: end;
 }
-body.home .slide-box a > * {
+body.home .slide-box a > *, 
+body.restomod .slide-box a > * {
     grid-area: overlayhero;
 }
-body.home .slide-box figure {
+body.home .slide-box figure, 
+body.restomod .slide-box figure, 
+section.projects .slide-box figure {
     object-fit: cover;
     width: 100%;
     height: 100%;
 }
-body.home .slide-box figure img {
+body.home .slide-box figure img, 
+body.restomod .slide-box figure img, 
+section.projects .slide-box figure img {
     width: 100%;
 }
-body.home .slide-overlay {
+body.home .slide-overlay, 
+body.restomod .slide-overlay {
     margin-bottom: 4%;
 
 }
 body.home .slide-overlay h1, 
-body.home .slide-overlay h3 {
+body.home .slide-overlay h3, 
+body.restomod .slide-overlay h1, 
+body.restomod .slide-overlay h3 {
     font-weight: 700;
     text-align: center;
     text-transform: uppercase; 
 }
-body.home .slide-overlay h1 {
+body.home .slide-overlay h1, 
+body.restomod .slide-overlay h1 {
     display: table;
     margin: 0 auto;
     color: var(--primary);
     font-size: 4.2rem;
     letter-spacing: .04rem;
 }
-body.home .slide-overlay h1 span {
+body.home .slide-overlay h1 span, 
+body.restomod .slide-overlay h1 span {
     font-size: 2rem;
     vertical-align: middle;
 }
-body.home .slide-overlay h3 {
+body.home .slide-overlay h3, 
+body.restomod .slide-overlay h3 {
     color: #fff;
     font-size: 2.4rem;
     letter-spacing: .04rem;
 }
 
-body.home section.hero header .cta-tag {
+body.home section.hero header .cta-tag, 
+body.restomod section.hero header .cta-tag {
     margin: 1rem 0 0 0.8rem;
     color: #fff;
     font-size: var(--step-0);
@@ -970,7 +990,7 @@ section.half-split {
     margin: 0 auto;
 }
 
-section.half-split article {
+.half-split article {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-columns: repeat(auto-fill,minmax(clamp(48%, (400px - 100vw)*1000, 100%),1fr));
@@ -978,22 +998,22 @@ section.half-split article {
     margin-bottom: var(--space-m);
     padding: 0;
 }
-section.half-split article .column {
+.half-split article .column {
     padding: 1rem;
 }
 
-section.half-split article figure {
+.half-split article figure {
     margin: 0;
     padding: 0.75rem;
 
 }
-section.half-split article h3 {
+.half-split article h3 {
     width: fit-content;
     font-size: var(--step-2);
     font-weight: 500;
     border-bottom: 2px solid var(--primary);
 } 
-section.half-split article p {
+.half-split article p {
     font-size: var(--step-0);
     line-height: 2rem;
 }
@@ -1504,6 +1524,32 @@ body.cars section.carousel-cars figure figcaption {
     font-weight: 500;
     background-color: var(--md-dk-grey);
 }
+
+
+
+/*
+* PROJECT DETAIL gallery-project Modal fullscreen caption nav SECTION
+*/
+.pswp__custom-caption {
+    background: rgba(0, 0, 0, 0.6);
+    font-size: 16px;
+    color: #fff;
+    width: calc(100% - 32px);
+    max-width: 400px;
+    padding: 2px 8px;
+    border-radius: 4px;
+    position: absolute;
+    left: 50%;
+    bottom: 16px;
+    transform: translateX(-50%);
+  }
+  .pswp__custom-caption a {
+    color: #fff;
+    text-decoration: underline;
+  }
+  .hidden-caption-content {
+    display: none;
+  }
 
 
 /* PAGE content */

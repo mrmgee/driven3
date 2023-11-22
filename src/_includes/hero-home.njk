@@ -1,7 +1,7 @@
 {% block hero %}
 
 
-<section class="hero">   <!-- slider-nav-autoplay -->
+<section class="hero">   <!-- STOP auto: slider-nav-autoplay -->
     <div class="swiffy-slider slider-nav-autopause">  
         <ul class="slider-container">
 
@@ -60,6 +60,7 @@
         </div>
     </div><!-- END swiffy-slider -->
 
+{% if bodyName == "home" %}
     <header class="header">
         <div class="container">
             <h4 class="cta-tag">
@@ -75,7 +76,7 @@
           </div>
         </div>
     </header>
-
+{% endif %}
 </section>
 
 {% endblock hero %}

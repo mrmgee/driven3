@@ -4,7 +4,7 @@ title: ’67 Camaro Forsyth
 urlPath: projects/67-camaro-forsyth/
 tags: ['project']
 description: Driven Garage nothern California restomod auto customization and repair shop
-featuredImage: 67camaro_forsyth-5857.jpg
+featuredImage: ./src/projects/67-camaro-forsyth/67camaro_forsyth-5857.jpg
 featuredImageAlt: "67 Camaro Forsyth after righ side"
 featuredImagePos: "margin-top: -48%;"
 collectionName: 67CamaroForsyth

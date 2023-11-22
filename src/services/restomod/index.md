@@ -1,5 +1,5 @@
 ---
-layout: home.njk
+layout: restomod.njk
 title: Restomod & Full Builds
 bodyName: restomod
 tags: ['service']

@@ -1,5 +1,23 @@
-{% set heroSlides = proj1 %}
+{# {% set heroSlides = proj1 %} #}
 {%set collectionNameLink = "projects/69-barracuda-formula-s/" %}
+
+
+    {% if bodyName == "home" %}
+        {% set heroSlides = proj1.slides %}
+        {% set collectionName = featProjects %}
+        {% set collectionNameLink = featProjectsUrl %}
+    {% else %}
+      {# {% set heroSlides = collections[collectionName] %} #}
+    {% endif %}
+
+<!--
+<h1>
+  bodyName: {{bodyName}}<br>
+urlPath: {{urlPath}}<br> 
+collectionName: {{collectionName}}<br>
+heroSlides: {{heroSlides}}
+</h1>
+-->
 
 <section class="projects">
 
@@ -19,12 +37,28 @@
     <div class="swiffy-slider slider-item-nogap slider-nav-caret slider-nav-dark slider-indicators-square slider-indicators-dark slider-nav-touch slider-nav-autopause slider-nav-animation slider-item-last-visible" id="infiniteSliding">
     <ul class="slider-container">
 
-{% for heroSlides, item in heroSlides %}
-    {%set pageSlideP = "./src/" %}
-    {%set imgSlideP = item.image %}
-    {%set fullSlideP = pageSlideP+imgSlideP %}
+
+{# {%- for item in collections[data.proj1] %} #}
+
+
+{# {% for heroSlides, item in heroSlides %} #}
+
+
+{# {% for item in proj1.slides %}  works ONLY on Home #}
+
+
+{% for item in heroSlides %}
+
+    {# {%set pageSlideP = "./src/" %} #}
+    {% if bodyName == "home" %}
+      {% set pageSlideP = "./src/" %}
+    {% else %}
+      {% set pageSlideP = "./src"+page.url %}
+    {% endif %}
+    {% set imgSlideP = item.image %}
+    {% set fullSlideP = pageSlideP+imgSlideP %}
     {% set imgSlideAlt = item.altText %}
-    {% set imgSlidePos = "" %}
+    {# {% set imgSlidePos = "" %} #}
     {% set imgSizesResp = "12" %}
 
     {% if item.position | length %}
@@ -115,8 +149,10 @@
 
 
 
-  {%set collectionName = "69BarracudaFormulaS" %}
-  {%set collectionNameLink = "projects/69-barracuda-formula-s/" %}
+  {# {%set collectionName = "69BarracudaFormulaS" %} #}
+  {# {%set collectionNameLink = "projects/69-barracuda-formula-s/" %} #}
+
+{% if 1 == 0 %} {# TURN off TESTING #}
 
   {% if bodyName == "home" %}
     {%set loopLimit = 6 %}
@@ -132,7 +168,14 @@
 
             {% if cont.data.isHome !==1 %}  <!-- // Don't output if Home flag is true in index.md -->
 
-                {%set pageP = "./src/"+collectionNameLink %}
+                {# {%set pageP = "./src/"+collectionNameLink %} #}
+                {% if bodyName == "home" %}
+                  {% set pageP = "./src"+collectionNameLink %}
+                {% else %}
+                  {% set pageP = "./src"+page.url %}
+                {% endif %}
+
+
                 {%set imgP = cont.data.image %}
                 {%set fullP = pageP+imgP %}
                 {% set imgAlt = cont.data.altTag %}
@@ -163,12 +206,81 @@
     {% endif %}
   {%- endfor %}
 
+{% endif %} {# TURN off TESTING #}
 
   </div>
 
 
-
-
 </section>
 
-      
+
+
+
+{% if bodyName == "home" %}
+  {%set loopLimit = 6 %}
+{% else %}
+  {%set loopLimit = 100 %}
+{% endif %}
+
+
+
+<section class="gallery-projects projects">
+  <div id="gallery-{{collectionName}}" class="grid">
+
+{% gallery collectionName %}
+
+{% for cont in collections[collectionName] %}
+  {% if (loop.index <= loopLimit) %}
+
+  {% if cont.data.isHome !==1 %}  <!-- // Don't output if Home flag is true in index.md -->
+
+{#    {%set pageP = "./src"+page.url %} #}  {# .src/projects/67-camaro-forsyth/ = adds './src' to page url #}
+    {% if bodyName == "home" %}
+      {% set pageP = "./src"+collectionNameLink %}
+    {% else %}
+      {% set pageP = "./src"+page.url %}
+    {% endif %}
+
+<!-- 69-cuda-1-1275.jpeg -->
+    {%set imgP = cont.data.image %}  {# 67camaro_forsyth-0608.jpg = image file name #}
+    {%set fullP = pageP+imgP %}  {# .src/projects/67-camaro-forsyth/67camaro_forsyth-0608.jpg = combines all for full img path #}
+    {% set imgAlt = cont.data.altTag %}  {# 67 Camaro Forsyth before rear = sets imgAlt var with alt text string #}
+    {% set imgSlidePos = "galLnk" %}
+    {% set imgSizesResp = "(min-width: 1420px) 432px, 
+    (min-width: 1220px) 368px, 
+    (min-width: 1040px) 304px, 
+    (min-width: 780px) calc(33.33vw - 16px), 
+    calc(100vw - 24px)"
+    %}
+
+    <div class="card"><!-- loop {{loop.index}} -->
+    <!-- href="/assets/images/{{imgP.slice(0, -4)}}-1275.jpeg"  -->
+
+        <figure>
+    {% if cont.data.image|length %}  {# Required to wrap in conditional statement to make it work #}
+        {# {% image ""+fullP, ""+imgAlt, ""+imgSlidePos, ""+imgSizesResp %}   #}
+        
+        {# EXACT syntax neede pass src and alt vars to Image plugin #}
+
+
+
+
+        {% galleryImage ""+fullP, ""+imgAlt %}  {# EXACT syntax neede pass src and alt vars to Image plugin #}
+    {% endif %}
+
+        </figure>
+
+    </div>
+      {% endif %}
+    {% endif %}
+{% endfor %}
+
+{% endgallery %}
+
+  </div>
+</section>
+
+
+
+
+
