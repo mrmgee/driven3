@@ -93,7 +93,17 @@
 .m-top-65 {
     margin-top: -65%;
 }
-
+@media screen and (max-width: 768px) {
+    .m-top-15 {
+        margin-top: -7.5%;
+    }
+    .m-top-20 {
+        margin-top: -10%;
+    }
+    .m-top-30 {
+        margin-top: -10%;
+    }
+}
 
 
 /* Box sizing rules */
@@ -257,10 +267,10 @@ article .cta {
     justify-content: center;
 }
 body.home .nav .cta h3, 
-body.home .nav .cta .label-modal h4.s2 {
+body.home .nav > .cta > .label-modal > h4.s2 {
     display: none;
 }
-body.home .nav .cta .label-modal {
+body.home .nav > .cta > .label-modal {
     background: rgb(54 54 54 / 0%);
 }
 #form-modal {
@@ -810,7 +820,23 @@ body.restomod section.hero header .cta-tag {
     font-size: var(--step-0);
     font-weight: 400;
 }
-
+/* mobile HERO HOME content content */
+@media screen and (max-width: 768px) {
+    body.home .slide-box figure {
+        max-height: 16rem;
+        overflow: hidden;
+    }
+    body.home .slide-box figure img {
+        min-height: 16rem;
+        max-height: 16rem;
+    }
+    body.home .slide-overlay h1 {
+        font-size: 2rem;
+    }
+    body.home .slide-overlay h3 {
+        font-size: 1rem;
+    }
+}
 
 
 
@@ -865,6 +891,8 @@ section.hero figure.bkg-img {
     max-height: 7.4rem;
 }
 
+
+/* mobile HERO content */
 @media screen and (max-width: 768px) {
     section.hero {
         display: grid;
@@ -921,12 +949,12 @@ section.services figure.halftone-overlay {
     max-height: 19rem;
 }
 
-
-.card:hover .card-overlay, 
-.card:hover .card-overlay h3,
-.card:hover .halftone-overlay {
-    transform: translate3d(0,0,0);
-
+@media screen and (min-width: 769px) {
+    .card:hover .card-overlay, 
+    .card:hover .card-overlay h3,
+    .card:hover .halftone-overlay {
+        transform: translate3d(0,0,0);
+    }
 }
 .card-overlay h3 {
     margin: 0;
@@ -980,6 +1008,25 @@ section.services .card a > figure {
     margin: 0.2rem 0 0 0.4rem;
 }
 
+/* mobile SERVICES grid */
+@media screen and (max-width: 768px) {
+    section.services > .container {
+        padding: var(--space-s);
+    }
+
+    .card .card-overlay, 
+    .card .card-overlay h3,
+    .card .halftone-overlay {
+        transform: translate3d(0,30%,0);
+    
+    }
+    .halftone-overlay {
+        display: none;
+    }
+    .card .card-overlay {
+        background: rgba(0,0,0,0.6);
+    }
+}
 
 
 
@@ -1188,11 +1235,14 @@ section.media figure img {
 
 
 /* PRO TIPS content */
-section.pro-tips {
-    display: grid;
-    grid-template-areas: "overlaydemo"; 
-    grid-template-columns: 10% 1fr 2fr 10%;   /* grid-template-columns: 1fr 3fr 5fr 1fr; */
-    column-gap: var(--space-s);
+
+@media screen and (min-width: 769px) {
+    section.pro-tips {
+        display: grid;
+        grid-template-areas: "overlaydemo"; 
+        grid-template-columns: 10% 1fr 2fr 10%;   /* grid-template-columns: 1fr 3fr 5fr 1fr; */
+        column-gap: var(--space-s);
+    }
 }
 section.pro-tips header {
     grid-column-start: 1;
@@ -1281,6 +1331,29 @@ section.pro-tips figure.bkg-img {
     position: relative;
 }
 
+@media screen and (max-width: 768px) {
+    section.pro-tips figure.bkg-img {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    section.pro-tips {
+        background-color: var(--charcoal);
+    }
+    .know-tips {
+        padding: 0 var(--space-2xs);
+    }
+    .know-tips span.hilite {
+        font-size: 0.8rem;
+    }
+    section.pro-tips article {
+        padding: var(--space-s);
+    }
+}
+
+
 /* FIX ME - overlaps nav at top */
 figure.bkg-img::after {
     content: "";
@@ -1367,11 +1440,7 @@ section.services-cost article {
 section.services-cost article > * {
     margin: 0 auto;
 }
-@media screen and (max-width: 768px) {
-    section.services-cost article {
-        margin: var(--space-m) var(--space-m) var(--space-m) var(--space-xs);
-    }
-}
+
 section.services-cost article figure {
     max-width: var(--space-3xl);
     margin-bottom: var(--space-s);
@@ -1387,6 +1456,15 @@ section.services-cost article p {
     font-weight: 500;
 }
 
+
+@media screen and (max-width: 768px) {
+    section.services-cost {
+        padding: var(--space-s);
+    }
+    section.services-cost article {
+        margin: var(--space-l);
+    }
+}
 
 
 /* FAQ accordion section content */

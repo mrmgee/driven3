@@ -5,6 +5,7 @@ image: "67camaro_forsyth-0609.jpg"
 altTag: "67 Camaro Forsyth before rear three quarters"
 rating: 4.5
 buyLink: "/"
+permalink: ""
 ---
 
 I enjoyed this book very much, and so did my 3 year old.
