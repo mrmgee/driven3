@@ -8,32 +8,32 @@ performanceUpgradesItems:
   tag: performanceUpgrades
   order: 11
 description: Driven Garage nothern California restomod auto customization and repair shop
-featuredImage: ./src/_images/68_orange_steering_shifter01.jpg
+featuredImage: ./src/_images/Race_Camaro_radiator.jpg
 featuredImageAlt: "68 Scout orange steering wheel and shifter"
 featuredImagePos: "margin-top: -48%;"
 isHome: 1
 sectionCont:
   - pattern: sec-2col-pos1
-    title: One of the most important upgrades
+    title: Cooling Upgrades section 1
     subtitle: No limits offroad capability
-    image: ./src/_images/68_orange_steering_shifter01.jpg
+    image: ./src/_images/Race_Camaro_radiator.jpg
     altText: CCS transmission swap
     position: 0px -70px
     text: Transmission swap can enhance your car’s speed and the way it handles engine power. It will also give you more control and improve your overall riding experience. Changing the transmission may be the easiest way to completely transform your driving experience from ho-hum into a gear-shifting rocket you can't wait to take cruising.
     slidelayout:
   - pattern: sec-2col-pos1
-    title: Stick vs Automatic
+    title: Cooling Upgrades section 2
     subtitle: 
-    image: ./src/_images/68_orange_steering_shifter01.jpg
-    altText: 68 Scout orange steering wheel and shifter
+    image: ./src/_images/70_Dodge_Dart_radiator.jpg
+    altText: 70 Dodge Dart radiator
     position: 0px 0px
     text: Whether you’re looking for a high-performance experience behind the wheel or are just looking to make you commute easier, we’ve got you covered. Take control with a manual gearbox to precisely put your engine’s power to work. A modern automatic transmission in your classic will make quick runs out for coffee or driving to work more comfortable. We won’t judge, just give you the best setup to match your driving style.
     CTAlabel: Let's Get Started >
     slidelayout: 1
   - pattern: sec-tips
-    title: Trans Tips Section
-    image: ./src/_images/68_orange_steering_shifter01.jpg
-    altText: CCS transmission swap
+    title: Cooling Upgrades Tips Section
+    image: ./src/_images/70_Dodge_Dart_radiator_pressure.jpg
+    altText: 70 Dodge Dart radiator pressure
     bkgImage: ./src/_images/70_Mustang01_green_lights.jpg
     bkgImgAlt: 70 Mustang green lights
     bkgImgPos: m-top-65

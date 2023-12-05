@@ -15,26 +15,26 @@ collectionName: engineSwaps
 isHome: 1
 sectionCont:
   - pattern: sec-2col-pos1
-    title: Chevy LS Engine Swap
+    title: Sec 1 Get it Running
     subtitle: 
-    image: ./src/_images/89_Grand_Wagoneer-LS-side-top.jpg
-    altText: 89 Grand Wagoneer LS side top
+    image: ./src/_images/68_cuda_white_engine_parts.jpg
+    altText: 68 Cuda white engine parts
     position: 
     text: Supercharge Your Vehicle with a Chevy LS Crate Engine Swap. This beast is no joke when it comes to power. We're talking up to a mind-blowing 525 horsepower and 485 ft-lbs of torque. Say goodbye to sluggish starts and hello to lightning-fast acceleration!
     slidelayout:
   - pattern: sec-2col-pos1
-    title: Transplant your Powerplant
+    title: Sec 2 Get it Running
     subtitle: Tuned to perform
-    image: ./src/_images/engine_swap.jpg
-    altText: Engine swap
+    image: ./src/_images/70_Camaro_carburetor.jpg
+    altText: 70 Camaro carburetor
     position: 
     text: If your original engine is shot or you’d like to get more power and performance. we’ll work with you revitalize your classic ride.
     CTAlabel: Let's Go >
     slidelayout: 1
   - pattern: sec-tips
-    title: Engine Swaps tips
-    image: ./src/_images/66_Chevelle03.jpg
-    altText: 66 Chevelle engine
+    title: Get it Running tips
+    image: ./src/_images/70_Dodge_Dart_Ross_inspect.jpg
+    altText: 70 Dodge Dart Ross inspect
     bkgImage: ./src/_images/70_Mustang01_green_lights.jpg
     bkgImgAlt: 70 Mustang green lights
     bkgImgPos: m-top-65

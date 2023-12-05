@@ -8,8 +8,8 @@ performanceUpgradesItems:
   tag: performanceUpgrades
   order: 6
 description: Driven Garage nothern California restomod auto customization and repair shop
-featuredImage: ./src/_images/Exhaust_custom_stainless.jpg
-featuredImageAlt: "Custom stainless Exhaust"
+featuredImage: ./src/_images/64_Corvette_exhaust_full.jpg
+featuredImageAlt: "64 Corvette custom stainless Exhaust"
 featuredImagePos: "margin-top: -48%;"
 collectionName: exhaust
 isHome: 1
@@ -17,8 +17,8 @@ sectionCont:
   - pattern: sec-2col-pos1
     title: Performance exhaust systems
     subtitle: 
-    image: ./src/_images/Exhaust_custom_stainless.jpg
-    altText: Custom stainless Exhaust
+    image: ./src/_images/64_Corvette_exhaust_full.jpg
+    altText: 64 Corvette custom stainless Exhaust
     position: 
     text: Performance exhaust systems can lead to better throttle response and increased horsepower and torque due to reduced backpressure and improved exhaust flow. Classic car owners looking to enhance acceleration and overall power delivery often opt for performance exhausts.
     slidelayout:
@@ -33,8 +33,8 @@ sectionCont:
     slidelayout: 1
   - pattern: sec-tips
     title: Custom means “High and Tight”
-    image: ./src/_images/exhaust_cu.jpg
-    altText: Exhaust catalytic converter detail
+    image: ./src/_images/64_Corvette_exhaust_cu.jpg
+    altText: 64 Corvette custom stainless Exhaust detail
     bkgImage: ./src/_images/70_Mustang01_green_lights.jpg
     bkgImgAlt: 70 Mustang green lights
     bkgImgPos: m-top-65
@@ -43,8 +43,8 @@ sectionCont:
   - pattern: sec-2col-pos2
     title: Headers are a simple upgrade
     subtitle: Tuned to perform
-    image: ./src/_images/83_Mercedes_Benz_E300_TD_wagon_silver_carb.jpg
-    altText: 83 Mercedes Benz E300 TD wagon silver carb
+    image: ./src/_images/70_Dodge_Dart_primer_headers.jpg
+    altText: 70 Dodge Dart headers
     position: 0px 0px
     text: A great set of headers can add that muscle car sound - and increase flow from the engine to the exhaust system. Headers can be tricky to get to fit right, and tricky to get to seal up - but we do them all the time. We can spec the right stuff and get it installed the right way.
     slidelayout: 1

@@ -25,16 +25,16 @@ sectionCont:
   - pattern: sec-2col-pos1
     title: Too Lean or Poor Throttle Response
     subtitle: Tuned to perform
-    image: ./src/_images/83_Mercedes_Benz_E300_TD_wagon_silver_carb.jpg
-    altText: 83 Mercedes Benz E300 TD wagon silver carb
+    image: ./src/_images/70_Dodge_Dart_timing.jpg
+    altText: 70 Dodge Dart timing
     position: 
     text: If running too lean, the off-idle circuit needs to be enriched. Regardless of the carburetor brand,  we can make the right adjustments to ensure your engine gets the correct amount of fuel it needs. If the problem is throttle response, the pump circuit needs to be more active. We’ll adjust your carburetor, or recommend a high-performance replacement, that will give you power when you need it. Lastly, the ignition spark timing curve and the air-fuel mix curve should be retuned. With the proper mix and firing, we’ll make sure your classic gives you the power to make it fun to drive again.
     CTAlabel: Let's Go >
     slidelayout: 1
   - pattern: sec-tips
     title: Carb and timing are like peanut butter and jelly
-    image: ./src/_images/67_GTO_red_carb.jpg
-    altText: 67 GTO red carb
+    image: ./src/_images/70_Camaro_carburetor_cu.jpg
+    altText: 70 Camaro carburetor
     bkgImage: ./src/_images/70_Mustang01_green_lights.jpg
     bkgImgAlt: 70 Mustang green lights
     bkgImgPos: m-top-65

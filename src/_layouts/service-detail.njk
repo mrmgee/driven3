@@ -6,6 +6,7 @@ title: Service Detail
 {% include "hero.njk" %}
 
 {% block secCont01 %}
+{% set loopNum = 1 %}
     {% include "sec-cont01.njk" %}
 {% endblock secCont01 %}
 
@@ -14,12 +15,32 @@ title: Service Detail
 {% endblock secTips %}
 
 {% block secCont02 %}
-    {% include "sec-cont02.njk" %}
+{% set loopNum = 2 %}
+    {% include "sec-cont01.njk" %}
 {% endblock secCont02 %}
 
-{% block secCost %}
-    {% include "sec-cost.njk" %}
-{% endblock secCost %}
+
+
+
+
+{%set useInclude = 'sec-cost.njk' %}
+{% block secContAccordion %}
+    {% include ('sec-cont-accordion.njk' if bodyName == 'custom-high-end-paint' else useInclude) %}
+{% endblock secContAccordion %}
+
+
+{% if bodyName == "custom-high-end-paint" %}
+{% block secCostAlt %}
+    {% include "sec-cost-alt.njk" %}
+{% endblock secCostAlt %}
+{% endif %}
+
+
+
+{% block secCont03 %}
+{% set loopNum = 3 %}
+    {% include "sec-cont01.njk" %}
+{% endblock secCont03 %}
 
 {% block secFAQs %}
     {% include "sec-faq-accordion.njk" %}

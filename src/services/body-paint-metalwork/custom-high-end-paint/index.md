@@ -25,31 +25,31 @@ sectionCont:
   - pattern: sec-2col-pos1
     title: It starts with taking it apart
     subtitle: 
-    image: ./src/_images/70_Mustang04_engine.jpg
-    altText: Wilwood braking system
+    image: ./src/_images/67_Nova_silver_rotissie.jpg
+    altText: 67 Nova silver rotissie
     position: 
     text: The first thing we do is completely disassemble the car. Every nut, bolt, piece of glass, wires, piece of trim is removed, cataloged and marked. Along the way we take notes for broken bolts, missing parts etc. From here we start a list of what we will need to complete your job in detail. Once the car is back from the media blaster - We will assess body damage and metalwork required - and which panels will be replaced or repaired.
     slidelayout: 1
-  - pattern: sec-2col-pos1
+  - pattern: sec-2col-pos2
     title: We’re masters of metal
     subtitle: Tuned to perform
-    image: ./src/_images/69_Custom_S_engine_cu.jpg
-    altText: 69 Custom S engine detail
+    image: ./src/_images/68_cuda_white_patch_hand.jpg
+    altText: 68 cuda white patch hand
     position: 0px 0px
     text: We repair (or replace) all the damaged sheet metal and pre-assemble the car to fit all the panels either on the chassis or on a build stand and refine all the gaps for doors, fenders, trunk and hood. Even new reproduction panels sometimes require significant modifications in metal to ensure proper fit.
     slidelayout: 1
-  - pattern: sec-2col-pos1
+  - pattern: sec-2col-pos2
     title: The right foundation
     subtitle: Tuned to perform
-    image: ./src/_images/73_Scout_II_dash_cu.jpg
-    altText: 73 Scout II orange dash brakes detail
+    image: ./src/_images/67_Nova_trunk_fit.jpg
+    altText: 67 Nova trunk fit
     position: 0px 0px
     text: Proper bodywork, primers and expert craftsmanship with hours and hours of block sanding lay the groundwork for the final finish. This is the most labor intensive part of the process. Without laser straight panels and perfect lines - the paint on top won’t matter much.
     slidelayout: 1
   - pattern: sec-tips
     title: Strip it or forget it.
-    image: ./src/_images/67_GTO_wheel_brakes.jpg
-    altText: 67 GTO red wheel brakes detail
+    image: ./src/_images/67_Nova_front_together_full.jpg
+    altText: 67 Nova front together full
     bkgImage: ./src/_images/70_Mustang01_green_lights.jpg
     bkgImgAlt: 70 Mustang green lights
     bkgImgPos: m-top-65
@@ -82,7 +82,7 @@ sectionCont:
       - que: Disassembly / Media blast / condition assessment
         ansImg: ./src/_images/73_Scout_II_dash_cu.jpg
         ansImgAlt: Custom fabricated exhaust
-        ansText: The first thing we do is completely disassemble the car. Every nut, bolt, piece of glass, wires, piece of trim is removed, cataloged and marked. Along the way we take notes for broken bolts, missing parts etc. From here we start a list of what we will need to complete your job in detail. Once the car is back from the media blaster - We will assess body damage and metalwork required - and which panels will be replaced or repaired.
+        ansText: <p>The first thing we do is completely disassemble the car. Every nut, bolt, piece of glass, wires, piece of trim is removed, cataloged and marked. Along the way we take notes for broken bolts, missing parts etc. From here we start a list of what we will need to complete your job in detail. Once the car is back from the media blaster - We will assess body damage and metalwork required - and which panels will be replaced or repaired.</p>
       - que: Metalwork / Modification / Pre-assembly & Fit
         ansImg: ./src/_images/73_Scout_II_dash_cu.jpg
         ansImgAlt: Custom fabricated exhaust
@@ -90,7 +90,7 @@ sectionCont:
       - que: Bodywork / Block Sand / Refinement
         ansImg: ./src/_images/73_Scout_II_dash_cu.jpg
         ansImgAlt: Custom fabricated exhaust
-        ansText: <h4>Bodywork / Filler</h4>Once everything is fit and we’re happy with the panel gaps and mods in metal we do our body filler work - We don’t call it “Bondo” and it’s not a bad word. Filler work is required to get the surface of all body panels closer to where we need them to be. Done properly, this filler can last 50+ years without issues.  Can we metalwork your car without using any filler? Totally - but that’s easily 800-1000 hours of labor to get there. Using modern body fillers - and making sure that our metalwork is within 1/16” or less we can get the same or better results in less time.
+        ansText: <h4>Bodywork / Filler</h4><p>Once everything is fit and we’re happy with the panel gaps and mods in metal we do our body filler work - We don’t call it “Bondo” and it’s not a bad word. Filler work is required to get the surface of all body panels closer to where we need them to be. Done properly, this filler can last 50+ years without issues.  Can we metalwork your car without using any filler? Totally - but that’s easily 800-1000 hours of labor to get there. Using modern body fillers - and making sure that our metalwork is within 1/16” or less we can get the same or better results in less time.</p>
       - que: Prime and Block Sand
         ansImg: ./src/_images/73_Scout_II_dash_cu.jpg
         ansImgAlt: Custom fabricated exhaust

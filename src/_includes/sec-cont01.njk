@@ -2,8 +2,12 @@
 
     <section class="services half-split">
 
+
+
 {% for cont in sectionCont %}
 
+    {% set pattern = cont.pattern %}
+    {% set trip = (loop.index)+1 %}
     {% set imgPostP = cont.image %}
     {% set imgPostAlt = cont.altText %}
     {% set imgSizesResp = "(min-width: 1420px) 660px, 
@@ -15,14 +19,15 @@
     {% set imgBkgP = cont.bkgImage %}
     {% set imgSlidePos = "cont-img" %}
 
-    {% if cont.pattern == "sec-2col-pos1" %}
+    {# {% if ( (cont.pattern == "sec-2col-pos1") and (cont.slidelayout== "1") ) or (cont.pattern == "sec-2col-pos3") and (cont.slidelayout== "1") %} #}
+
+    {% if ( (pattern == "sec-2col-pos1") and (loopNum == 1) ) or ( (pattern == "sec-2col-pos2") and (loopNum == 2) ) or ( (pattern == "sec-2col-pos3") and (loopNum == 3) )   %}
 
         {% if cont.secTitle|length %}
             <h2>{{ cont.secTitle | safe }}</h2>
         {% endif %}
 
         {% if (loop.index)%2 == 0 %}  {# loop.index(4)%2 = 0 EVEN   loop.index(5)%2 = 1 ODD #}
-
 
         <article>
             <figure>
@@ -38,8 +43,12 @@
                     <p>{{ cont.text | safe }}</p>
                 {% endif %}
                 {% if cont.CTAlabel|length %}
-                <div class="control">
-                    <div class="button is-primary slant js-modal-trigger" data-target="modal-js-example"><h4>{{ cont.CTAlabel }}</h4></div>
+                <div class="cta">
+                    <input class="form-modal" type="checkbox" id="form-modal"/>
+
+                    <label class="label-modal" for="form-modal">
+                        <h4 class="s2">{{ cont.CTAlabel }}</h4><h4 class="s1">X</h4>
+                    </label>
                 </div>
                 {% endif %}
             </div>

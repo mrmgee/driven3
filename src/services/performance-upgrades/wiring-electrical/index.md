@@ -24,16 +24,16 @@ sectionCont:
   - pattern: sec-2col-pos1
     title: Repair or Rewire?
     subtitle: Tuned to perform
-    image: ./src/_images/fuses_wiring01.jpg
-    altText: fuses wiring
+    image: ./src/_images/wiring01.jpg
+    altText: wires
     position: 0px 0px
     text: We will troubleshoot and diagnose any electrical issue. A complete rewire is sometimes the best solution. The wiring in most classic cars is old, brittle and beyond its usable life - a complete re-wire takes care of all of the issues at once - instead of circuits failing one at a time and leaving you stranded, tow, repair - then do it all again.
     CTAlabel: Let's Get Started >
     slidelayout: 1
   - pattern: sec-tips
     title: Tight and Neat
-    image: ./src/_images/66_Chevelle03.jpg
-    altText: 66 Chevelle engine
+    image: ./src/_images/fuses_wiring01.jpg
+    altText: fuses wiring
     bkgImage: ./src/_images/70_Mustang01_green_lights.jpg
     bkgImgAlt: 70 Mustang green lights
     bkgImgPos: m-top-65

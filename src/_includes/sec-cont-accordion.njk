@@ -1,0 +1,74 @@
+{% block secContAccordion %}
+
+<style>
+.bkg-grad2 {
+  background-image: linear-gradient(180deg, #dadada 40%, #636363);
+}
+.accordion .a-container.active .a-panel {
+  padding: 2rem;
+}
+</style>
+
+{% for cont in sectionCont %}
+
+    {% if cont.pattern == "sec-cont-accordion" %}
+
+
+<!-- START accordion -->
+<section class="cont-accordion">
+    <div class="container">
+{% if cont.title|length %}
+        <h2>{{ cont.title }}</h2>
+{% endif %}
+{% if cont.text|length %}
+        <h3>{{ cont.text | safe }}</h3>
+{% endif %}
+    </div>
+    <div class="container">
+
+{% for item in cont.qaCont %}
+
+    {% set imgPostP = item.ansImg %}
+    {% set imgPostAlt = item.ansImgAlt %}
+    {% set imgSizesResp = "(min-width: 1420px) 660px, 
+    (min-width: 1220px) 564px, 
+    (min-width: 1040px) 468px, 
+    (min-width: 780px) 50vw, 
+    calc(100vw - 24px)"
+    %}
+    {% set imgPos = "cont-img" %}
+
+        <div class="tab">
+        <input type="radio" name="accordionCont" id="cont-rd{{loop.index}}" {% if loop.index == 1 %}checked{% endif %}>
+        <label for="cont-rd{{loop.index}}" class="tab-label">
+            <span>{{ loop.index }}</span>
+            {% if item.que|length %}
+            <p>{{ item.que | safe }}</p>
+            {% endif %}
+        </label>
+            <div class="tab-content">
+                <figure>
+            {% if imgPostP | length %}
+                {%- image ""+imgPostP, ""+imgPostAlt, ""+imgPos, ""+imgSizesResp -%}
+            {% endif %}
+                </figure>
+                <div class="column">
+                    {%- if item.ansText|length -%}
+                    {{ item.ansText | safe }}
+                    {%- endif -%}
+                </div>
+            </div>
+        </div>
+
+{% endfor %}
+
+  </div>
+</section>
+<!-- END accordion -->
+
+
+    {% endif %}
+
+{% endfor %}
+
+{% endblock secContAccordion %}
