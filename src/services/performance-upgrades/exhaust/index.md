@@ -59,9 +59,10 @@ sectionCont:
       - title: $800 - $2000
         subtitle: kit / materials
         icon: i-repair.svg
-      - title: $1500 - $3000
+      - title: $1500 - $3000 up to<br> $5,000 - $6,000+ 
         subtitle: installation / welding
         icon: i-mechanic.svg
+    CTAlabel: I’m ready to make some noise >
     slidelayout: 1
   - pattern: sec-faq-accordion
     title: Exhaust FAQs
@@ -71,12 +72,12 @@ sectionCont:
     position: 
     text: 
     qaCont:
-      - que: Q1 Exhaust
-        ans: A1 Exhaust answer text here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae dolor id enim iaculis bibendum. Fusce ut pellentesque erat.
-      - que: Q2 Exhaust
-        ans: A2 Exhaust answer text here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae dolor id enim iaculis bibendum. Fusce ut pellentesque erat.
-      - que: Q3 Exhaust
-        ans: A3 Exhaust answer text here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae dolor id enim iaculis bibendum. Fusce ut pellentesque erat.
+      - que: My exhaust is always hitting things - can you help?
+        ans: Totally! Most stock exhaust or kits are not great - we can either modify your current set-up, or do a full custom system that gets your pipes high and tight. 
+      - que: Do you guys do cutouts?
+        ans: We’re happy to put electric cutouts in to let you open up that beast. We will suggest a high quality set that won’t let you down like the cheap knock-off’s for sale online.
+      - que: Why is custom exhaust so expensive?
+        ans: We use only high quality stainless tubing and bends for a custom system. It can take 50-60 hours to build and weld this type of system - but it’s the best you can get.
     slidelayout: 1
 ---
 
