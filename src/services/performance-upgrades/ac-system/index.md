@@ -54,14 +54,15 @@ sectionCont:
     image:
     altText:
     position:
-    text: Suspension Upgrades cost paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae dolor id enim iaculis bibendum. Fusce ut pellentesque erat. Nunc vitae viverra massa. Duis placerat a augue in eleifend. Pellentesque ut neque ex. Ut non nisi ultrices, tincidunt nunc vitae, tincidunt orci. Donec cursus sagittis felis sed tempus. Ut et viverra arcu.
+    text: For a complete system from Restomod Air or Vintage air, you can expect to pay around $2,000 - $2,500 in parts depending on details. Install will cost $1,500 - $2,500.
     figures:
-      - title: $1,100 - $1,855
+      - title: $2,000 - $2,500
         subtitle: for the parts
         icon: i-repair.svg
-      - title: $2,100 - $2,655
+      - title: $1,500 - $2,500
         subtitle: for installation and calibration
         icon: i-mechanic.svg
+    CTAlabel: Help me cool down >
     slidelayout: 1
   - pattern: sec-faq-accordion
     title: AC System Installations FAQs
@@ -71,12 +72,12 @@ sectionCont:
     position: 
     text: 
     qaCont:
-      - que: Q1 AC System Installations
-        ans: A1 AC System Installations answer text here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae dolor id enim iaculis bibendum. Fusce ut pellentesque erat.
-      - que: Q2 AC System Installations
-        ans: A2 AC System Installations answer text here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae dolor id enim iaculis bibendum. Fusce ut pellentesque erat.
-      - que: Q3 AC System Installations
-        ans: A3 AC System Installations answer text here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae dolor id enim iaculis bibendum. Fusce ut pellentesque erat.
+      - que: My car from the 60’s already has air - can you make it work?
+        ans: In some cases, yes - In most cases even if we do a conversion to modern refrigerant the results are underwhelming. You may spend almost as much as a new retrofit system that will work better.
+      - que: Can you put AC in any vehicle?
+        ans: With very few exceptions - we can get a system in 99% of vehicles.
+      - que: My AC stopped working - can you fix it.
+        ans: We’re happy to diagnose the issue and get you driving cool again.
     slidelayout: 1
 ---
 
