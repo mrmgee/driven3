@@ -15,20 +15,20 @@ collectionName: brakeUpgrades
 isHome: 1
 sectionCont:
   - pattern: sec-2col-pos1
-    title: Upgrade to dependable, modern brakes
+    title: Ditch the Drums
     subtitle: 
     image: ./src/_images/67_Nova_wilwood_brakes3.jpg
     altText: 67 Nova Wilwood brakes
     position: 
-    text: Utilizing modern brake technology, you can stop your classic car in a shorter distance and with less effort, giving you peace of mind on the road. Plus, a brake upgrade can improve your car's handling and performance, making it more fun to drive.
+    text: A front disc brake upgrade is one of the best things you can do to most classic cars. Remember, when these cars were built - the playing field was a bit more even with most cars having drum brakes. Now you have to worry about the soccer mom in her lexus who can outbrake your car by 100’s of feet.
     slidelayout:
   - pattern: sec-2col-pos1
     title: Easier, more reliable braking
     subtitle: 
-    image: ./src/_images/70_Mustang04_engine.jpg
+    image: ./src/_images/67_Nova_silver_wilwood_brake_cylinder.jpg
     altText: Wilwood braking system
     position: 
-    text: A modern braking system makes it easier to stop and improves handling. This can be especially helpful if you have a classic car with a lot of horsepower. New brakes are more effective than their old-school counterparts, so you can stop your car in a shorter distance. This can be a lifesaver in an emergency situation.
+    text: More than just disc conversions - we can do power brakes as well. Even “Hydroboost brakes” that use power steering pressure for assist. We can match the best components for your needs and get your ride stopping on a dime.
     CTAlabel: Let's Get Started >
     slidelayout: 1
   - pattern: sec-tips
@@ -70,6 +70,7 @@ sectionCont:
       - title: $1200 - $2000
         subtitle: for labor/installation
         icon: i-mechanic.svg
+    CTAlabel: Put on the brakes today >
     slidelayout: 1
   - pattern: sec-faq-accordion
     title: Wiring and Elecrical FAQs
@@ -79,12 +80,12 @@ sectionCont:
     position: 
     text: 
     qaCont:
-      - que: Q1 Brake Upgrades
-        ans: A1 Brake Upgrades answer text here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae dolor id enim iaculis bibendum. Fusce ut pellentesque erat.
-      - que: Q2 Brake Upgrades
-        ans: A2 Brake Upgrades answer text here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae dolor id enim iaculis bibendum. Fusce ut pellentesque erat.
-      - que: Q3 Brake Upgrades
-        ans: A3 Brake Upgrades answer text here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae dolor id enim iaculis bibendum. Fusce ut pellentesque erat.
+      - que: Do you work on drum brakes as well?
+        ans: Totally! A well set up drum brake system can work just fine - especially just in the rear. We can service drum brakes on most any vehicle.
+      - que: Do I need 4 wheel disc brakes?
+        ans: Typically, a front disc conversion is all you need for most cars - rear brakes only handle about 10-20% of your cars braking - so in most cases a front upgrade is fine.
+      - que: I have a big cam, and my power brakes are horrible. Can you help?
+        ans: Totally! Big cam engines are perfect for hydroboost set-ups, We can also do an electric vacuum pump as well to help at idle. 
     slidelayout: 1
 ---
 

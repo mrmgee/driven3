@@ -29,11 +29,13 @@ title: Service Detail
 {% endblock secContAccordion %}
 
 
-{% if bodyName == "custom-high-end-paint" %}
+
+{% if ( bodyName == "custom-high-end-paint" ) or ( bodyName == "restoration" )  %}
 {% block secCostAlt %}
     {% include "sec-cost-alt.njk" %}
 {% endblock secCostAlt %}
 {% endif %}
+
 
 
 

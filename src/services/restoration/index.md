@@ -58,21 +58,14 @@ sectionCont:
     position: 0px 0px
     text: We can use our network to find a suitable donor and get it here to start the process. Our list of industry friends is long and we can find even obscure cars that are looking for your love and attention. Let us realize your dream today.
     slidelayout: 1
-  - pattern: sec-cost
-    title: What's the cost?
+  - pattern: sec-cost-alt
+    title: What does it all cost?
     subtitle: 
     image: ./src/_images/Exhaust_custom_stainless.jpg
     altText: 74 Scout three quarters front left
     position: 0px 0px
-    text: Restoration cost paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae dolor id enim iaculis bibendum. Fusce ut pellentesque erat. Nunc vitae viverra massa. Duis placerat a augue in eleifend. Pellentesque ut neque ex. Ut non nisi ultrices, tincidunt nunc vitae, tincidunt orci. Donec cursus sagittis felis sed tempus. Ut et viverra arcu.
-    figures:
-      - title: $1,100 - $1,855
-        subtitle: for the parts
-        icon: i-repair.svg
-      - title: $2,100 - $2,655
-        subtitle: for installation and calibration
-        icon: i-mechanic.svg
-    slidelayout: 1
+    text: <p>That’s a very loaded question! On the lower end our paint service requires at a minimum exterior disassembly with all trim and glass removed and stripping to bare metal. On the higher end and rotisserie restoration to concours level or a magazine feature worthy custom Resto-Mod and anything in-between is in our wheelhouse.  Price really comes down to level of fit and finish, modifications and parts we use.</p><p>There is no single price - but see the table below that details the basics for 3 levels of build level based on labor and components / modifications. There is crossover from one extreme to the other and every job is different - but you can use this as a guide to see how low - or far we can go.</p>
+    slidelayout: 
   - pattern: sec-faq-accordion
     title: Restoration FAQs
     subtitle: 

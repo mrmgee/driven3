@@ -15,46 +15,38 @@ collectionName: bodyPaintMetalwork
 isHome: 1
 sectionCont:
   - pattern: sec-2col-pos1
-    title: Upgrade to dependable, modern brakes
+    title: Nobody wants to meet by accident
     subtitle: 
     image: ./src/_images/67_Nova_wilwood_brakes3.jpg
     altText: 67 Nova Wilwood brakes
     position: 
-    text: Utilizing modern brake technology, you can stop your classic car in a shorter distance and with less effort, giving you peace of mind on the road. Plus, a brake upgrade can improve your car's handling and performance, making it more fun to drive.
+    text: If your pride and joy was wrecked in a fender bender or worse - you can’t trust any collision shop to get it back to 100%. That’s where we come in. You won’t see a bunch of Honda’s and Minivans in our shop - all we do is classic cars - so you can trust us to get it right.
+    CTAlabel: Let’s get you fixed up!
     slidelayout:
   - pattern: sec-2col-pos1
-    title: Easier, more reliable braking
+    title: We work with insurance companies
     subtitle: 
     image: ./src/_images/70_Mustang04_engine.jpg
     altText: Wilwood braking system
     position: 
-    text: A modern braking system makes it easier to stop and improves handling. This can be especially helpful if you have a classic car with a lot of horsepower. New brakes are more effective than their old-school counterparts, so you can stop your car in a shorter distance. This can be a lifesaver in an emergency situation.
-    CTAlabel: Let's Get Started >
+    text: You need a shop that is on your side to make sure your classic / muscle car or specialty car is repaired right. We work with your insurance adjuster to make sure that there is enough to cover getting your car back to where it was BEFORE the accident - or even better. Don’t just take their estimate - there can be deeper damage and more work involved than the initial estimate. We’ll handle it for you.
     slidelayout: 1
   - pattern: sec-tips
-    title: Components Matter
+    title: Tear it down and look for more
     image: ./src/_images/67_GTO_wheel_brakes.jpg
     altText: 67 GTO red wheel brakes detail
     bkgImage: ./src/_images/70_Mustang01_green_lights.jpg
     bkgImgAlt: 70 Mustang green lights
     bkgImgPos: m-top-65
-    text: We’ve seen it a bunch… Customer buys “no name” disc brake kit online and asks us to install it. Most of these kits use off the shelf parts from 20 year old cars and some brackets. They rarely fit right and can take 2x longer to install. We prefer to spec a good engineered component from a company like Wilwood Engineering, Brembo, Baer, etc. The kit was engineered for the car - and can generally be installed in half the time of some cobbled together “Kit”.  You save in the long run by saving on Labor hours - $400 saved on the cheap kit can end up costing you $800 in hours to install. You also get a superior product that adds resale to the car.
+    text: We’ll need to tear down the damaged area(s) to make sure the damage isn’t deeper than we - or the insurance estimator can see. We’ve seen it happen before and it’s a bummer. We’d rather get the estimate right then get surprises at the end.
     slidelayout:
   - pattern: sec-2col-pos2
-    title: Disc brake swaps require more than just the calipers and rotors
-    subtitle: Tuned to perform
-    image: ./src/_images/69_Custom_S_engine_cu.jpg
-    altText: 69 Custom S engine detail
-    position: 0px 0px
-    text: A braking system has many components. And when swapping to front (or 4 wheel) disc brakes we also need to change the lines, and most importantly the brake master cylinder. You can’t use a drum/drum master for a disc/drum set-up.
-    slidelayout: 1
-  - pattern: sec-2col-pos2
-    title: Pedal ratio is math that solves problems!
-    subtitle: Tuned to perform
-    image: ./src/_images/73_Scout_II_dash_cu.jpg
-    altText: 73 Scout II orange dash brakes detail
-    position: 0px 0px
-    text: Have to hammer those brakes to get the car to stop? Or is your pedal “Touchy” sending the car into a screech without much pressure. Pedal ratio may be the issue - we can get to the root of this issue and get you stopping safely.
+    title: Don’t get totaled
+    subtitle: 
+    image: ./src/_images/67_GTO_wheel_brakes.jpg
+    altText: Wilwood braking system
+    position: 
+    text: Hopefully you have an agreed value policy from a reputable specialty insurance company like Hagerty or Grundy that is high enough. A crash can cost more than you think - and the extra coverage isn’t that much in premium per year. Want an opinion on coverage - we can help you out.
     slidelayout: 1
   - pattern: sec-cost
     title: What's the cost?
@@ -79,12 +71,14 @@ sectionCont:
     position: 
     text: 
     qaCont:
-      - que: Q1 Brake Upgrades
-        ans: A1 Brake Upgrades answer text here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae dolor id enim iaculis bibendum. Fusce ut pellentesque erat.
-      - que: Q2 Brake Upgrades
-        ans: A2 Brake Upgrades answer text here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae dolor id enim iaculis bibendum. Fusce ut pellentesque erat.
-      - que: Q3 Brake Upgrades
-        ans: A3 Brake Upgrades answer text here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae dolor id enim iaculis bibendum. Fusce ut pellentesque erat.
+      - que: Do you charge for insurance estimates?
+        ans: Yes, a small fee of $250. Why? Because many people go from shop to shop looking for the highest estimate, get a check and cash it and never do the work. Proper insurance estimates take time and we need to be paid for that time. If we do the work - we apply the fee to the job.
+      - que: Can you just fix it for less, and give me the rest?
+        ans: Absolutely not.
+      - que: Can you inflate the estimate to be sure I get enough?
+        ans: That would be insurance fraud - and we won’t go there. What we will do is make sure our estimate is enough for us to make the repairs.
+      - que: My insurance company had my car Towed to a yard - can I get it to you now?
+        ans: Sometimes. We’ll do our best to make room and start the process depending on your insurer.
     slidelayout: 1
 ---
 

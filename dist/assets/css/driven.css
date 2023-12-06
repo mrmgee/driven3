@@ -273,7 +273,8 @@ li.subnav-wrap {
 .nav .cta, 
 footer .cta, 
 body.home section.hero .cta, 
-article .cta {
+article .cta, 
+section.services-cost .container .cta {
     align-items: center;
     display: flex;
 /*    margin-left: 4rem; */
@@ -282,7 +283,8 @@ article .cta {
     flex-shrink: 0;
     justify-content: center;
 }
-article .column .cta {
+article .column .cta, 
+section.services-cost .container .cta {
     margin-top: var(--space-s);
 }
 
