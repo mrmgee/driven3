@@ -1084,9 +1084,16 @@ section.half-split {
     font-weight: 500;
     border-bottom: 2px solid var(--primary);
 } 
-.half-split article p {
+.half-split article p, 
+.half-split li {
     font-size: var(--step-0);
     line-height: 2rem;
+}
+.half-split ul {
+    list-style: disc;
+}
+.half-split li {
+    margin-bottom: var(--space-xs);
 }
 
 
