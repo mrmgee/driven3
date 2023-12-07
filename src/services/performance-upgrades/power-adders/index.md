@@ -15,7 +15,7 @@ collectionName: powerAdders
 isHome: 1
 sectionCont:
   - pattern: sec-2col-pos1
-    title: It’s simple. More Air + More fuel = More power.
+    title: It’s simple. More Air + More fuel =<br>More power.
     subtitle: 
     image: ./src/_images/F100_green_electric_steering.jpg
     altText: Chevy engine with supercharger
@@ -23,12 +23,12 @@ sectionCont:
     text: Superchargers, Blowers, Turbos… we can handle it and work with many manufacturers of these components to add to your build. If your bottom end is up to it - let’s bolt on some power!
     slidelayout:
   - pattern: sec-2col-pos1
-    title: Can your engine handle it.
+    title: Can your engine handle it?
     subtitle: 
     image: ./src/_images/F100_green_electric_steering.jpg
     altText: DCE electric power-assisted steering system (EPAS)
     position: 
-    text: A stock LS3 or Coyote - or most modern engines are set up form the factory for boost - but there are limits.
+    text: A stock LS3 or Coyote - or most modern engines are set up form the factory for boost - but there are limits. Before you add horses to the barn, we need to make sure the barn can fit them. If your bottom end is not up to snuff on your engine, adding boost may cause it to blow up.
     CTAlabel: Ready to upgrade >
     slidelayout: 1
   - pattern: sec-tips
@@ -40,21 +40,14 @@ sectionCont:
     bkgImgPos: m-top-65
     text: We love superchargers here - the power is linear, with no lag from turbo spool-up. But the turbo vs supercharger question really lies in the engine application - and the goals for the build. Looking for streetable boost? In most cases a supercharger (or blower) fits the bill. Looking for power on the top end? A turbo might be the way to go. There is no right or wrong answer.
     slidelayout:
-  - pattern: sec-cost
-    title: What's the cost?
+  - pattern: sec-2col-pos2
+    title: Give it the laughing gas
     subtitle: 
-    image:
-    altText:
-    position:
-    text: Power Adders cost paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae dolor id enim iaculis bibendum. Fusce ut pellentesque erat. Nunc vitae viverra massa. Duis placerat a augue in eleifend. Pellentesque ut neque ex. Ut non nisi ultrices, tincidunt nunc vitae, tincidunt orci. Donec cursus sagittis felis sed tempus. Ut et viverra arcu.
-    figures:
-      - title: $1,100 - $1,855
-        subtitle: for the parts
-        icon: i-repair.svg
-      - title: $2,100 - $2,655
-        subtitle: for installation and calibration
-        icon: i-mechanic.svg
-    slidelayout: 1
+    image: ./src/_images/F100_green_electric_steering.jpg
+    altText: Chevy engine with supercharger
+    position: 
+    text: A simple power adder is putting on a nitrous shot (NOS or “Laughing gas”). This can be added to most set-ups without an insane amount of work. Again - adding power, means that the lower end components need to be able to handle it - or else… BOOM!
+    slidelayout:
   - pattern: sec-faq-accordion
     title: SPower Adders FAQs
     subtitle: 
@@ -63,12 +56,12 @@ sectionCont:
     position: 
     text: 
     qaCont:
-      - que: Q1 Power Adders
-        ans: A1 Power Adders answer text here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae dolor id enim iaculis bibendum. Fusce ut pellentesque erat.
-      - que: Q2 Power Adders
-        ans: A2 Power Adders answer text here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae dolor id enim iaculis bibendum. Fusce ut pellentesque erat.
-      - que: Q3 Power Adders
-        ans: A3 Power Adders answer text here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae dolor id enim iaculis bibendum. Fusce ut pellentesque erat.
+      - que: Will I need my car tuned if I add a supercharger or turbo?
+        ans: Most definitely! You have to take into account that adding more air, requires more fuel - and all at the right time. So tuning is absolutely necessary.
+      - que: Can you add turbos to my carbureted car?
+        ans: It can be done… but requires a carb or throttle body capable of blow through.
+      - que: How much horsepower can we add?
+        ans: There’s no hard or fast rule here - it is different for every engine combination.
     slidelayout: 1
 ---
 

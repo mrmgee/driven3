@@ -14,15 +14,15 @@ featuredImagePos: "margin-top: -48%;"
 isHome: 1
 sectionCont:
   - pattern: sec-2col-pos1
-    title: One of the most important upgrades
+    title: Ditch the multiple v belt set-up and dress up your accessory drive
     subtitle: No limits offroad capability
     image: ./src/_images/84_Camaro_Z28_engine_electrical.jpg
     altText: CCS transmission swap
     position: 0px -70px
-    text: Transmission swap can enhance your car’s speed and the way it handles engine power. It will also give you more control and improve your overall riding experience. Changing the transmission may be the easiest way to completely transform your driving experience from ho-hum into a gear-shifting rocket you can't wait to take cruising.
+    text: Serpentine belt conversions not only look great, but they simplify the belt system on your hot rod. A properly engineered serpentine conversion kit will come with all of the components, pulleys and such for a clean install.
     slidelayout:
   - pattern: sec-2col-pos1
-    title: Stick vs Automatic
+    title: Serpentine Conversions sec 2
     subtitle: 
     image: ./src/_images/68_orange_steering_shifter01.jpg
     altText: 68 Scout orange steering wheel and shifter
