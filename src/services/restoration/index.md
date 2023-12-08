@@ -26,10 +26,10 @@ sectionCont:
     CTAlabel: Let’s get my restoration started >
     slidelayout:
   - pattern: sec-2col-pos1
-    title: Our Process starts with a complete teardown and catalog.
+    title: Our Process starts with a complete teardown and catalog
     subtitle: Tuned to perform
-    image: ./src/projects/69-barracuda-formula-s/69-cuda-5.jpg
-    altText: ’69 Barracuda Formula S three quarters front left
+    image: ./src/_images/68_Valiant_parts.jpg
+    altText: 68 Valiant parts
     position: 
     text: The first thing we do is completely disassemble the car. Every nut, bolt, piece of glass, wires, piece of trim is removed, cataloged and marked. Along the way we take notes for broken bolts, missing parts etc. From here we start a list of what we will need to complete your job in detail. Once the car is back from the media blaster - We will assess body damage and metalwork required - and which panels will be replaced or repaired.
     slidelayout: 1
@@ -45,8 +45,8 @@ sectionCont:
   - pattern: sec-2col-pos2
     title: Can you handle it all from paint to interior and small finish work?
     subtitle: Tuned to perform
-    image: ./src/_images/83_Mercedes_Benz_E300_TD_wagon_silver_carb.jpg
-    altText: 83 Mercedes Benz E300 TD wagon silver carb
+    image: ./src/_images/66_Chevelle_wiring_shop.jpg
+    altText: 66 Chevelle silver wiring shop
     position: 0px 0px
     text: We do all metalwork, body and paint work in house - as well as all mechanical and fabrication work. We send out our engine machine work, some interior work and other specialties like driveshaft balancing to local vendors we know and trust. In short - you won’t have to drag your car from shop to shop - we’ll make it all seamless to you.
     slidelayout: 1

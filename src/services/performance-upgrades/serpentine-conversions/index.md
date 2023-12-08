@@ -8,24 +8,24 @@ performanceUpgradesItems:
   tag: performanceUpgrades
   order: 12
 description: Driven Garage nothern California restomod auto customization and repair shop
-featuredImage: ./src/_images/68_orange_steering_shifter01.jpg
-featuredImageAlt: "68 Scout orange steering wheel and shifter"
+featuredImage: ./src/_images/engine_serpentine.jpg
+featuredImageAlt: "engine serpentine"
 featuredImagePos: "margin-top: -48%;"
 isHome: 1
 sectionCont:
   - pattern: sec-2col-pos1
     title: Ditch the multiple v belt set-up and dress up your accessory drive
     subtitle: No limits offroad capability
-    image: ./src/_images/84_Camaro_Z28_engine_electrical.jpg
-    altText: CCS transmission swap
+    image: ./src/_images/engine_serpentine.jpg
+    altText: engine serpentine
     position: 0px -70px
     text: Serpentine belt conversions not only look great, but they simplify the belt system on your hot rod. A properly engineered serpentine conversion kit will come with all of the components, pulleys and such for a clean install.
     slidelayout:
   - pattern: sec-2col-pos1
     title: Serpentine Conversions sec 2
     subtitle: 
-    image: ./src/_images/68_orange_steering_shifter01.jpg
-    altText: 68 Scout orange steering wheel and shifter
+    image: ./src/_images/engine_serpentine.jpg
+    altText: engine serpentine
     position: 0px 0px
     text: Whether you’re looking for a high-performance experience behind the wheel or are just looking to make you commute easier, we’ve got you covered. Take control with a manual gearbox to precisely put your engine’s power to work. A modern automatic transmission in your classic will make quick runs out for coffee or driving to work more comfortable. We won’t judge, just give you the best setup to match your driving style.
     CTAlabel: Let's Get Started >

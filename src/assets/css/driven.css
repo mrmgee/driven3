@@ -1769,7 +1769,7 @@ section.nav-links .tab-nav ul {
 section.nav-links .tab-nav ul li a {
     display: block;
     margin: 0 var(--space-xs);
-    padding: var(--space-2xs) var(--space-xs);
+    padding: var(--space-3xs) var(--space-2xs);
     background-color: #e4e4e4; /* rgb(228 228 228); */
     transform: skew(-24deg)!important;
     color: #363637;
