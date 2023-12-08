@@ -1,6 +1,6 @@
 ---
 layout: home.njk
-title: Home v1-1-1
+title: Home v3-3-1
 bodyName: home
 featProjects: 69BarracudaFormulaS
 featProjectsUrl: "/projects/69-barracuda-formula-s/"
