@@ -21,7 +21,7 @@ heroSlides:
     subtitle: Classic Period-correct restoration
     image: 69-cuda-4.jpg
     altText: ’69 Barracuda Formula S three quarters rear left
-    position: 
+    position: m-top-10
     text: <ul><li>Resprayed in original A4 silver</li><li>Original 340 engine</li><li>Original 4-speed transmission w/Hurst shifter</li><li>Original 8 ¾” Sure-Grip rear end</li><li>Every nut and bolt on this car was touched</li><li>Period-correct restoration using NOS parts wherever possible</li><li>High-quality aftermarket parts when needed</li></ul>
     slidelayout: 1
   - title: 

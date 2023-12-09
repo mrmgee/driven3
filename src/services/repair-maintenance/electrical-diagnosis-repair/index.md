@@ -17,16 +17,16 @@ sectionCont:
   - pattern: sec-2col-pos1
     title: Sec 1 Electrical Diagnosis
     subtitle: 
-    image: ./src/_images/89_Grand_Wagoneer-LS-side-top.jpg
-    altText: 89 Grand Wagoneer LS side top
+    image: ./src/_images/79_Trans_Am_Firebird_tech_wiring.jpg
+    altText: 79 Trans Am Firebird tech wiring
     position: 
     text: Supercharge Your Vehicle with a Chevy LS Crate Engine Swap. This beast is no joke when it comes to power. We're talking up to a mind-blowing 525 horsepower and 485 ft-lbs of torque. Say goodbye to sluggish starts and hello to lightning-fast acceleration!
     slidelayout:
   - pattern: sec-2col-pos1
     title: Sec 2 Electrical Diagnosis
     subtitle: Tuned to perform
-    image: ./src/_images/engine_swap.jpg
-    altText: Engine swap
+    image: ./src/_images/89_Grand_Wagoneer-LS-side-top.jpg
+    altText: 89 Grand Wagoneer LS side top
     position: 
     text: If your original engine is shot or you’d like to get more power and performance. we’ll work with you revitalize your classic ride.
     CTAlabel: Let's Go >

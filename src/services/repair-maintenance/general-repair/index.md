@@ -8,8 +8,8 @@ performanceUpgradesItems:
   tag: repairMaintenance
   order: 2
 description: Driven Garage nothern California restomod auto customization and repair shop
-featuredImage: ./src/_images/65_Mustang_quick_service.jpg
-featuredImageAlt: "65 Mustang quick service"
+featuredImage: ./src/_images/55_Chevy_Belair_tech_under_hood.jpg
+featuredImageAlt: "55 Chevy Belair tech under hood"
 featuredImagePos: "margin-top: -48%;"
 collectionName: engineSwaps
 isHome: 1
@@ -25,8 +25,8 @@ sectionCont:
   - pattern: sec-2col-pos1
     title: We speak carburetors, timing, and the like.
     subtitle: Tuned to perform
-    image: ./src/_images/65_Mustang_quick_service.jpg
-    altText: 65 Mustang quick service
+    image: ./src/_images/55_Chevy_Belair_tech_under_hood.jpg
+    altText: 55 Chevy Belair tech under hood
     position: 
     text: Most shops will shy away from your classic - but we can get you back up and running in no time with the tools, expertise and facility to tackle any issue with your classic.
     CTAlabel: Let's Go >

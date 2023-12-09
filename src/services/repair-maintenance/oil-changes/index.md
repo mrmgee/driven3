@@ -33,8 +33,8 @@ sectionCont:
     slidelayout: 1
   - pattern: sec-tips
     title: New customer inspection
-    image: ./src/_images/66_Chevelle03.jpg
-    altText: 66 Chevelle engine
+    image: ./src/_images/70_Dodge_Dart_tech_inspect.jpg
+    altText: 70 Dodge Dart tech inspect
     bkgImage: ./src/_images/70_Mustang01_green_lights.jpg
     bkgImgAlt: 70 Mustang green lights
     bkgImgPos: m-top-65
@@ -51,8 +51,8 @@ sectionCont:
   - pattern: sec-2col-pos2
     title: Ignition Tune Ups
     subtitle: Tuned to perform
-    image: ./src/_images/84_Camaro_Z28_engine_electrical.jpg
-    altText: 84 Camaro Z28 engine electrical
+    image: ./src/_images/70_Dodge_Dart_timing.jpg
+    altText: 70 Dodge Dart timing
     position: 0px 0px
     text: Points, electronic ignition, or super performance ignition systems are our everyday around here. We’re more than comfortable with this stuff and can take care of keeping your classic running smooth and efficient.
     slidelayout: 1

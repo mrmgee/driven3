@@ -45,7 +45,7 @@ sectionCont:
   - pattern: sec-2col-pos2
     title: Lighting Upgrades
     subtitle: Tuned to perform
-    image: ./src/_images/67_dart_vader_headlights.jpg
+    image: ./src/projects/67-dart-vader/67_dart_vader_front_rt_hills.jpg
     altText: 67 dart vader headlights
     position: 0px 0px
     text: Compared to modern cars, your classic car’s headlights leave you in the dark. LED replacement lamps offer farther-reaching light for safer nighttime driving. We can give you modern, improved lighting without compromising the classic vintage look.

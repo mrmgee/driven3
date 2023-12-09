@@ -25,8 +25,8 @@ sectionCont:
   - pattern: sec-2col-pos1
     title: Let us peek under the Hood
     subtitle: Tuned to perform
-    image: ./src/_images/65_Mustang_quick_service.jpg
-    altText: 65 Mustang quick service
+    image: ./src/_images/55_Chevy_Belair_tech_under_hood.jpg
+    altText: 55 Chevy Belair tech under hood
     position: 
     text: Let our certified techs perform a rigorous 40-point inspection to really dig into your car’s issues. Typically an inspection is the first step to diagnose problems, identify repairs, and make your vehicle safe. Even if you’ve had other shops look at your vehicle, it’s best for us to confirm the findings – and make sure nothing was missed.
     CTAlabel: Let's Go >

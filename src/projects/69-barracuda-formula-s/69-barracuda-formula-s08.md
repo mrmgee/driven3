@@ -1,10 +1,8 @@
 ---
-title: "’69 Barracuda Formula S item08 Title"
-author: "Driven photographer"
-image: "69-cuda-8.jpg"
-altTag: "’69 Barracuda Formula S detail sticker"
-rating: 4.5
-buyLink: "/"
+title: ’69 Barracuda Formula S item08
+author: Driven photographer
+image: 69-cuda-8.jpg
+altTag: ’69 Barracuda Formula S detail sticker
 ---
 
-I enjoyed this book very much, and so did my 3 year old.
+’69 Barracuda Formula S detail sticker

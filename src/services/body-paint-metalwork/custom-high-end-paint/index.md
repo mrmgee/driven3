@@ -7,9 +7,9 @@ performanceUpgradesItems:
   tag: bodyPaintMetalwork
   order: 1
 description: Driven Garage nothern California restomod auto customization and repair shop
-featuredImage: ./src/_images/67_dart_vader_cover.jpg
-featuredImageAlt: "67 Dart Vader Mopar Muscle cover
-featuredImagePos: "margin-top: -48%;"
+featuredImage: ./src/projects/67-dart-vader/67_dart_vader_cover.jpg
+featuredImageAlt: 67 Dart Vader Mopar Muscle cover
+featuredImagePos: m-top-5
 collectionName: bodyPaintMetalwork
 isHome: 1
 sectionCont:

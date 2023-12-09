@@ -3,7 +3,7 @@ layout: page.njk
 title: Cars
 bodyName: cars
 description: Driven Garage nothern California restomod auto customization and repair shop
-featuredImage: ./src/_images/67_dart_vader_graffiti.jpg
+featuredImage: ./src/projects/67-dart-vader/67_dart_vader_graffiti.jpg
 featuredImageAlt: "67 Dart Vader three quarters front left graffiti"
 featuredImagePos: "m-top-20"
 header: Cars we've had Our Hands on

@@ -16,7 +16,7 @@ sectionCont:
   - pattern: sec-2col-pos1
     title: Upgrade from one wheel peel
     subtitle: No limits offroad capability
-    image: ./src/_images/67_dart_vader_burnout.jpg
+    image: ./src/projects/67-dart-vader/67_dart_vader_burnout.jpg
     altText: 67 Dart Vader burnout - ours goes to 11
     position: 0px -70px
     text: A posi traction or limited slip carrier can be a great upgrade for your classic car. We can spec and install a new carrier, gears and bearings and get your burnouts turned up from a “1” to “11”.

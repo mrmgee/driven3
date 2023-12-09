@@ -43,6 +43,11 @@
     (min-width: 780px) calc(33.33vw - 16px), 
     calc(100vw - 24px)"
     %}
+    {% if post.data.featuredImagePos | length %}
+        {% set imgSlidePos = post.data.featuredImagePos %}
+    {% else %}
+        {% set imgSlidePos = "cont-img" %}
+    {% endif %}
 
     {% if (post.data.title !== title) %}
 

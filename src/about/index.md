@@ -3,7 +3,7 @@ layout: page.njk
 title: About
 bodyName: about
 description: Driven Garage nothern California restomod auto customization and repair shop
-featuredImage: ./src/_images/67_dart_vader_graffiti.jpg
+featuredImage: ./src/projects/67-dart-vader/67_dart_vader_graffiti.jpg
 featuredImageAlt: "67 Dart Vader three quarters front left graffiti"
 featuredImagePos: "m-top-20"
 header: Driven Garage was born out of a passion for classic cars.

@@ -1,10 +1,8 @@
 ---
-title: "’69 Barracuda Formula S item04 Title"
-author: "Driven photographer"
-image: "69-cuda-4.jpg"
-altTag: "’69 Barracuda Formula S three quarters rear left"
-rating: 4.5
-buyLink: "/"
+title: ’69 Barracuda Formula S item04
+author: Driven photographer
+image: 69-cuda-4.jpg
+altTag: ’69 Barracuda Formula S three quarters rear left
 ---
 
-I enjoyed this book very much, and so did my 3 year old.
+’69 Barracuda Formula S three quarters rear left

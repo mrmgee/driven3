@@ -52,8 +52,8 @@ sectionCont:
   - pattern: sec-2col-pos2
     title: Traffic sucks…. Or does it?
     subtitle: Traffic sucks…. Or does it?
-    image: ./src/_images/Griffin_radiator_fan.jpg
-    altText: Griffin electric radiator fan
+    image: ./src/_images/79_Trans_Am_Firebird_radiator_fan.jpg
+    altText: 79 Trans Am Firebird radiator fan
     position: 0px -70px
     text: Many classic and muscle car cooling problems only appear when stuck in traffic. It’s the worst… in line to get into the car show for 30 min and your ride overheats. The problem is that in traffic, there is little air moving by the radiator to cool the engine coolant down. Adding an electric fan with a proper controller / shroud usually kills this issue 110%.
     CTAlabel:

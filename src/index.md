@@ -8,7 +8,7 @@ sectionCont:
   - pattern: hero-home
     title: Passion <span>for</span> Classic Cars
     subtitle: Born from our
-    image: ./src/_images/67_dart_vader_graffiti.jpg
+    image: ./src/projects/67-dart-vader/67_dart_vader_graffiti.jpg
     altText: 67 Dart Vader three quarters front left graffiti
     link: /projects/67-dart-vader/
     position: m-top-15
