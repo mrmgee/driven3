@@ -42,16 +42,16 @@ sectionCont:
   - pattern: sec-2col-pos2
     title: We can hide it all.
     subtitle: Tuned to perform
-    image: ./src/_images/69_Custom_S_engine_cu.jpg
-    altText: 69 Custom S engine detail
+    image: ./src/_images/67_Nova_silver_amp_speaker.jpg
+    altText: 67 Nova silver amp speaker
     position: 0px 0px
     text: You don’t have to see all the components to get good sound - we’re experts at hiding stuff to keep your install clean and tidy - and not take away from the rest of your build.
     slidelayout: 1
   - pattern: sec-2col-pos2
     title: Virtus Nano Carbon
     subtitle: Tuned to perform
-    image: ./src/_images/73_Scout_II_dash_cu.jpg
-    altText: 73 Scout II orange dash brakes detail
+    image: ./src/_images/67_Nova_silver_rear_speaker.jpg
+    altText: 67 Nova silver rear speaker
     position: 0px 0px
     text: That’s quite a mouthful right? In layman's terms it means that these speakers a so thin, that we don’t have to hack holes in your car to install them - and they sound F’n amazing! No more scraping the speaker with the parking brake pedal. No holes in the lower cowls. Heck, in some cases we can surface mount them because they are so thin.
     CTAlabel: Let us build a system for you > 

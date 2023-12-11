@@ -33,8 +33,8 @@ sectionCont:
     slidelayout: 1
   - pattern: sec-tips
     title: We’re not here to gouge you
-    image: ./src/_images/66_Chevelle03.jpg
-    altText: 66 Chevelle engine
+    image: ./src/_images/67_Nova_silver03.jpg
+    altText: 67 Nova engine
     bkgImage: ./src/_images/70_Mustang01_green_lights.jpg
     bkgImgAlt: 70 Mustang green lights
     bkgImgPos: m-top-65

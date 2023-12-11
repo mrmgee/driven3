@@ -45,8 +45,8 @@ sectionCont:
   - pattern: sec-2col-pos2
     title: Can you handle it all from paint to interior and small finish work?
     subtitle: Tuned to perform
-    image: ./src/_images/66_Chevelle_wiring_shop.jpg
-    altText: 66 Chevelle silver wiring shop
+    image: ./src/_images/67_Nova_green_wiring_shop.jpg
+    altText: 67 Nova green wiring shop
     position: 0px 0px
     text: We do all metalwork, body and paint work in house - as well as all mechanical and fabrication work. We send out our engine machine work, some interior work and other specialties like driveshaft balancing to local vendors we know and trust. In short - you won’t have to drag your car from shop to shop - we’ll make it all seamless to you.
     slidelayout: 1

@@ -9,8 +9,8 @@ performanceUpgradesItems:
   order: 2
 description: Driven Garage nothern California restomod auto customization and repair shop
 featuredImage: ./src/_images/engine_swap.jpg
-featuredImageAlt: "Engine swap"
-featuredImagePos: "m-top-20"
+featuredImageAlt: Engine swap
+featuredImagePos: m-top-5
 collectionName: engineSwaps
 isHome: 1
 sectionCont:
@@ -33,8 +33,8 @@ sectionCont:
     slidelayout: 1
   - pattern: sec-tips
     title: It’s not just the engine silly!
-    image: ./src/_images/66_Chevelle03.jpg
-    altText: 66 Chevelle engine
+    image: ./src/_images/67_Nova_silver03.jpg
+    altText: 67 Nova engine
     bkgImage: ./src/_images/70_Mustang01_green_lights.jpg
     bkgImgAlt: 70 Mustang green lights
     bkgImgPos: m-top-65

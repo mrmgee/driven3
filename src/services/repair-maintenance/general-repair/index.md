@@ -33,7 +33,7 @@ sectionCont:
     slidelayout: 1
   - pattern: sec-tips
     title: Experience matters
-    image: ./src/_images/66_Chevelle03.jpg
+    image: ./src/_images/67_Nova_silver03.jpg
     altText: 66 Chevelle engine
     bkgImage: ./src/_images/70_Mustang01_green_lights.jpg
     bkgImgAlt: 70 Mustang green lights

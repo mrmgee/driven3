@@ -32,8 +32,8 @@ sectionCont:
     slidelayout: 1
   - pattern: sec-tips
     title: Matched components are important
-    image: ./src/_images/84_Camaro_Z28_engine_electrical.jpg
-    altText: CCS transmission swap
+    image: ./src/_images/rear_differential.jpg
+    altText: Rear differential
     bkgImage: ./src/_images/70_Mustang01_green_lights.jpg
     bkgImgAlt: 70 Mustang green lights
     bkgImgPos: m-top-65
@@ -51,8 +51,8 @@ sectionCont:
   - pattern: sec-2col-pos2
     title: Keep it looking original
     subtitle: 
-    image: ./src/_images/68_orange_steering_shifter01.jpg
-    altText: 68 Scout orange steering wheel and shifter
+    image: ./src/_images/67_Nova_steering_shifter.jpg
+    altText: 67 Nova steering wheel and shifter
     position: 0px 0px
     text: At Driven Garage we have done 4 speed swaps in restored cars and can keep the original shifter intact by modifying the shift gate and using a linkage that doesn’t require us to ditch the originality of your interior. This allows you to keep the original look but get the advantage of that extra gear.
     CTAlabel: I need more shifts >
