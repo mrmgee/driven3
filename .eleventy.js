@@ -206,6 +206,21 @@ module.exports = function (eleventyConfig) {
         })
     );
 
+
+    // Order project collection
+    eleventyConfig.addCollection("project", collection =>
+    collection
+    //   .getAll()
+        .getFilteredByTag("project")
+        .filter(function(item) {
+          return "projectItems" in item.data;
+        })
+        .sort((a, b) => {
+          return (a.data.projectItems.order || 0) - (b.data.projectItems.order || 0);
+        })
+    );
+
+
     // gallery and shortcode   
     eleventyConfig.addPairedNunjucksShortcode('gallery', galleryShortcode);
     eleventyConfig.addNunjucksAsyncShortcode('galleryImage', galleryImageShortcode);

@@ -81,6 +81,12 @@
 .m-top-5 {
     margin-top: -5%;
 }
+.m-top-7 {
+    margin-top: -7%;
+}
+.m-top-9 {
+    margin-top: -9%;
+}
 .m-top-10 {
     margin-top: -10%;
 }
@@ -1801,11 +1807,14 @@ section.nav-links .tab-nav ul li a > span i {
     font-style: normal;
   }
 
-
-
 /*
-* PROJECT DETAIL gallery-project Modal fullscreen caption nav SECTION
+* PROJECTS section
 */
+
+body.projects section.services .card a > figure {
+    height: 16rem;
+}
+/*  PROJECT DETAIL gallery-project Modal fullscreen caption nav SECTION  */
 .pswp__custom-caption {
     background: rgba(0, 0, 0, 0.6);
     font-size: 16px;

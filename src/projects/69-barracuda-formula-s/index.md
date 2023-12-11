@@ -3,6 +3,9 @@ layout: projects.njk
 title: ’69 Barracuda Formula S
 urlPath: projects/69-barracuda-formula-s/
 tags: ['project']
+projectItems:
+  tag: projectItems
+  order: 2
 description: Driven Garage nothern California restomod auto customization and repair shop
 featuredImage: ./src/projects/69-barracuda-formula-s/69-cuda-5.jpg
 featuredImageAlt: ’69 Barracuda Formula S three quarters front left
