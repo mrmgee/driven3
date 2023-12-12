@@ -29,9 +29,12 @@ title: Page layout
 
 
 {% if bodyName == 'about' %}
+    {% set loopNum = 1 %}
     {%set useInclude = 'sec-cont01.njk' %}
 {% elseif bodyName == 'how-we-work' %}
     {%set useInclude = 'sec-timeline.njk' %}
+{% elseif bodyName == 'work-request' %}
+    {%set useInclude = 'sec-photos.njk' %}
 {% endif %}
 
 {% include ('sec-photos.njk' if bodyName == 'cars' else useInclude) %}

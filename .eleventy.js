@@ -210,7 +210,6 @@ module.exports = function (eleventyConfig) {
     // Order project collection
     eleventyConfig.addCollection("project", collection =>
     collection
-    //   .getAll()
         .getFilteredByTag("project")
         .filter(function(item) {
           return "projectItems" in item.data;
