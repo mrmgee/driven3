@@ -7,17 +7,17 @@ performanceUpgradesItems:
   tag: carAudio
   order: 2
 description: Driven Garage nothern California restomod auto customization and repair shop
-featuredImage: ./src/_images/67_Nova_wilwood_brakes3.jpg
-featuredImageAlt: "67 Nova Wilwood brakes"
-featuredImagePos: "margin-top: -48%;"
+featuredImage: ./src/_images/DroneMobile_gps.jpg
+featuredImageAlt: DroneMobile gps
+featuredImagePos: 
 collectionName: brakeUpgrades
 isHome: 1
 sectionCont:
   - pattern: sec-2col-pos1
     title: Track your ride with GPS!
     subtitle: 
-    image: ./src/_images/67_Nova_wilwood_brakes3.jpg
-    altText: 67 Nova Wilwood brakes
+    image: ./src/_images/DroneMobile_gps.jpg
+    altText: DroneMobile gps
     position: 
     text: Imagine knowing your baby is safe and sound while you are at work, on vacation - Anywhere! We install CompuStar alarm systems with Drone GPS so that you can see from your phone where your car is, it can alert you if it moves, the battery is low and more. Pretty slick eh?
     CTAlabel: I’m sold - get me in >
@@ -25,15 +25,15 @@ sectionCont:
   - pattern: sec-2col-pos1
     title: Add keyless entry and trunk
     subtitle: 
-    image: ./src/_images/70_Mustang04_engine.jpg
-    altText: Wilwood braking system
+    image: ./src/_images/Klassic_Keyless_entry_system.jpg
+    altText: Klassic Keyless entry system
     position: 
     text: We can take it a step further and add keyless entry and trunk to your system so you don’t have to fumble with keys to open the car or risk scratching your door.
     slidelayout: 1
   - pattern: sec-tips
     title: Air tags don’t do squat.
-    image: ./src/_images/67_GTO_wheel_brakes.jpg
-    altText: 67 GTO red wheel brakes detail
+    image: ./src/_images/70_El-Camino_airtag.jpg
+    altText: 70 El Camino airtag
     bkgImage: ./src/_images/70_Mustang01_green_lights.jpg
     bkgImgAlt: 70 Mustang green lights
     bkgImgPos: m-top-65
@@ -42,8 +42,8 @@ sectionCont:
   - pattern: sec-2col-pos2
     title: Backup cameras - we got you.
     subtitle: Tuned to perform
-    image: ./src/_images/69_Custom_S_engine_cu.jpg
-    altText: 69 Custom S engine detail
+    image: ./src/_images/TYPE_S_license_plate_frame_backup_camera.jpg
+    altText: TYPE S license plate frame backup camera
     position: 0px 0px
     text: We can add a back up camera just like a modern car. Don’t risk scratching your ride when you put it to bed - we can hide the screen under the dash and put the camera on the license plate so you’ll barely know it’s there.
     slidelayout: 1

@@ -33,7 +33,7 @@
     "title": "’67 Camaro",
     "image": "./src/projects/67-camaro-forsyth/67camaro_forsyth-5857.jpg",
     "altText": "’67 Camaro three quarters front left",
-    "position": "p-top-50"
+    "position": ""
     },
     {
     "title": "’67 Cuda",
@@ -45,7 +45,7 @@
     "title": "’67 GTO",
     "image": "./src/_images/67_GTO_red.jpg",
     "altText": "’67 GTO red three quarters front right",
-    "position": "p-top-20"
+    "position": ""
     },
     {
     "title": "’67 Valiant",
@@ -69,7 +69,7 @@
     "title": "’70 El Camino",
     "image": "./src/_images/70_El-Camino_dk_blue.jpg",
     "altText": "’70 El Camino dark blue three quarters front left",
-    "position": "p-top-20"
+    "position": ""
     },
     {
     "title": "’70 Malibu",
@@ -81,7 +81,7 @@
     "title": "’74 Vega",
     "image": "./src/_images/74_Vega_green.jpg",
     "altText": "’74 Vega green three quarters front right",
-    "position": "p-top-20"
+    "position": ""
     },
     {
     "title": "’76 Chevelle",
@@ -108,9 +108,9 @@
     "position": ""
     },
     {
-    "title": "bill lovens",
-    "image": "./src/_images/bill_lovens.jpg",
-    "altText": "bill lovens cream three quarters front right",
+    "title": "Chevrolet",
+    "image": "./src/_images/Chevrolet_bl.jpg",
+    "altText": "Chevrolet cream three quarters front right",
     "position": ""
     },
     {

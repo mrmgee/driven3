@@ -7,8 +7,8 @@ performanceUpgradesItems:
   tag: carAudio
   order: 3
 description: Driven Garage nothern California restomod auto customization and repair shop
-featuredImage: ./src/_images/67_Nova_wilwood_brakes3.jpg
-featuredImageAlt: "67 Nova Wilwood brakes"
+featuredImage: ./src/_images/Compustar_security_remote_start.jpg
+featuredImageAlt: Compustar security remote start
 featuredImagePos: "margin-top: -48%;"
 collectionName: brakeUpgrades
 isHome: 1
@@ -16,8 +16,8 @@ sectionCont:
   - pattern: sec-2col-pos1
     title: Power windows in your classic car?
     subtitle: 
-    image: ./src/_images/67_Nova_wilwood_brakes3.jpg
-    altText: 67 Nova Wilwood brakes
+    image: ./src/_images/67_Pontiac_Firebird_window.jpg
+    altText: 67 Pontiac Firebird window
     position: 
     text: Done! It’s easier than you think to get the convenience of power windows in most cars. We buy kits from companies like NuRelics and Electric Life to make it happen. We don’t even need to put ugly switches in to make them work - rather install window crank switches that turn your existing crank handle into an up / down switch. Pretty neat!
     CTAlabel: I’m sold - get me in >
@@ -25,15 +25,15 @@ sectionCont:
   - pattern: sec-2col-pos1
     title: Remote start - really?
     subtitle: 
-    image: ./src/_images/70_Mustang04_engine.jpg
-    altText: Wilwood braking system
+    image: ./src/_images/Compustar_security_remote_start.jpg
+    altText: Compustar security remote start
     position: 
     text: If your car has a carburetor - it probably won’t work great - but for cars with Sniper systems, LS swaps and other modern engines - totally doable. Imagine having your car cool when you get in on a hot day - or warm on a cold day… super neat.
     slidelayout: 1
   - pattern: sec-tips
     title: Universal power window kits are for chumps!
-    image: ./src/_images/67_GTO_wheel_brakes.jpg
-    altText: 67 GTO red wheel brakes detail
+    image: ./src/_images/67_Pontiac_Firebird_window.jpg
+    altText: 67 Pontiac Firebird window
     bkgImage: ./src/_images/70_Mustang01_green_lights.jpg
     bkgImgAlt: 70 Mustang green lights
     bkgImgPos: m-top-65
@@ -42,8 +42,8 @@ sectionCont:
   - pattern: sec-2col-pos2
     title: Keyless entry
     subtitle: Tuned to perform
-    image: ./src/_images/69_Custom_S_engine_cu.jpg
-    altText: 69 Custom S engine detail
+    image: ./src/_images/Klassic_Keyless_entry_system.jpg
+    altText: Klassic Keyless entry system
     position: 0px 0px
     text: With some quality actuators and a bit of wiring we can get you opening your doors, and trunk remotely in no time. Sometimes it’s the little things that make a difference in the drive and not fumbling for the door key can be one of them.
     slidelayout: 1

@@ -43,8 +43,8 @@ sectionCont:
   - pattern: sec-2col-pos2
     title: Rack and pinion conversions
     subtitle: 
-    image: ./src/_images/67_Nova_front_suspension.jpg
-    altText: 67 Nova silver front suspension
+    image: ./src/_images/66_Chevelle_silver_front_suspension.jpg
+    altText: 66 Chevelle silver front suspension
     position: 
     text: Many cars have power rack conversions available as well. We’ve installed a bunch of these and they are great. We’ll source the best option for your car and get you steering easy. Sometimes for a rack conversion we’ll also need to do a  front suspension upgrade to make it happen - but either way, we can handle it.
     CTAlabel: Ready to upgrade >

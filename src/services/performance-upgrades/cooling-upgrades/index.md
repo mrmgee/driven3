@@ -43,9 +43,9 @@ sectionCont:
   - pattern: sec-2col-pos2
     title: Shroud it out loud
     subtitle: No limits offroad capability
-    image: ./src/_images/Race_Camaro_radiator.jpg
-    altText: CCS transmission swap
-    position: 0px -70px
+    image: ./src/_images/71_Chevelle_grey_radiator_fan_shroud.jpg
+    altText: 71 Chevelle grey radiator fan shroud
+    position: 
     text: Many times - we just need to make sure that your fan and shroud are working right. The fan shroud needs to be on to direct the air - and the fan needs to be within the shroud to function right. We have even seen electric fans wired wrong - so they don’t work right. Sometimes it can be the simple thing.
     CTAlabel:
     slidelayout:

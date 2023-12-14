@@ -87,6 +87,9 @@
 .m-top-9 {
     margin-top: -9%;
 }
+.m-top-12 {
+    margin-top: -12%;
+}
 .m-top-10 {
     margin-top: -10%;
 }
@@ -95,6 +98,12 @@
 }
 .m-top-20 {
     margin-top: -20%;
+}
+.m-top-23 {
+    margin-top: -23%;
+}
+.m-top-25 {
+    margin-top: -25%;
 }
 .m-top-30 {
     margin-top: -30%;
@@ -108,6 +117,9 @@
     }
     .m-top-20 {
         margin-top: -10%;
+    }
+    .m-top-23 {
+        margin-top: -23%;
     }
     .m-top-30 {
         margin-top: -10%;
@@ -170,6 +182,14 @@ section .container > *:last-child:not(header .cta) {
     margin-bottom: var(--space-m);
 }
 
+
+/* MOBILE */
+@media screen and (max-width: 768px) {
+    section:not(.hero) {
+        padding-right: var(--space-xs);
+        padding-left: var(--space-xs);
+    }
+}
 
 /* LARGER than MOBILE */
 @media screen and (min-width: 769px) {
@@ -327,7 +347,7 @@ body.home section.hero .cta h3 {
 
 input[id=form-modal]:not(:checked) ~ .label-modal h4, 
 .cta .label-modal h4 {
-    color: #fff;
+    /* color: #fff; */
     transform: skew(24deg);
 }
 
@@ -342,9 +362,11 @@ input[id=form-modal]:not(:checked) ~  .label-modal,
     font-size: var(--step--0);
     border-radius: 4px;
     transform: skew(-24deg);
-
 }
-
+.cta .label-modal:hover {
+    color: var(--charcoal);
+    background-color: var(--md-grad-grey);
+}
 
 /* Menu Icon */
 
@@ -738,13 +760,14 @@ footer {
   background-color: var(--charcoal);
   padding-bottom: var(--space-l);
 }
-.columns {
-  display: flex;
-  /* padding: var(--space-xs); */
-}
-.columns > * {
+
+footer .columns {
   /* flex-grow: 1; */
+  display: flex;
 }
+footer .columns > * {
+    flex-grow: 1;
+  }
 footer article {
   display: block;
   padding: var(--space-s);
@@ -780,7 +803,9 @@ footer article {
     width:800px;
     height:600px;
   }
-
+  .columns {
+    display: flex;
+  }
 }
 
 
@@ -799,7 +824,8 @@ body.restomod .slide-box,
 body.restomod .slide-box a > *, 
 section.projects .slide-box, 
 section.projects .slide-box a {
-    max-height: 36rem;
+    /* max-height: 36rem; */
+    max-height: 48rem;
 }
 body.home .slide-box, 
 body.restomod .slide-box, 
@@ -872,6 +898,10 @@ body.restomod section.hero header .cta-tag {
 }
 /* mobile HERO HOME content content */
 @media screen and (max-width: 768px) {
+    body.home header .container {
+        padding: var(--space-xs);
+
+    }
     body.home .slide-box figure {
         max-height: 16rem;
         overflow: hidden;
@@ -885,6 +915,10 @@ body.restomod section.hero header .cta-tag {
     }
     body.home .slide-overlay h3 {
         font-size: 1rem;
+    }
+    body.home section.hero header h4.cta-tag {
+        margin: 0;
+        font-size: var(--step-1);
     }
 }
 
@@ -1030,6 +1064,14 @@ section a.control {
     justify-content: flex-end;
     font-size: var(--step--1);
 }
+@media (max-width: 768px) {
+    .card-overlay .control, 
+    section a.control {
+        position: relative;
+        margin-top: var(--space-s);
+    }
+}
+
 .card-overlay .control {
     background-color: rgba(0,0,0,.33);
 }
@@ -1068,8 +1110,11 @@ section.services .card a > figure {
     .card .card-overlay h3,
     .card .halftone-overlay {
         transform: translate3d(0,30%,0);
-    
     }
+    body.home .gallery-projects .card .card-overlay {
+        transform: translate3d(0,90%,0);
+    }
+
     .halftone-overlay {
         display: none;
     }
@@ -1145,6 +1190,16 @@ section.process .columns p {
 }
 
 /* mobile PROCESS */
+@media screen and (max-width: 768px) {
+    section.process .columns {
+        display: flex;
+    }
+    section.process .columns h5 {
+        margin-left: var(--space-xs);
+    }
+}
+
+/* LARGER mobile PROCESS */
 @media screen and (min-width: 769px) {
     section.process article {
         display: flex;
@@ -1208,12 +1263,17 @@ section.projects .slide-box li::before {
 
 section.projects .grid {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: 1fr;
     gap: var(--space-m);
     max-width: var(--grid-max-width);
     margin: var(--space-m) auto 0 auto;
 }
 
+@media (min-width: 769px) {
+    section.projects .grid {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
 
 
 /* REVIEWS content */
@@ -1339,22 +1399,24 @@ span.hilite {
     transform: skew(-8deg);
     z-index: 4;
 }
-span.hilite i:before {
-    left: -4%;
-    transform: rotate(4deg) translatey(-0.5em);
-}
-span.hilite i:after {
-    left: 0;
-    transform: rotate(4deg) translatey(1em);
-}
-span.hilite i:after, span.hilite i:before {
-    display: inline-block;
-    position: absolute;
-    background: var(--primary);
-    content: "";
-    opacity: .5;
-    height: 70%;
-    width: 100%;
+@media screen and (min-width: 769px) {
+    span.hilite i:before {
+        left: -4%;
+        transform: rotate(4deg) translatey(-0.5em);
+    }
+    span.hilite i:after {
+        left: 0;
+        transform: rotate(4deg) translatey(1em);
+    }
+    span.hilite i:after, span.hilite i:before {
+        display: inline-block;
+        position: absolute;
+        background: var(--primary);
+        content: "";
+        opacity: .5;
+        height: 70%;
+        width: 100%;
+    }
 }
 span.hilite i:after, span.hilite i:before {
     z-index: -1;
@@ -1393,18 +1455,19 @@ section.pro-tips figure.bkg-img {
     section.pro-tips figure.bkg-img {
         display: none;
     }
-}
-
-
-@media screen and (max-width: 768px) {
     section.pro-tips {
         background-color: var(--charcoal);
     }
     .know-tips {
+        display: block;
         padding: 0 var(--space-2xs);
     }
+    .know-tips h3 {
+        font-size: var(--step-3);
+    }
     .know-tips span.hilite {
-        font-size: 0.8rem;
+        display: block;
+        font-size: var(--step--1);
     }
     section.pro-tips article {
         padding: var(--space-s);
@@ -1747,9 +1810,14 @@ section.carousel-cars figure figcaption {
 /* CARS grid photo wall */
 section.carousel-cars .grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 1fr;
     gap: var(--space-m);
     margin-top: var(--space-m);
+}
+@media screen and (min-width: 769px) {
+    section.carousel-cars .grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
 
 section.carousel-cars figure img {
@@ -1832,6 +1900,10 @@ section.nav-links .tab-nav ul li a > span i {
 body.projects section.services .card a > figure {
     height: 16rem;
 }
+body.projects section.services .card {
+    background-color: var(--charcoal);
+}
+
 /*  PROJECT DETAIL gallery-project Modal fullscreen caption nav SECTION  */
 .pswp__custom-caption {
     background: rgba(0, 0, 0, 0.6);

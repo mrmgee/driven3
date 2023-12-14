@@ -33,8 +33,8 @@ sectionCont:
     slidelayout: 1
   - pattern: sec-tips
     title: It’s not just the engine silly!
-    image: ./src/_images/67_Nova_silver03.jpg
-    altText: 67 Nova engine
+    image: ./src/_images/66_Chevelle_silver03.jpg
+    altText: 66 Chevelle silver engine
     bkgImage: ./src/_images/70_Mustang01_green_lights.jpg
     bkgImgAlt: 70 Mustang green lights
     bkgImgPos: m-top-65

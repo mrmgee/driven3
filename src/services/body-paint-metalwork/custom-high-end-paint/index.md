@@ -25,8 +25,8 @@ sectionCont:
   - pattern: sec-2col-pos1
     title: It starts with taking it apart
     subtitle: 
-    image: ./src/_images/67_Nova_silver_rotissie.jpg
-    altText: 67 Nova silver rotissie
+    image: ./src/_images/66_Chevelle_silver_rotissie.jpg
+    altText: 66 Chevelle silver rotissie
     position: 
     text: The first thing we do is completely disassemble the car. Every nut, bolt, piece of glass, wires, piece of trim is removed, cataloged and marked. Along the way we take notes for broken bolts, missing parts etc. From here we start a list of what we will need to complete your job in detail. Once the car is back from the media blaster - We will assess body damage and metalwork required - and which panels will be replaced or repaired.
     slidelayout: 1
@@ -66,8 +66,8 @@ sectionCont:
   - pattern: sec-2col-pos3
     title: Color and final finish
     subtitle: Tuned to perform
-    image: ./src/_images/67_Nova_front_lt.jpg
-    altText: 67 Nova silver front left
+    image: ./src/_images/66_Chevelle_silver_front_lt.jpg
+    altText: 66 Chevelle silver front left
     position: 0px 0px
     text: Most people think that we just sand a car real quick, prime it and spray on the paint - but in reality the actual painting process is the least labor intensive part of what we do. We do hundreds of hours of prep work to get here - and it’s under 20 hours of actual painting. After that the final finish process of wet / dry sanding and compound polish gets us that mirror finish.
     slidelayout: 1

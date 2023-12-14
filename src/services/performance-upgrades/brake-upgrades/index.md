@@ -25,8 +25,8 @@ sectionCont:
   - pattern: sec-2col-pos1
     title: Easier, more reliable braking
     subtitle: 
-    image: ./src/_images/67_Nova_silver_wilwood_brake_cylinder.jpg
-    altText: Wilwood braking system
+    image: ./src/_images/66_Chevelle_silver_wilwood_brake_cylinder.jpg
+    altText: 66 Chevelle silver Wilwood braking system
     position: 
     text: More than just disc conversions - we can do power brakes as well. Even “Hydroboost brakes” that use power steering pressure for assist. We can match the best components for your needs and get your ride stopping on a dime.
     CTAlabel: Let's Get Started >

@@ -51,9 +51,9 @@ sectionCont:
   - pattern: sec-2col-pos2
     title: Keep it looking original
     subtitle: 
-    image: ./src/_images/67_Nova_steering_shifter.jpg
-    altText: 67 Nova steering wheel and shifter
-    position: 0px 0px
+    image: ./src/_images/66_Chevelle_silver_steering_shifter.jpg
+    altText: 66 Chevelle silver steering wheel and shifter
+    position: 
     text: At Driven Garage we have done 4 speed swaps in restored cars and can keep the original shifter intact by modifying the shift gate and using a linkage that doesn’t require us to ditch the originality of your interior. This allows you to keep the original look but get the advantage of that extra gear.
     CTAlabel: I need more shifts >
     slidelayout: 1

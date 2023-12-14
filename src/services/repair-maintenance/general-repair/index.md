@@ -33,8 +33,8 @@ sectionCont:
     slidelayout: 1
   - pattern: sec-tips
     title: Experience matters
-    image: ./src/_images/67_Nova_silver03.jpg
-    altText: 66 Chevelle engine
+    image: ./src/_images/70_Dodge_Dart_timing.jpg
+    altText: 70 Dodge Dart timing
     bkgImage: ./src/_images/70_Mustang01_green_lights.jpg
     bkgImgAlt: 70 Mustang green lights
     bkgImgPos: m-top-65
@@ -43,8 +43,8 @@ sectionCont:
   - pattern: sec-2col-pos2
     title: Diagnosis is key
     subtitle: Tuned to perform
-    image: ./src/_images/69_Custom_S_engine_cu.jpg
-    altText: 69 Custom S engine detail
+    image: ./src/_images/64_Ford_Falcon_inspection_techs.jpg
+    altText: 64 Ford Falcon inspection techs
     position: 0px 0px
     text: Battery keeps going dead? Could be the alternator, regulator or another component drawing power. Running rough and stalling - could be the carburetor, a vacuum leak or other issue. Whatever the problem is it will require a bit of time to diagnose - then repair. We cant always tell you what it is from a work request, but if it takes only a short time to fix, you’ll be charged for just that. If it takes more time and parts we’ll let you know.
     slidelayout: 1
