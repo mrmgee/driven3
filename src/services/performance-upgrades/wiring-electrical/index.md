@@ -32,8 +32,8 @@ sectionCont:
     slidelayout: 1
   - pattern: sec-tips
     title: Tight and Neat
-    image: ./src/_images/fuses_wiring01.jpg
-    altText: fuses wiring
+    image: ./src/_images/Ron_Francis_Wiring_fusebox.jpg
+    altText: Ron Francis Wiring fusebox
     bkgImage: ./src/_images/70_Mustang01_green_lights.jpg
     bkgImgAlt: 70 Mustang green lights
     bkgImgPos: m-top-65

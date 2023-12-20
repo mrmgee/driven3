@@ -2,7 +2,15 @@
 
 {% for cont in sectionCont %}
     {% if cont.pattern == "sec-cost" %}
-<section class="services-cost">
+    
+        {% if cont.slidelayout == 2 %}
+            {% set costClass = "services-cost icon1" %}
+        {% else %}
+            {% set costClass = "services-cost" %}
+        {% endif %}
+
+    
+<section class="{{costClass}}">
     <div class="container">
         <header>
         {% if cont.title | length %}

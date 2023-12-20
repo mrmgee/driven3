@@ -26,8 +26,8 @@ sectionCont:
   - pattern: sec-2col-pos1
     title: More Efficient Power Curve
     subtitle: 
-    image: ./src/_images/Holley_Street_Fire_cdi.jpg
-    altText: Holley Street Fire cdi
+    image: ./src/_images/65_Mercury_Comet_engine.jpg
+    altText: 65 Mercury Comet engine
     position: 
     text: EFI isn’t a magic bullet that solves poor running conditions - but it can make your car easier to start both when cold and hot and increase overall reliability in most driving conditions. It won’t double your fuel mileage but will provide a more efficient burn. It won’t add horsepower - but will make your power curve better.
     CTAlabel: 

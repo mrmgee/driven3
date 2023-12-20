@@ -5,6 +5,17 @@ title: Service Detail
 
 {% include "hero.njk" %}
 
+
+{% if bodyName == "restyling" %}
+<section class="intro">
+    <div class="container">
+        <h2>{{introHead}}</h2>
+        <h3>{{intro}}</h3>
+    </div>
+</section>    
+{% endif %}
+
+
 {% block secCont01 %}
 {% set loopNum = 1 %}
     {% include "sec-cont01.njk" %}

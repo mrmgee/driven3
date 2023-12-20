@@ -38,22 +38,41 @@ sectionCont:
     bkgImage: ./src/_images/70_Mustang01_green_lights.jpg
     bkgImgAlt: 70 Mustang green lights
     bkgImgPos: m-top-65
-    text: We have to tune both together for optimum results. Sometimes that means simply adjusting the carb.
+    text: We have to tune both together for optimum results. Sometimes that means simply adjusting the carb (re re-building it) and sometimes it means upgrading the carb, or the distributor - or both.
     slidelayout:
+  - pattern: sec-2col-pos2
+    title: Don’t go too big when it comes to carbs
+    subtitle: Tuned to perform
+    image: ./src/_images/carburetor_shelf.jpg
+    altText: carburetors on shelf
+    position: 
+    text: More CFM does not alway translate into more power. We’ve seen it with our own eyes on an engine dyno. That 850 double pumper with huge jets sounds cool in theory - but we’ve seen a 650 out of the box Holley make better numbers on the dyno than the bigger carb. Don’t trust your buddies, some basement dweller on the forums - trust guys who know…. And make calls to guys who know to choose the right stuff.
+    CTAlabel:
+    slidelayout: 1
+  - pattern: sec-2col-pos2
+    title: HEI, MSD Box, Points… we work on it all.
+    subtitle: Tuned to perform
+    image: ./src/_images/64_Ford_Falcon_inspection_techs.jpg
+    altText: 64 Ford Falcon inspection techs
+    position: 
+    text: We can help dial in just about any system - old school, new school - we’ve touched it all in over 10 years and 1000’s of cars. We may recommend upgrades - but we can also work with what you have as long as it functions.
+    CTAlabel: Let’s get dialed in >
+    slidelayout: 1
   - pattern: sec-cost
     title: What's the cost?
     subtitle: 
     image: ./src/_images/Exhaust_custom_stainless.jpg
     altText: 74 Scout three quarters front left
     position: 0px 0px
-    text: Carb & Timing cost paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae dolor id enim iaculis bibendum. Fusce ut pellentesque erat. Nunc vitae viverra massa. Duis placerat a augue in eleifend. Pellentesque ut neque ex. Ut non nisi ultrices, tincidunt nunc vitae, tincidunt orci. Donec cursus sagittis felis sed tempus. Ut et viverra arcu.
+    text: Just a simple carb set-up and timing can take just an hour or two of labor ($200-$400) and parts will be determined by what we need to make it all work right.
     figures:
-      - title: $1,100 - $1,855
+      - title: varies
         subtitle: for the parts
         icon: i-repair.svg
-      - title: $2,100 - $2,655
-        subtitle: for installation and calibration
+      - title: $200 - $400
+        subtitle: for labor
         icon: i-mechanic.svg
+    CTAlabel: Set me up >
     slidelayout: 1
   - pattern: sec-faq-accordion
     title: Carb & Timing FAQs
@@ -63,12 +82,12 @@ sectionCont:
     position: 
     text: 
     qaCont:
-      - que: Q1 Carb & Timing
-        ans: A1 Carb & Timing answer text here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae dolor id enim iaculis bibendum. Fusce ut pellentesque erat.
-      - que: Q2 Carb & Timing
-        ans: A2 Carb & Timing answer text here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae dolor id enim iaculis bibendum. Fusce ut pellentesque erat.
-      - que: Q3 Carb & Timing
-        ans: A3 Carb & Timing answer text here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae dolor id enim iaculis bibendum. Fusce ut pellentesque erat.
+      - que: My carb runs super rich at idle, should I get a new one?
+        ans: There's no hard or fast rule here. Sometimes we can adjust it out - or sometimes we need to make bigger changes - but on most performance engines with big cams it’s hard to make them run lean at idle..
+      - que: I have a dead spot - do I need a bigger carb? Bigger jets?
+        ans: Usually - NO. We can usually get it right by accelerator pump adjustments, and timing curve.
+      - que: My car backfires a bunch… can you help?
+        ans: Absolutely - Backfires or lean popping is all timing and carb related… we can get you dialed in and running smooth.
     slidelayout: 1
 ---
 

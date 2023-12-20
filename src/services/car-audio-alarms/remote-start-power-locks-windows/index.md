@@ -20,7 +20,7 @@ sectionCont:
     altText: 67 Pontiac Firebird window
     position: 
     text: Done! It’s easier than you think to get the convenience of power windows in most cars. We buy kits from companies like NuRelics and Electric Life to make it happen. We don’t even need to put ugly switches in to make them work - rather install window crank switches that turn your existing crank handle into an up / down switch. Pretty neat!
-    CTAlabel: I’m sold - get me in >
+    CTAlabel:
     slidelayout:
   - pattern: sec-2col-pos1
     title: Remote start - really?
@@ -47,6 +47,14 @@ sectionCont:
     position: 0px 0px
     text: With some quality actuators and a bit of wiring we can get you opening your doors, and trunk remotely in no time. Sometimes it’s the little things that make a difference in the drive and not fumbling for the door key can be one of them.
     slidelayout: 1
+  - pattern: sec-2col-pos2
+    title: GPS monitoring for your car
+    subtitle: Tuned to perform
+    image: ./src/_images/Klassic_Keyless_entry_system.jpg
+    altText: Klassic Keyless entry system
+    position: 0px 0px
+    text: The systems we install can allow you to track your car wherever it is - wherever you are in real time. You can set up a geo-fence so if the car ever leaves an area, it alerts you instantly. Solid piece of mind and a reduction in insurance rates… easy call.
+    slidelayout: 1
   - pattern: sec-faq-accordion
     title: Wiring and Elecrical FAQs
     subtitle: 
@@ -55,12 +63,12 @@ sectionCont:
     position: 
     text: 
     qaCont:
-      - que: Q1 Car Audio and Alarms
-        ans: A1 Car Audio and Alarms answer text here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae dolor id enim iaculis bibendum. Fusce ut pellentesque erat.
-      - que: Q2 Car Audio and Alarms
-        ans: A2 Car Audio and Alarms answer text here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae dolor id enim iaculis bibendum. Fusce ut pellentesque erat.
-      - que: Q3 Car Audio and Alarms
-        ans: A3 Car Audio and Alarms answer text here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae dolor id enim iaculis bibendum. Fusce ut pellentesque erat.
+      - que: I bought a kit on ebay - will you install my power windows?
+        ans: We’ll look at it… but we can’t warranty parts we don’t trust.
+      - que: I saw power windows with cranks that were the switches - can you do that?
+        ans: We love these! Old school look, new school function. Count us in.
+      - que: I have a car that no one makes a power window kit for - can you help?
+        ans: Totally! It will take more time and some engineering and fabrication work - but we can do it.
     slidelayout: 1
 ---
 

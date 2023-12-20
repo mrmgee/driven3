@@ -8,9 +8,9 @@ performanceUpgradesItems:
   tag: performanceUpgrades
   order: 13
 description: Driven Garage nothern California restomod auto customization and repair shop
-featuredImage: ./src/_images/68_orange_steering_shifter01.jpg
-featuredImageAlt: "68 Scout orange steering wheel and shifter"
-featuredImagePos: "margin-top: -48%;"
+featuredImage: ./src/_images/Richmond_Gear_Yukon_Gear-Axle.jpg
+featuredImageAlt: Richmond Gear Yukon Gear & Axle
+featuredImagePos: 
 isHome: 1
 sectionCont:
   - pattern: sec-2col-pos1
@@ -65,4 +65,4 @@ sectionCont:
     slidelayout: 1
 ---
 
-Rear end / gears mouseover text here
+Re-gearing for performance or economy, Posi’s, lockers, or rear end narrowing - we can handle it all to get your rear in gear.

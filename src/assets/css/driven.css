@@ -1531,6 +1531,9 @@ section.services-detail-cost-box-alt {
         grid-template-columns: 1fr 1fr 1fr;
         column-gap: var(--space-s); 
     }
+    section.services-cost.icon1 .container {
+        grid-template-columns: 2fr 1fr;
+    }
 }
 section.services-cost .container > *:last-child {
     /* margin-bottom: 0; */

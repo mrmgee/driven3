@@ -91,4 +91,4 @@ sectionCont:
     slidelayout: 1
 ---
 
-Cooling Upgrades mouseover text here
+Get the sweats in traffic? We can help you cool down with a rad upgrade or electric fan

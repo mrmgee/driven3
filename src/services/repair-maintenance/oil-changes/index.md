@@ -64,12 +64,12 @@ sectionCont:
     position: 
     text: 
     qaCont:
-      - que: Q1 Engine Swaps
-        ans: A1 Engine Swaps answer text here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae dolor id enim iaculis bibendum. Fusce ut pellentesque erat.
-      - que: Q2 Engine Swaps
-        ans: A2 Engine Swaps answer text here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae dolor id enim iaculis bibendum. Fusce ut pellentesque erat.
-      - que: Q3 Engine Swaps
-        ans: A3 Engine Swaps answer text here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae dolor id enim iaculis bibendum. Fusce ut pellentesque erat.
+      - que: My car just started running bad - will a tune-up fix it?
+        ans: Possibly… but there may be deeper issues. Either way, we’re here to get you back on the road better than you came in.
+      - que: I already have my parts - can you just put them in?
+        ans: As long as they are the right stuff - sure - but we can’t warranty the work. We’ve spent years learning what is good - and not good when it comes to parts… and it’s not always the most expensive stuff that we trust so we’d rather get you the right stuff and install it.
+      - que: My buddy, the internet, or some parts guy at a chain store told me to get a part… but you are telling me differently. What gives?
+        ans: Your buddy, guys on the forum - or the pimply faced kid at the parts store don’t work here. We have experience with this stuff after years of doing it every day. Trust us…
     slidelayout: 1
 ---
 
