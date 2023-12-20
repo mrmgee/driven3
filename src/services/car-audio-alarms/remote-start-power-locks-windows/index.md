@@ -50,9 +50,9 @@ sectionCont:
   - pattern: sec-2col-pos2
     title: GPS monitoring for your car
     subtitle: Tuned to perform
-    image: ./src/_images/Klassic_Keyless_entry_system.jpg
-    altText: Klassic Keyless entry system
-    position: 0px 0px
+    image: ./src/_images/DroneMobile_gps.jpg
+    altText: DroneMobile gps
+    position: 
     text: The systems we install can allow you to track your car wherever it is - wherever you are in real time. You can set up a geo-fence so if the car ever leaves an area, it alerts you instantly. Solid piece of mind and a reduction in insurance rates… easy call.
     slidelayout: 1
   - pattern: sec-faq-accordion

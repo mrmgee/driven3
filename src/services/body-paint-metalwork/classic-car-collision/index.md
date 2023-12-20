@@ -8,17 +8,17 @@ performanceUpgradesItems:
   tag: bodyPaintMetalwork
   order: 3
 description: Driven Garage nothern California restomod auto customization and repair shop
-featuredImage: ./src/_images/67_Nova_wilwood_brakes3.jpg
-featuredImageAlt: "67 Nova Wilwood brakes"
-featuredImagePos: "margin-top: -48%;"
+featuredImage: ./src/_images/67_Pontiac_Firebird_crashed_left.jpg
+featuredImageAlt: 67 Pontiac Firebird crashed left
+featuredImagePos: 
 collectionName: bodyPaintMetalwork
 isHome: 1
 sectionCont:
   - pattern: sec-2col-pos1
     title: Nobody wants to meet by accident
     subtitle: 
-    image: ./src/_images/67_Nova_wilwood_brakes3.jpg
-    altText: 67 Nova Wilwood brakes
+    image: ./src/_images/67_Pontiac_Firebird_crashed_left.jpg
+    altText: 67 Pontiac Firebird crashed left
     position: 
     text: If your pride and joy was wrecked in a fender bender or worse - you can’t trust any collision shop to get it back to 100%. That’s where we come in. You won’t see a bunch of Honda’s and Minivans in our shop - all we do is classic cars - so you can trust us to get it right.
     CTAlabel: Let’s get you fixed up!
@@ -26,15 +26,15 @@ sectionCont:
   - pattern: sec-2col-pos1
     title: We work with insurance companies
     subtitle: 
-    image: ./src/_images/70_Mustang04_engine.jpg
-    altText: Wilwood braking system
+    image: ./src/_images/porsche_crash_before_after.jpg
+    altText: Porsche crash before and after
     position: 
     text: You need a shop that is on your side to make sure your classic / muscle car or specialty car is repaired right. We work with your insurance adjuster to make sure that there is enough to cover getting your car back to where it was BEFORE the accident - or even better. Don’t just take their estimate - there can be deeper damage and more work involved than the initial estimate. We’ll handle it for you.
     slidelayout: 1
   - pattern: sec-tips
     title: Tear it down and look for more
-    image: ./src/_images/67_GTO_wheel_brakes.jpg
-    altText: 67 GTO red wheel brakes detail
+    image: ./src/_images/67_Pontiac_Firebird_crashed_cu.jpg
+    altText: 67 Pontiac Firebird crashed detail
     bkgImage: ./src/_images/70_Mustang01_green_lights.jpg
     bkgImgAlt: 70 Mustang green lights
     bkgImgPos: m-top-65
@@ -43,8 +43,8 @@ sectionCont:
   - pattern: sec-2col-pos2
     title: Don’t get totaled
     subtitle: 
-    image: ./src/_images/67_GTO_wheel_brakes.jpg
-    altText: Wilwood braking system
+    image: ./src/_images/61_Dodge_Lancer_crash_before_after.jpg
+    altText: 61 Dodge Lancer crash before and after
     position: 
     text: Hopefully you have an agreed value policy from a reputable specialty insurance company like Hagerty or Grundy that is high enough. A crash can cost more than you think - and the extra coverage isn’t that much in premium per year. Want an opinion on coverage - we can help you out.
     slidelayout: 1
