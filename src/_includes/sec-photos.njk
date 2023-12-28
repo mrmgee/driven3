@@ -3,7 +3,34 @@
 <section class="carousel-cars">
     <div class="container">
 
-    {% if bodyName == "services" %}
+    {% if bodyName == "cars" %}
+
+        <div class="grid">
+        {% for item in carsAll.cars %}
+            {% set imgPostP = item.image %}
+            {% set imgPostAlt = item.altText %}
+            {% set imgSlidePos = item.position %}
+            {% set imgSizesResp = "12" %}
+
+            <div class="card">
+                <figure>
+            {% if imgPostP | length %}
+                {% image ""+imgPostP, ""+imgPostAlt, ""+imgSlidePos, ""+imgSizesResp %}
+            {% endif %}
+                    <figcaption>
+            {% if item.title|length %}
+                {{ item.title | safe }}
+            {% endif %}
+                    </figcaption>
+                </figure>
+            </div>
+        {% endfor %}        
+        </div>
+
+
+            
+    {% else %}
+        <h2>Cars we've had Our Hands on</h2>
         <div id="all-carousel-cars" class="swiffy-slider slider-item-helper slider-item-show4 slider-item-reveal slider-item-snapstart slider-item-nogap">
             <ul class="slider-container">
         {% for item in carsAll.cars %}
@@ -11,7 +38,6 @@
             {% set imgPostAlt = item.altText %}
             {% set imgSlidePos = item.position %}
             {% set imgSizesResp = "12" %}
-
                 <li>
                     <div class="slide-box">
                         <a href="/cars">
@@ -40,32 +66,6 @@
                 <button></button>
             </div>
           </div><!-- END swiffy-slider -->
-            
-    {% elseif bodyName == "cars" %}
-
-        <div class="grid">
-        {% for item in carsAll.cars %}
-            {% set imgPostP = item.image %}
-            {% set imgPostAlt = item.altText %}
-            {% set imgSlidePos = item.position %}
-            {% set imgSizesResp = "12" %}
-
-            <div class="card">
-                <figure>
-            {% if imgPostP | length %}
-                {% image ""+imgPostP, ""+imgPostAlt, ""+imgSlidePos, ""+imgSizesResp %}
-            {% endif %}
-                    <figcaption>
-            {% if item.title|length %}
-                {{ item.title | safe }}
-            {% endif %}
-                    </figcaption>
-                </figure>
-            </div>
-        {% endfor %}        
-
-
-        </div>
 
     {% endif %}
 
