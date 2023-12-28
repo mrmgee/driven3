@@ -13,15 +13,15 @@ eleventyNavigation:
 collectionName: restomod
 isHome: 1
 description: Driven Garage nothern California restomod auto customization and repair shop  
-featuredImage: ./src/projects/67-dart-vader/67_dart_vader_graffiti.jpg
-featuredImageAlt: "67 Dart Vader three quarters front left graffiti"
+featuredImage: ./src/_images/67_dart_vader_graffiti.jpg
+featuredImageAlt: 67 Dart Vader three quarters front left graffiti
 introHead: All the show + All the GO!
 intro: <p>Whether we’re creating a wild Resto-Mod or something more subtle we follow a strict process to ensure quality of work and get the best outcome. Some of the steps change based on the type of build - but our process for the basic metalwork, body and paint remains the same no matter what level we are taking the job to.</p><p>Over the years we have honed our process to the 13 Step approach described here. There are smaller steps in-between - and we sweat every detail. We won’t compromise here, as compromising by skipping steps or changing our process usually results in sub-par work.</p>
 sectionCont:
   - pattern: sec-2col-pos1
     title: "Step 1: Build spec / design"
     subtitle: 
-    image: ./src/projects/67-dart-vader/67_dart_vader_graffiti.jpg
+    image: ./src/_images/67_dart_vader_graffiti.jpg
     altText: 67 Dart Vader three quarters front left graffiti
     position: 
     text: "For a full custom build this may be the most important part of the process as it gives the project a vision to move forward. We’ll not only spec the nuts and bolts components like engine and transmission, suspension, cooling and fuel systems - but also define the stance, body modifications, color and interior designs. We work with each client to realize their vision and our professional design team will offer a set of drawings that brings tasteful mods that will stand the test of time.</p>

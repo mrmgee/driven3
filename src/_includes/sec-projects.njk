@@ -1,5 +1,5 @@
 {# {% set heroSlides = proj1 %} #}
-{%set collectionNameLink = "projects/69-barracuda-formula-s/" %}
+{%set collectionNameLink = "69-barracuda-formula-s/" %}
 
 
     {% if bodyName == "home" %}
@@ -237,7 +237,7 @@ heroSlides: {{heroSlides}}
 
 {#    {%set pageP = "./src"+page.url %} #}  {# .src/projects/67-camaro-forsyth/ = adds './src' to page url #}
     {% if bodyName == "home" %}
-      {% set pageP = "./src"+collectionNameLink %}
+      {% set pageP = "./src/_images/" %}
     {% else %}
       {% set pageP = "./src"+page.url %}
     {% endif %}

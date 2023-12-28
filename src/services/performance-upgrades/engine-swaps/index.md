@@ -62,13 +62,13 @@ sectionCont:
     image: ./src/_images/Exhaust_custom_stainless.jpg
     altText: 74 Scout three quarters front left
     position: 0px 0px
-    text: Engine swaps are tough to give a “rough” estimate on as the price of parts can vary wildly. Many LS swaps are an easy bolt in.
+    text: Cost varies depending on make and model of vehicle and performance level desired.
     figures:
-      - title: $1,100 - $1,855
+      - title: varies
         subtitle: for the parts
         icon: i-repair.svg
-      - title: $2,100 - $2,655
-        subtitle: for installation and calibration
+      - title: hourly rate
+        subtitle: for labor
         icon: i-mechanic.svg
     slidelayout: 1
   - pattern: sec-faq-accordion

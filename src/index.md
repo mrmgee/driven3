@@ -1,16 +1,16 @@
 ---
 layout: home.njk
-title: Home v3-3-2
+title: Home
 bodyName: home
 featProjects: 69BarracudaFormulaS
-featProjectsUrl: "/projects/69-barracuda-formula-s/"
+featProjectsUrl: "/projects/"
 sectionCont:
   - pattern: hero-home
     title: Passion <span>for</span> Classic Cars
     subtitle: Born from our
-    image: ./src/projects/67-dart-vader/67_dart_vader_graffiti.jpg
+    image: ./src/_images/67_dart_vader_graffiti.jpg
     altText: 67 Dart Vader three quarters front left graffiti
-    link: /projects/67-dart-vader/
+    link: /projects/
     position: m-top-15
     text: Pick your powerplant and we’ll make it happen. We’re specialists in modern engine swaps into classic cars - from mild to wild and oddball combos, we love making your classic better with an engine swap. We know the right parts to make it all work seamlessly and make awesome power and reliability. 
     slidelayout:
@@ -19,7 +19,7 @@ sectionCont:
     subtitle: 69 Cuda
     image: ./src/_images/69-cuda-5.jpg
     altText: 69 Cuda
-    link: /projects/69-barracuda-formula-s/
+    link: /projects/
     position: m-top-20
     text: Pick your powerplant and we’ll make it happen. We’re specialists in modern engine swaps into classic cars - from mild to wild and oddball combos, we love making your classic better with an engine swap. We know the right parts to make it all work seamlessly and make awesome power and reliability. 
     slidelayout:

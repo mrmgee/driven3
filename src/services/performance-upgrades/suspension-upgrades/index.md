@@ -62,13 +62,13 @@ sectionCont:
     image:
     altText:
     position:
-    text: Suspension upgrades can be done for as little as $1000 - all the way into the tens of thousands of dollars depending on the car, and parts used.
+    text: Cost varies depending on make and model of vehicle and performance level desired.
     figures:
-      - title: 
-        subtitle: parts cost
+      - title: varies
+        subtitle: for the parts
         icon: i-repair.svg
-      - title: 
-        subtitle: labor and installation cost
+      - title: hourly rate
+        subtitle: for labor
         icon: i-mechanic.svg
     slidelayout: 1
   - pattern: sec-faq-accordion

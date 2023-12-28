@@ -3,7 +3,7 @@ layout: page.njk
 title: About
 bodyName: about
 description: Driven Garage nothern California restomod auto customization and repair shop
-featuredImage: ./src/projects/67-dart-vader/67_dart_vader_graffiti.jpg
+featuredImage: ./src/_images/67_dart_vader_graffiti.jpg
 featuredImageAlt: 67 Dart Vader three quarters front left graffiti
 featuredImagePos: m-top-20
 header: Driven Garage was born out of a passion for classic cars.
@@ -23,6 +23,13 @@ sectionCont:
     altText: Deb - Bosslady
     position: 
     text: <p>Deb grew up in Detroit as well - and met Geoff while he was working in advertising. Years passed after meeting and they became a couple. Deb was running a successful salon in San Francisco while working on Commercial sets doing hair and make-up for ad work, as well as rock stars. She’s a firecracker and an entrepreneur who knows how to rally a team - make things happen, and keep people happy.</p><p>Deb came in to help Geoff grow the business and help manage the people, finances and growth - and Driven Garage was born. Deb wears many hats here and keeps everything running smooth.</p>
+  - pattern: sec-2col-pos1
+    title: 
+    subtitle: 
+    image: 
+    altText: 
+    position: 
+    text: It takes a complete team to repair, upgrade and build cars. We currently employ 8+ skilled technicians  as well as several support staff to keep everything running smooth and work getting done. We’re always looking to grow our team to keep up with demand.
 ---
 <p>Shops with the knowledge and expertise for classic and specialty cars are a dying breed - but we’re here to stay. We know muscle cars and classics. We know how to repair, upgrade and improve these machines - it’s at our core - and it’s all we do. We respect the history of the automobile while looking for ways to blend technology and safety into our work.</p>
 <p>Our mission is to respect the customer, respect the machine, and do good work at a fair price. We won’t sell you services you don’t need. We won’t apply inflated markups to parts. We won’t milk the clock on your dime… We want customers for life – and we want them to tell everyone about us.</p>
