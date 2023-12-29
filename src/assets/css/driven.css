@@ -115,6 +115,9 @@
     .m-top-15 {
         margin-top: -7.5%;
     }
+    body.restomod ul.slider-container li:first-of-type .m-top-15 {
+        margin-top: 0;
+    }
     .m-top-20 {
         margin-top: -10%;
     }
@@ -230,7 +233,6 @@ section.services-cost header .cost-subhead {
 /* Header */
 .header {
     background-color: var(--charcoal);
-    /* z-index: 20; */
 }
 
 /* Logo */
@@ -289,8 +291,6 @@ li.subnav-wrap {
 
 .subnav-content a {
     text-decoration: none;
-    /* padding: 0.5rem 2rem; */
-    /* margin: 10px 0; */
 }
 .subnavbtn {
     padding-right: 1rem;
@@ -304,7 +304,6 @@ article .cta,
 section.services-cost .container .cta {
     align-items: center;
     display: flex;
-/*    margin-left: 4rem; */
     flex-basis: auto;
     flex-grow: 0;
     flex-shrink: 0;
@@ -330,7 +329,6 @@ body.home .nav > .cta > .label-modal {
 .nav .cta h3, 
 footer .cta h3, 
 body.home section.hero .cta h3, 
-/* .nav .cta  */
 .label-modal h4 {
     font-size: var(--step--1);
     font-weight: 500;
@@ -345,7 +343,6 @@ body.home section.hero .cta h3 {
 
 input[id=form-modal]:not(:checked) ~ .label-modal h4, 
 .cta .label-modal h4 {
-    /* color: #fff; */
     transform: skew(24deg);
 }
 
@@ -410,8 +407,6 @@ input[id=form-modal]:not(:checked) ~  .label-modal,
 .side-menu, 
 .form-modal, 
 .form-modal-step {
-    /* display: none; TESTING   */
-    /* display: block; TESTING   */
     display: none;
 }
 .side-menu:checked ~ nav {
@@ -561,7 +556,6 @@ body.work-request .modal {
 .modal {
     position: fixed;
     display: none;
-/*    display: flex;  */
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -594,7 +588,6 @@ body.work-request .modal {
     padding: 0 0 1rem 0;
     color: #4a4a4a;
     background-color: #fff;
-    /* border-radius: 6px; */
     border-radius: 0.4rem 0.4rem 0 0;
 }
 .modal-content h2 {
@@ -629,13 +622,6 @@ body.work-request .toggle-content {
 .icon {
     align-self: center;
     color: var(--primary);
-/*    
-    width: 100%;
-    font-size: 6rem;
-    width: 1.5rem;
-    height: 1.5rem;
-    line-height: 1;
-*/
 }
 i.icon.i-timesheet img {
     max-width: 6.8rem;
@@ -656,7 +642,6 @@ i.icon.i-timesheet img {
 }
 .img-wrap .icon.i-timesheet img {
     max-height: 8rem;
-    /* margin: 0.3rem 0 0 0; */
 }
 .process-item {
     display: flex;
@@ -701,7 +686,6 @@ section.process article h5 span {
 
 /* Modal TOGGLE */
 .form-modal:checked ~ .modal {
-/* body.work-request .form-modal ~ .modal */
     display: flex;
 }
 
@@ -762,7 +746,6 @@ footer {
 }
 
 footer .columns {
-  /* flex-grow: 1; */
   display: flex;
 }
 footer .columns > * {
@@ -824,13 +807,11 @@ body.restomod .slide-box,
 body.restomod .slide-box a > *, 
 section.projects .slide-box, 
 section.projects .slide-box a {
-    /* max-height: 36rem; */
     max-height: 48rem;
 }
 body.home .slide-box, 
 body.restomod .slide-box, 
 section.projects .slide-box {
-    /* min-height: 36rem; */
     background-color: #d3d3d3;
     overflow-y: hidden;
 }
@@ -1004,7 +985,6 @@ section.services {
 }
 section.services .grid {
     display: grid;
-    /* grid-template-columns: repeat(3, 1fr); */
     gap: var(--space-m);
 }
 @media screen and (min-width: 769px) {
@@ -1232,7 +1212,6 @@ section.projects .slide-box a > .columns > * {
 
 section.projects .columns .columns {
     flex-direction: column;
-    /* padding: 3rem 5rem 1rem 5rem; */
     padding: var(--space-xl) var(--space-2xl) var(--space-s) var(--space-2xl);
     line-height: 2rem;
 }
@@ -1278,7 +1257,6 @@ section.projects .grid {
 
 /* REVIEWS content */
 section.reviews {
-    /* display: grid; */
     grid-template-areas: 
     "header"
     "overlayreviews";
@@ -1515,11 +1493,6 @@ section.pro-tips article p {
 section.services-cost, 
 section.cont-accordion .tab-content, 
 section.services-detail-cost-box-alt {
-    /* position: relative;
-    margin: var(--space-2xs); */
-
-    /* background-color: var(--lt-grey); */
-
     background-image: linear-gradient(180deg,var(--lt-grey) 40%,var(--md-grad-grey));
 }
 @media screen and (min-width: 769px) {
@@ -1534,10 +1507,6 @@ section.services-detail-cost-box-alt {
     section.services-cost.icon1 .container {
         grid-template-columns: 2fr 1fr;
     }
-}
-section.services-cost .container > *:last-child {
-    /* margin-bottom: 0; */
-
 }
 section.services-cost header {
     font-size: var(--step-0);
@@ -1562,7 +1531,6 @@ section.services-cost article figure {
     margin-bottom: var(--space-s);
 }
 section.services-cost article h3 {
-    /* margin: 0 1rem 1rem 0; */
     font-size: var(--step-1);
     font-weight: 600;
     color: #363636;
@@ -1780,10 +1748,6 @@ section.carousel-cars .slider-item-helper:not(.slider-item-ratio) .slider-contai
 
 section.carousel-cars .slide-box {
     max-width: 22rem;
-/*
-    max-height: 11rem;
-    width: auto;
-*/
 }
 
 section.carousel-cars .slide-box figure {
@@ -1837,7 +1801,6 @@ body.cars section.carousel-cars figure figcaption {
 /* Restomod/Full Builds section */
 
 section.nav-links section {
-    /* height: 75vh; */
     min-height: 75vh;
     width: 100%;
     padding: 0;
@@ -1851,7 +1814,6 @@ section.nav-links .tab-nav {
     width: 100%;
     margin: 0 auto;
     padding: var(--space-xs) 0 0 0;
-    /* background-color: #eef0f1; */
     background-color: #ffffff;
     z-index: 10;
 }
@@ -1868,17 +1830,25 @@ section.nav-links .tab-nav ul li a {
     display: block;
     margin: 0 var(--space-xs);
     padding: var(--space-3xs) var(--space-2xs);
-    background-color: #e4e4e4; /* rgb(228 228 228); */
+    background-color: #e4e4e4;
     transform: skew(-24deg)!important;
     color: #363637;
     border-radius:4px;
     text-decoration: none;
 }
+section.nav-links .tab-nav ul li:hover a {
+    color: #ffffff;
+}
+section.nav-links .tab-nav ul li:hover a > i {
+    background-color: #4a4a4a;
+    transition: 0.3s;
+}
+
 section.nav-links .tab-nav ul li a.active {
     background-color: var(--primary);
     transition: 0.3s;
 }
-section.nav-links .tab-nav ul li a span {
+section.nav-links .tab-nav ul li a > span {
     display: flex;
     align-items: center;
     transform: skew(24deg);
@@ -1894,7 +1864,43 @@ section.nav-links .tab-nav ul li a > span i {
     font-size: 2rem;
     text-align: center;
     font-style: normal;
-  }
+}
+
+.tab-cont-head {
+    position: sticky;
+    top: 68px;
+    padding: 0.5rem 0 0.5rem 2rem;
+    background-color: #e4e4e4;
+    z-index: 9;
+}
+
+/* Restomod Mobile  */
+@media (max-width: 768px) {
+    body.restomod section.hero .slide-box {
+        max-height: 14rem;
+    }
+    section.nav-links .tab-nav ul li a {
+        margin: var(--space-3xs);
+        padding: var(--space-3xs);
+    }
+    section.nav-links .tab-nav ul li a span span {
+        display: none;
+    }
+    section.nav-links .tab-nav ul li a > span i {
+        width: 2.2rem;
+        height: 2.2rem;
+        font-size: 1.5rem;
+    }
+}
+
+@media(min-width:1406px) {
+    section.nav-links {
+        width: 94%;
+        margin: 0 auto;
+    }
+}
+
+
 
 /*
 * PROJECTS section
