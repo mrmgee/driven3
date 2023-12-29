@@ -240,11 +240,9 @@ section.services-cost header .cost-subhead {
 }
 
 
-
-
 /* Nav menu */
 @media (max-width: 768px) {
-    .nav, 
+    input.side-menu:not(:checked) ~ nav.nav ul.menu, 
     .subnav-content {
         display: none;
     }
@@ -412,6 +410,8 @@ input[id=form-modal]:not(:checked) ~  .label-modal,
 .side-menu, 
 .form-modal, 
 .form-modal-step {
+    /* display: none; TESTING   */
+    /* display: block; TESTING   */
     display: none;
 }
 .side-menu:checked ~ nav {
