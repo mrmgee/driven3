@@ -3,19 +3,18 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <meta property="og:title" content={{ title }}/>
-    <meta property="og:url" content={{ rootPath }}{{ page.url }} />
-    <meta property="og:description" content={{ description or site.description }} />
-    <meta property="og:image" content="{{ rootPath }}{{ featuredImage }}" />
+    <title>Driven Garage | {{ title }}</title>
+    <meta name="description" content="{{ description }}">
+    <meta property="og:title" content="Driven Garage | {{ title }}"/>
+    <meta property="og:url" content="https://www.drivengarage.com{{ page.url }}" />
+    <meta property="og:description" content="{{ description }}" />
+  {% if featuredImage | length %}
+      {% ogImage featuredImage, "Alt text" %}
+  {% endif %} 
     <meta property="og:type" content="article" />
 
-
-
-    <title>Driven Garage | {{ title }}</title>
-    <meta name="description" content="{{ description or site.description }}">
     <link rel="stylesheet" href="{{ rootPath }}assets/css/driven.css">
-    <link rel="icon" type="image/png" href="{{ rootPath }}/assets/images/favicon.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="{{ rootPath }}assets/images/favicon.png" sizes="32x32">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic%7CUbuntu:300,300italic,400,400italic,500,500italic,700,700italic%7CRoboto:300,regular,500" media="all">
 
     <!-- Swiffy Slider -->

@@ -162,7 +162,48 @@ function galleryShortcode(content, name) {
 
 
 
+//OPEN GRAPH share images
 
+// OPEN GRAPH shortcode function
+const ogsharp = require('sharp');
+
+
+const ogGALLERY_IMAGE_WIDTH = 1200;   //orig 400 width
+const ogLANDSCAPE_LIGHTBOX_IMAGE_WIDTH = 1200;   //orig 2000 width
+const ogPORTRAIT_LIGHTBOX_IMAGE_WIDTH = 720;
+
+// async function galleryImageShortcode(src, alt) {
+async function ogImageShortcode(src, alt) {
+    let oglightboxImageWidth = ogLANDSCAPE_LIGHTBOX_IMAGE_WIDTH;
+
+    const ogmetadata = await ogsharp(src).metadata();
+    if (ogmetadata.orientation > 1) {
+        console.log('Rotated image detected:', src, ogmetadata.orientation);
+        await ogsharp(src).rotate().toFile(`correct/${src.split("/").pop()}`);
+    }
+
+    if(ogmetadata.height > ogmetadata.width) {
+        oglightboxImageWidth = ogPORTRAIT_LIGHTBOX_IMAGE_WIDTH;
+    }
+
+    const options = {
+        formats: ['jpeg'],
+        widths: [ogGALLERY_IMAGE_WIDTH, oglightboxImageWidth],
+        filenameFormat: function (hash, src, widths, formats, options) {
+            const { name } = path.parse(src);
+            return `${name}-${widths}.${formats}`;
+        },
+        outputDir: 'dist/assets/images',
+        urlPath: '/assets/images'
+
+    }
+
+    const oggenMetadata = await Image(src, options);
+
+    return `
+        <meta property="og:image" content="${oggenMetadata.jpeg[0].url}" />
+    `.replace(/(\r\n|\n|\r)/gm, "");;
+}
 
 
 
@@ -223,6 +264,8 @@ module.exports = function (eleventyConfig) {
     // gallery and shortcode   
     eleventyConfig.addPairedNunjucksShortcode('gallery', galleryShortcode);
     eleventyConfig.addNunjucksAsyncShortcode('galleryImage', galleryImageShortcode);
+
+    eleventyConfig.addNunjucksAsyncShortcode('ogImage', ogImageShortcode);
 
     return {
       dir: {
