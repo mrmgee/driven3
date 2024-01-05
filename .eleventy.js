@@ -201,7 +201,7 @@ async function ogImageShortcode(src, alt) {
     const oggenMetadata = await Image(src, options);
 
     return `
-        <meta property="og:image" content="${oggenMetadata.jpeg[0].url}" />
+        <meta property="og:image" content="https://www.drivengarage.com${oggenMetadata.jpeg[0].url}" />
     `.replace(/(\r\n|\n|\r)/gm, "");;
 }
 

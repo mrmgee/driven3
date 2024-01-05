@@ -1,0 +1,4 @@
+Sitemap: https://www.drivengarage.com/sitemap.xml
+
+User-agent: *
+Disallow:
