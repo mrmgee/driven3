@@ -2,6 +2,9 @@
 layout: home.njk
 title: Home
 bodyName: home
+description: Driven Garage nothern California restomod auto customization and repair shop
+featuredImage: ./src/_images/67_dart_vader_graffiti.jpg
+featuredImageAlt: 67 Dart Vader three quarters front left graffiti
 featProjects: 69BarracudaFormulaS
 featProjectsUrl: "/projects/"
 sectionCont:
