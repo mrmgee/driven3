@@ -33,7 +33,7 @@ title: Page layout
     {%set useInclude = 'sec-cont01.njk' %}
 {% elseif bodyName == 'how-we-work' %}
     {%set useInclude = 'sec-timeline.njk' %}
-{% elseif bodyName == 'work-request' or bodyName == 'privacy' %}
+{% else %}
     {%set useInclude = 'sec-photos.njk' %}
 {% endif %}
 
